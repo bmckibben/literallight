@@ -1,0 +1,91 @@
+@import "bootstrap";
+body { 
+	padding-top: 60px;
+  color: #ccc;;
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #000000 0%, #000099 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #000000 0%, #000099 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #000000 0%, #000099 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000000), color-stop(1, #000099));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #000000 0%, #000099 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #000000 0%, #000099 100%);
+    min-height: 680px;
+}
+
+.navbar-inner {
+  background: asset-url("linebk.gif", image) repeat left top;
+  background-color: #999;
+  }
+
+.nav > li > a {
+    color: #66CCFF;
+    float: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: none !important;
+}
+
+.nav > li > a:link {
+    color: #66CCFF;
+    float: none;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.nav > li > a:visited {
+    color: #66CCFF;
+    float: none;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.nav > li > a:active {
+    color: #66CCFF;
+    float: none;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    color: #CC33FF !important;
+    text-decoration: underline;
+    float: none;
+    padding: 10px 15px;
+}
+
+html, body {
+  height: 100%;
+}
+
+#main {
+    min-height: 90%;
+}
+
+.container {
+  /* overflow:auto;
+  padding-bottom:50px;  this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -10px; /* negative value of footer height */
+  height: 50px;
+  clear:both;
+  color: #66CCFF;
+  padding-left: 2em;
+} 
+
+
+@import "bootstrap-responsive";
