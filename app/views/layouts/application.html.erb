@@ -8,6 +8,18 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
+    <style>
+      @media (max-width: 767px) {
+          body {
+              padding: 0;
+          }
+       
+          .container {
+              padding-left: 20px;
+              padding-right: 20px;
+          }
+      }
+    </style>
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
     <header class="navbar navbar-fixed-top">
