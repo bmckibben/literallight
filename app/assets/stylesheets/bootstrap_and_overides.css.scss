@@ -1,9 +1,12 @@
 @import "bootstrap";
 
 body { 
-	padding-top: 60px;
-  color: #ccc;;
+	padding-top: 40px;
+  color: #ccc;
+  background: #000099;
+}  
 
+#main {
 /* IE10 Consumer Preview */ 
 background-image: -ms-linear-gradient(top, #000000 0%, #000099 100%);
 
@@ -86,6 +89,7 @@ html, body {
   clear:both;
   color: #66CCFF;
   padding-left: 2em;
+  background: #000099;
 } 
 
 
