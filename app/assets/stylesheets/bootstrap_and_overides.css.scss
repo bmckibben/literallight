@@ -92,4 +92,15 @@ html, body {
   background: #000099;
 } 
 
+.alert-danger, .alert-error, .alert-success {
+    background-color: transparent;
+    border: none;
+}
+
+.alert-danger a, .alert-error a, .alert-success a {
+    background-color: yellow;
+    color: #CCCCCC;
+}
+
+
 @import "bootstrap-responsive";
