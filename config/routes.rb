@@ -1,7 +1,7 @@
 Literallight::Application.routes.draw do
   get "users/list"
-  get "static_pages/about"
-  get "static_pages/help"
+  get 'static_pages/about', :as => 'static_about'
+  get 'static_pages/help', :as => 'static_help'
 
   root :to => "home#index"
   devise_for :users
