@@ -1,5 +1,5 @@
 Literallight::Application.routes.draw do
-  get "users/list"
+  get "users/list", :as => 'users_list'
   get 'static_pages/about', :as => 'static_about'
   get 'static_pages/help', :as => 'static_help'
 
