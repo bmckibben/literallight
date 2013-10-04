@@ -4,7 +4,7 @@ Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
-  config.mailer_sender = "bmckibbeniii@gmail.com"
+  config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
@@ -86,7 +86,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "99097efa9304126634bff9067c8c58492357e1304d087eab248913b936c3f3d455c98f61f00e50d4df6ba7581a8f31daab2359d078ee7258082eceb8833b5f33"
+  # config.pepper = "8852dffe9536db0a32f42c6a2d235135cfccecbbece8c7665a6904592fd8fa80e1cf5ca9b25e508cb2cbd46e87d17f645a183bd29e22871a5c1e1fc643e0dadc"
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -214,7 +214,7 @@ Devise.setup do |config|
   # config.navigational_formats = ["*/*", :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  config.sign_out_via = Rails.env.test? ? :get : :delete
+  config.sign_out_via = :delete
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting

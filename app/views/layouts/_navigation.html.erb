@@ -1,29 +1,41 @@
+<div class="row-fluid">
+  <div class="span11">`  
+    <ul class="nav">
+      <li>
+        <%= link_to "Home", root_path %>
+      </li>
 
-<ul class="nav">
-  <li>
-    <%= link_to "Home", root_path %>
-  </li>
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>
-    </li>
-  <% else %>
-    <li>
-    <%= link_to 'Login', new_user_session_path %>
-    </li>
-  <% end %>
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to 'Edit account', edit_user_registration_path %>
-    </li>
-  <% end %>
-    <li>
-    <%= link_to 'About', static_about_path %>
-    </li>  
-    <li>
-    <%= link_to 'Contact', static_help_path %>
-    </li> 
-    <li>
-    <%= link_to 'Users', users_list_path %>
-    </li>             
-</ul>
+      <% if user_signed_in? %>
+        <li>
+        <%= link_to 'Edit account', edit_user_registration_path %>
+        </li>
+        <li>
+        <%= link_to 'Users', users_list_path %>
+        </li>     
+      <% end %>
+
+        <li>
+        <%= link_to 'About', static_about_path %>
+        </li>  
+        <li>
+        <%= link_to 'Contact', static_contact_path %>
+        </li> 
+        <li>
+        <%= link_to 'Help', static_help_path %>
+        </li>        
+    </ul>
+  </div> 
+  <div class="span1" style="align:right;">
+     <ul class="nav"> 
+     <% if user_signed_in? %>
+        <li>
+        <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>
+        </li>
+      <% else %>
+        <li>
+        <%= link_to 'Login', new_user_session_path %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
