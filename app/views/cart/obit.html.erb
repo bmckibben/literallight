@@ -1,0 +1,16 @@
+<div id="content">
+<h3><%= params[:deceased_name] %></h3>
+<p>
+(
+<% if @obituary.o_born_date != nil && @obituary.o_born_date != "" %>
+	<%= @obituary.o_born_date.strftime("%B %d, %Y") %> - <%= @obituary.o_died_date.strftime("%B %d, %Y") %>
+<% else %>	
+	Died: <%= @obituary.o_died_date.strftime("%B %d, %Y") %>
+<% end %>
+)
+</p>
+<p>	
+<%= @obituary.o_obituary %>
+</p>
+
+</div>

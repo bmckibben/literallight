@@ -1,0 +1,14 @@
+<div id="content">
+<%= image_tag("cart/products/full/"+@product.thumbnail) %>
+<br/>
+<div align="center" style="width:100%;">
+ 
+<%= link_to "SELECT", cart_personalize_path(:product_id => @product.product_id), :class => "greenBtn3", :style => "width:206px;height:40px;"   %>
+
+</div>        
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".ui-dialog-title").html("<%= @product.description %>");
+})
+</script>

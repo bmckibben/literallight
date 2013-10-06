@@ -1,0 +1,20 @@
+<h1>Only the best SciFi novels.</h1>
+
+  <% @active_products.each do |product| %>
+    <div class="row-fluid selectList" >
+        <div class="span1 selectBookImage" data-id="pop<%= product.product_id %>">
+
+       <%= link_to "Preview", cart_detail_path(:product_id => product.product_id), :remote => true, :class => "grayBtn4 trigger aPopup", :style => "display:none;", :id => "pop#{product.product_id}" %> 
+        <%= link_to image_tag("products/thumb/"+product.image, :alt => "Preview", :title => "Preview", :class => "selectThumb"), cart_personalize_path(:product_id => product.product_id) %> 
+        <!--<%= image_tag("products/thumb/"+product.image) %>
+        <%= image_tag "products/thumb/200.jpg" %>-->
+        </div>
+        
+        <div class="span11 selectBookDesc">
+            <h4><%= product.title %> <span style="font-style:italic;">- <%= product.author_last %>, <%= product.author_first %></span></h4>
+            <p><%= product.description %></p>
+        </div>
+
+      </div> 
+    <% end %>
+

@@ -1,12 +1,23 @@
 Literallight::Application.routes.draw do
-  get "users/list", :as => 'users_list'
-  get 'static_pages/about', :as => 'static_about'
-  get 'static_pages/help', :as => 'static_help'
-  get 'static_pages/contact', :as => 'static_contact'
+  
 
   root :to => "home#index"
   devise_for :users
   resources :users
+  resources :products
+
+  get "users/list", :as => 'users_list'
+
+  get 'static_pages/about', :as => 'static_about'
+  get 'static_pages/help', :as => 'static_help'
+  get 'static_pages/contact', :as => 'static_contact'
+
+  get 'products/index', :as => 'products_index'
+  get 'products/show', :as => 'products_show'
+
+  get "cart/select" , :as => 'cart_select'
+  get "cart/detail" , :as => 'cart_detail'
+  get "cart/personalize" , :as => 'cart_personalize'
   #get about :to => "static#about'"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @product.product_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @product.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @product.status %>
+</p>
+
+<p>
+  <strong>Display order:</strong>
+  <%= @product.display_order %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @product.image %>
+</p>
+
+<p>
+  <strong>Retail price:</strong>
+  <%= @product.retail_price %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @product.link %>
+</p>
+
+<p>
+  <strong>Author last:</strong>
+  <%= @product.author_last %>
+</p>
+
+<p>
+  <strong>Author first:</strong>
+  <%= @product.author_first %>
+</p>
+
+<p>
+  <strong>Publish year:</strong>
+  <%= @product.publish_year %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @product.genre %>
+</p>
+
+<p>
+  <strong>Keyword:</strong>
+  <%= @product.keyword %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @product.rating %>
+</p>
+
+<p>
+  <strong>Hugo:</strong>
+  <%= @product.hugo %>
+</p>
+
+<p>
+  <strong>Nebula:</strong>
+  <%= @product.nebula %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
