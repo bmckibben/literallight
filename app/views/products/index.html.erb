@@ -1,6 +1,6 @@
-<h1>Only the best scifi novels.</h1>
 
-<table>
+
+<table class="table">
   <thead>
     <tr>
       <th>Product</th>
@@ -19,9 +19,9 @@
       <th>Rating</th>
       <th>Hugo</th>
       <th>Nebula</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Show</th>
+      <th>Edit</th>
+      <th>Remove</th>
     </tr>
   </thead>
 
@@ -44,9 +44,9 @@
         <td><%= product.rating %></td>
         <td><%= product.hugo %></td>
         <td><%= product.nebula %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to raw('<i class="icon-eye-open icon-white"></i>'), product %></td>
+        <td><%= link_to raw('<i class="icon-pencil icon-white"></i>'), edit_product_path(product) %></td>
+        <td><%= link_to raw('<i class="icon-remove-sign icon-white"></i>'), product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -54,4 +54,4 @@
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+<%= link_to 'New Product', new_product_path,  class: "btn btn-default" %>

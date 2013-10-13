@@ -21,6 +21,10 @@ class ProductsController < ApplicationController
   def edit
   end
 
+  # GET /products/1/edit
+  def orders
+  end
+
   # POST /products
   # POST /products.json
   def create
