@@ -4,3 +4,6 @@ rails generate devise:install
 
 rails generate scaffold product product_id:primary_key title:string description:text status:integer display_order:integer image:string retail_price:decimal link:string author_last:string author_first:string publish_year:integer genre:string keyword:string rating:integer hugo:integer nebula:integer
 
+rake assets:precompile
+
+heroku labs:enable user-env-compile -a HEROKU_APP_NAME
