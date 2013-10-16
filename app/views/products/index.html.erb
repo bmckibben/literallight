@@ -1,5 +1,4 @@
 
-
 <table class="table">
   <thead>
     <tr>
@@ -29,8 +28,9 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.product_id %></td>
-        <td><%= product.title %></td>
-        <td><%= product.description %></td>
+        <td colspan="12"><h4><%= product.title %></h4></td>
+      </tr>    
+      <tr>
         <td><%= product.status %></td>
         <td><%= product.display_order %></td>
         <td><%= product.image %></td>
@@ -44,6 +44,9 @@
         <td><%= product.rating %></td>
         <td><%= product.hugo %></td>
         <td><%= product.nebula %></td>
+      </tr>  
+      <tr>  
+        <td colspan="10"><%= product.description %></td>        
         <td><%= link_to raw('<i class="icon-eye-open icon-white"></i>'), product %></td>
         <td><%= link_to raw('<i class="icon-pencil icon-white"></i>'), edit_product_path(product) %></td>
         <td><%= link_to raw('<i class="icon-remove-sign icon-white"></i>'), product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
