@@ -1,20 +1,45 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Product:</strong>
-  <%= @product.product_id %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @product.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
+<div class="row" > 
+  <div class="span12">
+    <p id="notice"><%= notice %></p>
+  </div>
+</div>
+<div class="row">
+  <div class="span3">
+    <p>
+      <strong>Product:</strong>
+      <%= @product.product_id %>
+    </p>    
+  </div>  
+  <div class="span9">
+    <p>
+      <strong>Title:</strong>
+      <%= @product.title %>
+    </p>    
+  </div>  
+</div> 
+<div class="row">
+    <div class="span6">
+      <p>
+        <strong>Author last:</strong>
+        <%= @product.author_last %>
+      </p>      
+    </div>
+    <div class="span6">
+      <p>
+        <strong>Author first:</strong>
+        <%= @product.author_first %>
+      </p>      
+    </div>  
+</div>
+<div class="row">
+    <div class="span12">
+      <p>
+        <strong>Description:</strong>
+        <%= @product.description %>
+      </p>
+    </div>  
+</div>
 <p>
   <strong>Status:</strong>
   <%= @product.status %>
@@ -40,15 +65,9 @@
   <%= @product.link %>
 </p>
 
-<p>
-  <strong>Author last:</strong>
-  <%= @product.author_last %>
-</p>
 
-<p>
-  <strong>Author first:</strong>
-  <%= @product.author_first %>
-</p>
+
+
 
 <p>
   <strong>Publish year:</strong>
@@ -82,4 +101,3 @@
 
 <%= link_to 'Edit', edit_product_path(@product), class: "btn btn-default" %> 
 <%= link_to 'Back', products_path , class: "btn btn-default"  %>
-<%= link_to 'list', products, class: "btn btn-default" %>

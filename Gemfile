@@ -55,6 +55,7 @@ gem "launchy", ">= 2.1.2", :group => :test
 gem "factory_girl_rails", :group => [:development, :test]
 gem "devise", ">= 3.0.0.rc"
 gem 'bcrypt-ruby', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+gem "cancan"
 
 group :production do
 	gem 'rails_log_stdout', github: 'heroku/rails_log_stdout'
