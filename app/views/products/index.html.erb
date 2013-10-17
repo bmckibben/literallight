@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table table-condensed">
   <thead>
     <tr>
       <th>Product</th>
@@ -32,7 +32,7 @@
         <td><%= product.product_id %></td>
         <td colspan="11"><h4><%= product.title %></h4></td>
       </tr>    
-      <tr>
+      <tr class="no-border">
         <td><%= product.author_last %>,&nbsp;<%= product.author_first %></td>
         <td><%= product.publish_year %></td> 
         <td><%= product.genre %></td>
@@ -46,7 +46,7 @@
         <td><%= product.hugo %></td>
         <td><%= product.nebula %></td>
       </tr>  
-      <tr>  
+      <tr class="no-border">  
         <td colspan="9"><%= product.description %></td>        
         <td><%= link_to raw('<i class="icon-eye-open icon-white"></i>'), product %></td>
         <td><%= link_to raw('<i class="icon-pencil icon-white"></i>'), edit_product_path(product) %></td>
