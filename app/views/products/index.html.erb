@@ -2,25 +2,24 @@
   <thead>
     <tr>
       <th>Product</th>
-      <th colspan="12"Title</th>
+      <th colspan="11">Title</th>
     </tr>
     <tr>
+      <th>Author</th>
+      <th>Published</th>  
+      <th>Genre</th>
+      <th>Keyword</th>
       <th>Status</th>
       <th>Display order</th>
       <th>Image</th>
       <th>Retail price</th>
       <th>Link</th>
-      <th>Author last</th>
-      <th>Author first</th>
-      <th>Publish year</th>
-      <th>Genre</th>
-      <th>Keyword</th>
       <th>Rating</th>
       <th>Hugo</th>
       <th>Nebula</th>
     </tr>
     <tr> 
-      <th colspan="10">Description</th>
+      <th colspan="9">Description</th>
       <th>Show</th>
       <th>Edit</th>
       <th>Remove</th>
@@ -31,25 +30,24 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.product_id %></td>
-        <td colspan="12"><h4><%= product.title %></h4></td>
+        <td colspan="11"><h4><%= product.title %></h4></td>
       </tr>    
       <tr>
+        <td><%= product.author_last %>,&nbsp;<%= product.author_first %></td>
+        <td><%= product.publish_year %></td> 
+        <td><%= product.genre %></td>
+        <td><%= product.keyword %></td>
         <td><%= product.status %></td>
         <td><%= product.display_order %></td>
         <td><%= product.image %></td>
         <td><%= product.retail_price %></td>
         <td><%= product.link %></td>
-        <td><%= product.author_last %></td>
-        <td><%= product.author_first %></td>
-        <td><%= product.publish_year %></td>
-        <td><%= product.genre %></td>
-        <td><%= product.keyword %></td>
         <td><%= product.rating %></td>
         <td><%= product.hugo %></td>
         <td><%= product.nebula %></td>
       </tr>  
       <tr>  
-        <td colspan="10"><%= product.description %></td>        
+        <td colspan="9"><%= product.description %></td>        
         <td><%= link_to raw('<i class="icon-eye-open icon-white"></i>'), product %></td>
         <td><%= link_to raw('<i class="icon-pencil icon-white"></i>'), edit_product_path(product) %></td>
         <td><%= link_to raw('<i class="icon-remove-sign icon-white"></i>'), product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
