@@ -48,9 +48,9 @@
       </tr>  
       <tr class="no-border">  
         <td colspan="9"><%= product.description %></td>        
-        <td><%= link_to raw('<i class="icon-eye-open icon-white"></i>'), product %></td>
-        <td><%= link_to raw('<i class="icon-pencil icon-white"></i>'), edit_product_path(product) %></td>
-        <td><%= link_to raw('<i class="icon-remove-sign icon-white"></i>'), product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to image_tag(asset_path("icons/eye.png"), :alt => "Show", :title => "Show"), product %></td>
+        <td><%= link_to image_tag(asset_path("icons/pencil.png"), :alt => "Edit", :title => "Edit"), edit_product_path(product) %></td>
+        <td><%= link_to image_tag(asset_path("icons/remove.png"), :alt => "Delete", :title => "Delete"), product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -59,3 +59,5 @@
 <br>
 
 <%= link_to 'New Product', new_product_path,  class: "btn btn-default" %>
+
+<br/><br/>
