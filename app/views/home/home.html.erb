@@ -60,15 +60,15 @@
                 </h1>
                 <p>This is my personal test/training/practice website.</p>
                 <p>Built with:<br/>
-                    <div style="width:170px;" align="center">
+                    
                     <ul>
-                        <li style="text-align:left;">Ruby 2.2.3</li>
-                        <li style="text-align:left;">Rails <%= Rails.version %></li>
-                        <li style="text-align:left;">MongoDB/Mongoid</li>
-                        <li style="text-align:left;">Devise</li>
-                        <li style="text-align:left;">Twitter Bootstrap</li>
+                        <li style="float:left;">Ruby 2.2.3</li>
+                        <li style="float:left;">Rails <%= Rails.version %></li>
+                        <li style="float:left;">MongoDB/Mongoid</li>
+                        <li style="float:left;">Devise</li>
+                        <li style="float:left;">Twitter Bootstrap</li>
                     </ul>
-                    </div>
+               
                 </p>
                 <h2>New and Improved</h2>
                 <p>Enhancing this site to make it <em>RESTful</em> with AngularJS!</p>
@@ -239,4 +239,10 @@
         <!-- /.container -->
     </section>
 
-
+  <script type='text/javascript'>
+      $(document).ready(function() {
+          $('.carousel').carousel({
+              interval: 3000
+          })
+      });
+  </script>
