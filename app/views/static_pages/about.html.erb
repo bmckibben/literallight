@@ -1,23 +1,33 @@
-<h1>About</h1>
-<h3>Welcome to the show</h3>
+<h1>
+Welcome to LiteralLight, <%= current_user.email %>!
+</h1>
+<section>
 <p>This is my personal test/training/practice website.</p>
-<p>So far I have built this site with:<br/>
+<p>This site is built with:<br/>
 	<ul>
-		<li>Ruby 2.0.0</li>
-		<li>Rails 4.0.0</li>
-		<li>MongoDB/Mongoid</>
+		<li>Ruby 2.0</li>
+		<li>Rails <%= Rails.version %></li>
+		<li>MongoDB/Mongoid</li>
 		<li>Devise</li>
 		<li>Twitter Bootstrap</li>
 	</ul>
 </p>
-<p>I am working on incorporating:
-	<ul>
-		<li>A shopping cart demo</li>
-		<li>A blog demo</li>
-		<li>CanCan</li>
-		<li>a CMS, perhaps </li>
-	</ul>
-</p>
-<p>Along the way I have run into a problem with Heroku's precompile of the asset pipeline. In particular, trying to set a background image for a &lt;DIV&gt;. I am using sass for my css</p>
+<p>Along the way I have run into a problem with Heroku's precompile of the asset pipeline. In particular, trying to set a background image for a &lt;DIV&gt;.<br/> I am testing out a solution using Bower to manage front end assets.</p>
 <p>The coolest thing I have seen so far is the rails generate command which I used to generate this page</p>
 <p>I highly recommed the RailsApps tutorials as well as http://ruby.railstutorial.org/</p>
+<h2>New and Improved</h2>
+<p>Enhancing this site to make it <em>RESTful</em> with AngularJS!</p>
+<%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+</section>	
+
+
+
+
+
+
+
+
+
+
+
+ 

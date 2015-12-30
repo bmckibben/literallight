@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "literallight" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "literallight" %>">
-    <%= stylesheet_link_tag "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
-    <%= yield(:head) %>
-    <style>
-      @media (max-width: 767px) {
-          body {
-              padding: 0;
-          }
-       
-          .container {
-              padding-left: 20px;
-              padding-right: 20px;
-          }
-          .navbar-fixed-top {
-            margin-bottom: 0;
-          }
-      }
-    </style>
-  </head>
-  <body class="<%= controller_name %> <%= action_name %>">
-    <header class="navbar navbar-fixed-top">
-      <nav class="navbar-inner" style='background:url(<%= asset_path "linebk.gif" %>) repeat left top;'>
-        <div class="container">
-          <%= render 'layouts/navigation' %>
-        </div>
-      </nav>
-    </header>
-    <div id="main" role="main">
-      <div class="container">
-        <div>
-           <div class="row">
-            <div class="span12">
-              <%= render 'layouts/messages' %>
-              <%= yield %>
-            </div>
-          </div>
-        </div>
-      </div> <!--! end of .container -->
-    </div> <!--! end of #main -->
-    <%= render 'layouts/footer' %>
-  </body>
+<head>
+  <title>LiteralLight</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<%= render 'layouts/navigation' %>
+
+<main>
+<div class="container-fluid">
+<% if notice.present? %>
+<aside class="alert alert-info alert-dismissible" role="alert">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true" class="glyphiconglyphicon-remove-circle"></span></button>
+<%= notice %>
+</aside>
+<% end %>
+<% if alert.present? %>
+<aside class="alert alert-warning alert-dismissible" role="alert">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true" class="glyphiconglyphicon-remove-circle"></span></button>
+<%= alert %>
+</aside>
+<% end %>
+<div class="clearfix"></div>	
+<%= yield %>
+</div>
+</main>
+<footer>
+	<%= render 'layouts/footer' %>	
+</footer>
+</body>
 </html>

@@ -1,0 +1,89 @@
+/* I prefer these to bootstrap defaults */
+
+.alert-warning {
+  background-color: #FCC2CA;
+  border-color: #FF7386;
+  color: #AD0219;
+}
+
+.navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar-header {
+  height: 50px;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin-right:20px;
+}
+
+.navbar-brand img {  
+  width: 100%;
+  height: auto;
+  max-width: 444px;
+  max-height: 50px; 
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+textarea {
+  color: #555555;
+}
+
+th {
+  font-weight:bold;
+}
+
+.main-content {
+  margin-top: 20px;
+}
+
+.alert {
+  margin-top: 50px;
+  margin-left: 2em;
+  float: left;
+}
+
+.alert-danger, #error_explanation, .alert-error, .alert-success {
+    // background-color: transparent;
+    border: none;
+} 
+
+.close {
+  color: #000;
+}
+
+.border-right {
+  border-right: 1px solid #fff
+}
+
+.well {
+  background-color:transparent;
+  border:none;
+} 
+
+.btn {
+  margin: 0.5em;
+  font-family: Verdana, Geneva, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-top: 0;  
+}
+
+
+label {
+  color: #000;
+}

@@ -1,70 +1,66 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-<title>We didn't find what you're looking for. (404)</title>
-<style>
-body {
-  margin: 0;
-  font-family: arial, sans-serif; 
-  color: #ccc;
-  background: #000099;
-}  
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  body {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
 
-#main {
-  /* IE10 Consumer Preview */ 
-  background-image: -ms-linear-gradient(top, #000000 0%, #000099 100%);
+  div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
 
-  /* Mozilla Firefox */ 
-  background-image: -moz-linear-gradient(top, #000000 0%, #000099 100%);
+  div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
 
-  /* Opera */ 
-  background-image: -o-linear-gradient(top, #000000 0%, #000099 100%);
+  h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
 
-  /* Webkit (Safari/Chrome 10) */ 
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000000), color-stop(1, #000099));
-
-  /* Webkit (Chrome 11+) */ 
-  background-image: -webkit-linear-gradient(top, #000000 0%, #000099 100%);
-
-  /* W3C Markup, IE10 Release Preview */ 
-  background-image: linear-gradient(to bottom, #000000 0%, #000099 100%);
-      min-height: 680px;
-}
-  
-
-html, body {
-  height: 100%;
-}
-
-#main {
-    min-height: 85%;
-    top: 0;
-    padding: 50px 50px 0 50px;
-    }
-
+  div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
   </style>
 </head>
 
 <body>
-  <!-- This file lives in public/404.html -->
-  <div id="main" role="main">
-    <h1>Whoa!</h1>
-    <p>We didn't expect that to happen. Either there is a some kind of a server failure or you discovered a bug we haven&#39;t fixed yet.  Please try using your browser&#39;s back button to return the page  you were previously viewing. If that doesn&#39;t work click <a href="http://www.literallight.com" >here</a> to return to the home page. We are updating this site frequently, so check back again soon to see if we have this resolved.</p>
-    </p>
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
   </div>
-
-
-  <footer class="footer">
-  <div class="row-fluid">
-    <div class="span6" align="left" style="padding-left: 50px;">
-        &copy; Ben McKibben, 2013. All rights reserved.<br/>
-        v. 20131006
-    </div>
-    <div class="span6" style="float:right;">
-    </div>
-  </div>  
-</footer>  
 </body>
 </html>
-
