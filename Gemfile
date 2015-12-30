@@ -19,14 +19,17 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Database ODM
-gem'mongoid', '~> 5.0.0'
+gem 'mongoid', '~> 5.0.0'
 #gem'bson_ext'
 
 gem "nokogiri"
 
 gem 'devise'
+gem 'pundit'
 gem 'bcrypt'
+gem 'simple_enum', '~> 2.0.0' , require: 'simple_enum/mongoid'
 
+# asset manager
 gem 'bower-rails'
 
 # per heroku

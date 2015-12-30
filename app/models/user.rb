@@ -1,5 +1,9 @@
 class User
   include Mongoid::Document
+  include SimpleEnum::Mongoid
+
+  as_enum :role, guest: 0, member: 1, admin: 2
+  after_initialize :set_default_role, :if => :new_record?
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -8,6 +12,8 @@ class User
   ## Database authenticatable
   field :email,              type: String, default: ""
   field :encrypted_password, type: String, default: ""
+  field :name,               :type => String, :default => ""
+  field :role,               :type => Integer
 
   ## Recoverable
   field :reset_password_token,   type: String
@@ -33,4 +39,19 @@ class User
   # field :failed_attempts, type: Integer, default: 0 # Only if lock strategy is :failed_attempts
   # field :unlock_token,    type: String # Only if unlock strategy is :email or :both
   # field :locked_at,       type: Time
+
+  ##Validation ?
+  validates_presence_of :name
+  validates_uniqueness_of :name, :email, :case_sensitive => false
+  #attr_accessible :name, :email, :password, :password_confirmation, :remember_me
+
+  #HACK FOR DEVISE 3.2.4
+  def self.serialize_into_session(record)
+      [record.id.to_s, record.authenticatable_salt]
+  end
+  
+  def set_default_role
+    self.role ||= :guest
+  end
+
 end
