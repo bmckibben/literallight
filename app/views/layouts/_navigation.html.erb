@@ -16,9 +16,9 @@
       <% if user_signed_in? %>
       <ul class="nav navbar-nav">
         <li class="active"><%= link_to 'Home', home_path %></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><%= link_to 'About Us', home_path(anchor: "about") %></li>
+        <li><%= link_to 'Portfolio', home_path(anchor: "portfolio") %></li>
+        <li><%= link_to 'FAQ', home_path(anchor: "faq") %></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
