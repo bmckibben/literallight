@@ -283,6 +283,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', end
   overflow-y: scroll;  */
 }
 
+.award-year {
+  color: #fff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0000ff+0,bcd3e5+100 */
+background: #0000ff; /* Old browsers */
+background: -moz-linear-gradient(left, #0000ff 0%, #bcd3e5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #0000ff 0%,#bcd3e5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #0000ff 0%,#bcd3e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', endColorstr='#bcd3e5',GradientType=1 ); /* IE6-9 */ 
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -319,6 +329,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', end
   .navbar-lower {
     margin-top: 100px;
   }  
+
+  .main {
+    padding: 100px 10px 0;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -330,18 +345,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', end
   }
 }
 
-@media (min-width: 700px) {
-  .main {
-    padding:100px 10px 0;
-  }
-} 
 
-.award-year {
-  color: #fff;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0000ff+0,bcd3e5+100 */
-background: #0000ff; /* Old browsers */
-background: -moz-linear-gradient(left, #0000ff 0%, #bcd3e5 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #0000ff 0%,#bcd3e5 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #0000ff 0%,#bcd3e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', endColorstr='#bcd3e5',GradientType=1 ); /* IE6-9 */ 
-}
