@@ -28,7 +28,7 @@
             <li><%= link_to "Angular Test", angular_test_path %></li>
           </ul>
         </li>
-      </ul>
+
      
       <% if current_user.admin? %>
       <li class="dropdown">
@@ -37,7 +37,9 @@
           <li><%= link_to 'Users', users_path %></li>
         </ul>
       </li>
+
       <% end %>
+      </ul>
       <% end %>      
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
