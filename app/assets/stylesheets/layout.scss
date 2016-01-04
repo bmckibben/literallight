@@ -331,14 +331,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', end
     margin-top: 100px;
   }  
 
-  .main {
-    padding: 100px 10px 0;
+  main {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
 .navbar-brand img {
   height: auto;
   max-height: 50px;
-  max-width: 250 px;
+  max-width: 250px;
   width: 100%;
 }
 
