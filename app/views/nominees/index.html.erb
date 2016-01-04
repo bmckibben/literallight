@@ -7,11 +7,14 @@
   <div class="col-md-3">
     <div class="float_box">
     <h1>Hugo and Nebula Nominiees</h1>
-    <% if current_user.admin? %>
+
     <p class="top100">  
+      <%= render partial: 'nominees/search' %>
+      <% if current_user.admin? %>
       <%= link_to 'New Novel', new_nominee_path %>
+      <% end %>
     </p>
-    <% end %>
+    
     </div>
   </div>
 

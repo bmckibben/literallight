@@ -296,7 +296,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', end
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 350px) {
+@media (max-width: 350px) {
   /* phone size */
   /* Navbar positioning foo */
   .navbar-wrapper {
@@ -349,7 +349,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', end
   .featurette-heading {
     margin-top: 120px;
   }  
-  .main {
+  
+  main {
     padding:100px 10px 0;
   }
 }
