@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<div class="row top50">
+<div class="row">
   <div class="col-md-1">
     &nbsp;
   </div>
@@ -11,14 +11,14 @@
     <p class="top100">  
       <%= render partial: 'nominees/search' %>
       <% if current_user.admin? %>
-      <%= link_to 'New Novel', new_nominee_path %>
+      <%= link_to 'Add Novel', new_nominee_path, class: "top20" %>
       <% end %>
     </p>
     
     </div>
   </div>
 
-  <div class="col-md-7">
+<div class="col-md-7">
 <div class="panel panel-default" style="background-color:#f2f2f2;">
 <div class="panel-body" id="novels">
 
