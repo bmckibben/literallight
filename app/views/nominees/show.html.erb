@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @nominee.year %>
+</p>
+
+<p>
+  <strong>Award:</strong>
+  <%= @nominee.award %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @nominee.author %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @nominee.title %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @nominee.link %>
+</p>
+
+<%= link_to 'Edit', edit_nominee_path(@nominee) %> |
+<%= link_to 'Back', nominees_path %>

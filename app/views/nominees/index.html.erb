@@ -1,0 +1,62 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row top50">
+  <div class="col-md-1">
+    &nbsp;
+  </div>
+  <div class="col-md-3">
+    <div class="float_box">
+    <h1>Hugo and Nebula Nominiees</h1>
+    <% if current_user.admin? %>
+    <p class="top100">  
+      <%= link_to 'New Novel', new_nominee_path %>
+    </p>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="col-md-7">
+<div class="panel panel-default" style="background-color:#f2f2f2;">
+<div class="panel-body">
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Award</th>
+      <th>Author</th>
+      <th>Title</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nominees.each do |nominee| %>
+      <tr>
+        <td><%= nominee.year %></td>
+        <td><%= nominee.award %></td>
+        <td><%= nominee.author %></td>
+        <td><%= link_to nominee.title, nominee.link %></td>
+        <td>
+          <% if current_user.admin? %>
+          <%= link_to nominee do %><i aria-hidden="false" class="glyphicon glyphicon-open"></i><% end %>&nbsp;&nbsp;
+          <%= link_to edit_nominee_path(nominee) do %><i aria-hidden="false" class="glyphicon glyphicon-pencil"></i><% end %>&nbsp;&nbsp;
+          <%= link_to nominee, method: :delete, data: { confirm: 'Are you sure?' }  do %><i aria-hidden="false" class="glyphicon glyphicon-trash"></i><% end %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+
+</div>
+</div>
+<div class="col-md-1">
+&nbsp;
+</div>
+</div>
+</div>
