@@ -4,7 +4,7 @@
 <%= label_tag :keywords, nil, class: "sr-only" %>
 <%= text_field_tag :keywords, nil, placeholder: "Year, Author, Award or Title", class: "form-control input-xs" %>
 <span class="input-group-btn">
-<%= button_tag "", type: "submit", class: "btn btn-primary btn-xs glyphicon glyphicon-search pull-right" %>
+<%= button_tag "", type: "submit", class: "btn btn-primary btn-xs " do %><i aria-hidden="false" class="glyphicon glyphicon-search"></i><% end %>
 </span>
 </div>
 <% end %>
