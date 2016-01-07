@@ -296,7 +296,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', end
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (max-width: 350px) {
+.widthtest {
+  background-color: blue;
+}
+
+@media (max-width: 400px) {
   /* phone size */
   /* Navbar positioning foo */
   .navbar-wrapper {
@@ -310,6 +314,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', end
     padding-right: 0;
     padding-left: 0;
   }
+
+.widthtest {
+  background-color: red;
+}
 
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
@@ -338,9 +346,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', end
 
 .navbar-brand img {
   height: auto;
-  max-height: 50px;
-  max-width: 230px;
   width: 100%;
+  max-width: 200px;
 }
 
 }
