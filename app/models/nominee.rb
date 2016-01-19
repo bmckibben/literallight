@@ -6,16 +6,12 @@ class Nominee
   field :title, type: String
   field :link, type: String
 
+# index({ year: 1 }, { database: "users", unique: true, background: true })
+ Nominee.createIndex(
+   { "$**": "text"} ,
+   { name: "TextIndex"}
+ )
 
- # Nominee.createIndex(
- #   {
- #     year: "text",
- #     award: "text",
- #     author: "text",
- #     title: "text"
- #   }
- # )
- 
   ##Validation ?
   validates_presence_of :year, :author, :title
     
