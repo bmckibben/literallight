@@ -8,7 +8,7 @@ class Nominee
 
 # index({ year: 1 }, { database: "users", unique: true, background: true })
  index(
-   { "$**": "text" }
+   { "$**" => "text" }
  )
 
   ##Validation ?
