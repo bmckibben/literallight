@@ -7,9 +7,9 @@ class NomineesController < ApplicationController
     if params[:keywords] 
       #@nominees = Nominee.search(params[:kewords])
       @nominees = Nominee.where(
-        { $text => { $search => params[:keywords] } },
-        { score: { $meta => "textScore" } }
-      ).sort( { score: { $meta => "textScore" } } )
+        { $text => { $search => params[:keywords] } })
+      #   { score: { $meta => "textScore" } }
+      # ).sort( { score: { $meta => "textScore" } } )
       
     else
       @nominees = Nominee.all 
