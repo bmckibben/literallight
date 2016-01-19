@@ -4,7 +4,15 @@ class NomineesController < ApplicationController
   # GET /nominees
   # GET /nominees.json
   def index
-    @nominees = Nominee.all 
+    if params[:keywords] 
+      Nominee.find(
+        { $text: { $search: params[:keywords] } },
+        { score: { $meta: "textScore" } }
+      ).sort( { score: { $meta: "textScore" } } )
+    else
+      @nominees = Nominee.all 
+    end     
+   
   end
 
   # GET /nominees/1
