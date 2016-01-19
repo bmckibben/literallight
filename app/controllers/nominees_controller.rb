@@ -6,7 +6,7 @@ class NomineesController < ApplicationController
   def index
     if params[:keywords] 
       Nominee.find(
-        { $text => { $search: params[:keywords] } },
+        { $text => { $search => params[:keywords] } },
         { score: { $meta => "textScore" } }
       ).sort( { score: { $meta => "textScore" } } )
     else
