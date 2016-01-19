@@ -7,9 +7,8 @@ class Nominee
   field :link, type: String
 
 # index({ year: 1 }, { database: "users", unique: true, background: true })
- Nominee.createIndex(
-   { "$**" => "text"} ,
-   { name: "TextIndex"}
+ index(
+   { "$**": "text" }
  )
 
   ##Validation ?
