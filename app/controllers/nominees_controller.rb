@@ -9,7 +9,7 @@ class NomineesController < ApplicationController
       @nominees = Nominee.full_text_search(params[:searchwords])
       @searched_for = params[:searchwords]
     else
-      @nominees = Nominee.all.sort({year: 1})
+      @nominees = Nominee.all #.sort({year: 1})
     end
   end
 
