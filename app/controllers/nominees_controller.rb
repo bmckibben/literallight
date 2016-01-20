@@ -6,7 +6,7 @@ class NomineesController < ApplicationController
   def index
     if params[:searchwords] 
       #@nominees = Nominee.search(params[:kewords])
-      @nominees = Nominee.full_text_search(params[:searchwords])
+      @nominees = Nominee.full_text_search("Hugo")
       @searched_for = params[:searchwords]
     else
       @nominees = Nominee.all 
