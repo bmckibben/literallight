@@ -6,7 +6,6 @@ class Nominee
   field :author, type: String
   field :title, type: String
   field :link, type: String
-  field :reindexed, type: Boolean, default: false
 
   search_in :year, :award, :author, :title
 
