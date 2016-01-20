@@ -9,8 +9,9 @@ class NomineesController < ApplicationController
       @nominees = Nominee.full_text_search(params[:searchwords])
       @searched_for = params[:searchwords]
     else
+      Nominee.where(reindexed: false).each {|u| u.reindexed = true, u.save}
       @nominees = Nominee.all.sort({name: 1})
-   
+    end
   end
 
   # GET /nominees/1
