@@ -9,6 +9,7 @@ class NomineesController < ApplicationController
       @nominees = Nominee.full_text_search("Hugo")
       @searched_for = params[:searchwords]
     else
+      Nominee.where(reindexed: false).each {|u| u.reindexed = true; u.save}
       @nominees = Nominee.all 
     end     
    
