@@ -23,7 +23,7 @@
 <div class="panel-body" id="novels">
 
       <% if @searched_for %> 
-      <h2 class="h2">[<%= @searched_for %>]</h2>
+      <h2 class="h2">Search Terms: [<%= @searched_for %>]</h2>
       <% end %>
 
 <table class="table">
@@ -43,7 +43,12 @@
         <td><%= nominee.year %></td>
         <td><%= nominee.award %></td>
         <td><%= nominee.author %></td>
-        <td><%= link_to nominee.title, nominee.link %></td>
+        <td><%= link_to nominee.title, nominee.link %>
+          <br/>
+          <% if nominee._keywords.present? %> 
+            has keyword
+          <% end %>          
+        </td>
         <td>
           <% if current_user.admin? %>
           <%= link_to nominee do %><i aria-hidden="false" class="glyphicon glyphicon-open"></i><% end %>&nbsp;&nbsp;
