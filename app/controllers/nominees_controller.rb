@@ -4,7 +4,7 @@ class NomineesController < ApplicationController
   # GET /nominees
   # GET /nominees.json
   def index
-    if params[:searchwords] 
+    if params[:searchwords].present?
       #@nominees = Nominee.search(params[:kewords])
       @nominees = Nominee.full_text_search(params[:searchwords])
       @searched_for = params[:searchwords]
