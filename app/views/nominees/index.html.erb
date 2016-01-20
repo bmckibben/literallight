@@ -22,6 +22,10 @@
 <div class="panel panel-default" style="background-color:#f2f2f2;">
 <div class="panel-body" id="novels">
 
+      <% if searched_for? %>
+      <h2>Search Terms: <%= searched_for %></h2>
+      <% end %>
+
 <table class="table">
   <thead>
     <tr>

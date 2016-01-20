@@ -6,11 +6,8 @@ class NomineesController < ApplicationController
   def index
     if params[:keywords] 
       #@nominees = Nominee.search(params[:kewords])
-      @nominees = Nominee.where(
-        { $text => { $search => params[:keywords] } })
-      #   { score: { $meta => "textScore" } }
-      # ).sort( { score: { $meta => "textScore" } } )
-      
+      @nominees = Nominee.full_text_search(params[:keywords])
+      @searched_for = params[:kewords]
     else
       @nominees = Nominee.all 
     end     
