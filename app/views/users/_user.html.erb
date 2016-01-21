@@ -2,7 +2,7 @@
   <%= link_to user.name, edit_user_registration_path(user) %>
 </td>
 <td>
-  <%= user.email %>
+  <%= user.email %><br/><%= user._id %>
 </td>
 <td>
   <%= form_for(user) do |f| %>
