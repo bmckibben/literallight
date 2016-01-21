@@ -1,15 +1,13 @@
 class Nominee
   include Mongoid::Document
+  include Mongoid::Search
   field :year, type: String
   field :award, type: String
   field :author, type: String
   field :title, type: String
   field :link, type: String
 
-# index({ year: 1 }, { database: "users", unique: true, background: true })
- index(
-   { "$**" => "text" }
- )
+  search_in :year, :award, :author, :title
 
   ##Validation ?
   validates_presence_of :year, :author, :title

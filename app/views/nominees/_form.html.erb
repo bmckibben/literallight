@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :year %><br>
-    <%= f.text_field :year %>
+  <div class="form-group">
+    <%= f.label :year, class: "form-control" %><br>
+    <%= f.text_field :year, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :award %><br>
-    <%= f.text_field :award %>
+  <div class="form-group">
+    <%= f.label :award, class: "form-control" %><br>
+    <%= f.text_field :award, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :author %><br>
-    <%= f.text_field :author %>
+  <div class="form-group">
+    <%= f.label :author, class: "form-control" %><br>
+    <%= f.text_field :author, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <div class="form-group">
+    <%= f.label :title, class: "form-control" %><br>
+    <%= f.text_field :title, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :link %><br>
-    <%= f.text_field :link %>
+  <div class="form-group">
+    <%= f.label :link, class: "form-control" %><br>
+    <%= f.text_field :link, class: "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Save", class: "btn btn-primary btn-lg" %>
   </div>
 <% end %>

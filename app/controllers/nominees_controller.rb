@@ -4,17 +4,14 @@ class NomineesController < ApplicationController
   # GET /nominees
   # GET /nominees.json
   def index
-    if params[:keywords] 
+    if params[:searchwords].present?
       #@nominees = Nominee.search(params[:kewords])
-      #@nominees = Nominee.where(:author => "Cherie Priest")
-      @nominees = Nominee.find(
-        { $text => { $search => "Priest" } })
-         #{ score: { $meta => "textScore" } }
-       #).sort( { score: { $meta => "textScore" } } )
+      @nominees = Nominee.full_text_search(params[:searchwords])
+      @searched_for = params[:searchwords]
+
     else
-      @nominees = Nominee.all 
-    end     
-   
+      @nominees = Nominee.all #.sort({year: 1})
+    end
   end
 
   # GET /nominees/1
