@@ -181,7 +181,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', end
     border-radius: 10px;
     margin-top:0;
     padding: 1em;
-    min-height:600px;
+    height:90%;
+    max-width: 250px;
     color:#999;
     background:url(asset_path("star.png")) no-repeat center; 
     background-size:100% 100%;

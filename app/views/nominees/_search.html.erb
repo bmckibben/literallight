@@ -2,7 +2,7 @@
 <%= form_for :nominees, method: :get do |f| %>
 <div class="input-group input-group-xs">
 <%= label_tag :searchwords, nil, class: "sr-only" %>
-<%= text_field_tag :searchwords, nil, placeholder: "Year, Author, Award or Title", class: "form-control input-xs" %>
+<%= text_field_tag :searchwords, nil, placeholder: "Year, Author, Award or Title", class: "form-control input-xs", style: "border-radius: 4;" %>
 <span class="input-group-btn">
 <%= button_tag "", type: "submit", class: "btn btn-primary btn-xs " do %><i aria-hidden="false" class="glyphicon glyphicon-search"></i><% end %>
 </span>
