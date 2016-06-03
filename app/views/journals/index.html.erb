@@ -4,7 +4,7 @@
 
 <h1>Entries</h1>
 <div class="table-responsive">
-<table class="table reqponsive-table">
+<table class="table responsive-table">
   <thead>
     <tr>
       <th>Id</th>
@@ -31,7 +31,7 @@
     <% @journals.each do |journal| %>
       <tr>
         <td><%= journal.id %></td>
-        <td><%= journal.entry_for %></td>
+        <td><%= journal.entry_for.to_formatted_s(:stardate) %></td>
         <td><%= journal.am_glucose %></td>
         <td><%= journal.pm_glucose %></td>
         <td><%= journal.weight %></td>

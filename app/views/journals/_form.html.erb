@@ -14,7 +14,7 @@
 <div class="row">
   <div class="field col-md-2 col-sm-12">
     <%= f.label :entry_for %><br>
-    <%= f.datetime_select :entry_for %>
+    <%= f.text_field :entry_for.to_formatted_s(:stardate) %>
   </div>
   <div class="field col-md-2 col-sm-12">
     <%= f.label :am_glucose %><br>
@@ -65,7 +65,6 @@
           <div id="collapse01" class="panel-collapse collapse">
               <div class="panel-body">
                   <div class="field">
-                    <%= f.label :details %><br>
                     <%= f.text_area :details %>
                   </div>       
               </div>
@@ -80,7 +79,6 @@
           <div id="collapse02" class="panel-collapse collapse">
               <div class="panel-body"> 
                   <div class="field">
-                    <%= f.label :notes %><br>
                     <%= f.text_area :notes %>
                   </div>   
               </div>
@@ -95,7 +93,6 @@
           <div id="collapse03" class="panel-collapse collapse">
               <div class="panel-body">
                   <div class="field">
-                    <%= f.label :goals %><br>
                     <%= f.text_area :goals %>
                   </div>
               </div>

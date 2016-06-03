@@ -19,7 +19,7 @@
       <tr>
         <td><%= journal.entry_for.to_formatted_s(:stardate) %></td>
         <td><%= journal.notes %></td>
-        <td><%= link_to 'Edit', edit_journal_path(journal), class: "btn btn-primary btn-xs" %></td>
+        <td><%= link_to journal.entry_for.to_formatted_s(:stardate), edit_journal_path(journal), class: "btn btn-primary btn-xs" %></td>
       </tr>
     <% end %>
   </tbody>
