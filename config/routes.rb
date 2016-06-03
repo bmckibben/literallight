@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
 	root 'home#home'
 	
+	get 'home/home' => 'home'
 	get 'static_pages/about' => 'static_pages#about'
 	get 'static_pages/help' => 'static_pages#help'
 	get 'static_pages/contact' => 'static_pages#contact'
