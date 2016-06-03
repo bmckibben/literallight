@@ -1,0 +1,64 @@
+<div class="main-margined">
+<div class="row">
+<div class="col-md-12">
+<p id="notice"><%= notice %></p>
+
+<h1>Entries</h1>
+<div class="table-responsive">
+<table class="table responsive-table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Entry for</th>
+      <th>Am glucose</th>
+      <th>Pm glucose</th>
+      <th>Weight</th>
+      <th>Systolic</th>
+      <th>Diastolic</th>
+      <th>Body fat</th>
+      <th>Energy</th>
+      <th>Motivation</th>
+      <th>Happiness</th>
+      <th>Details</th>
+      <th>Goals</th>
+      <th>Notes</th>
+      <th>Created at</th>
+      <th>Updated at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @journals.each do |journal| %>
+      <tr>
+        <td><%= journal.id %></td>
+        <td><%= journal.entry_for.to_formatted_s(:stardate) %></td>
+        <td><%= journal.am_glucose %></td>
+        <td><%= journal.pm_glucose %></td>
+        <td><%= journal.weight %></td>
+        <td><%= journal.systolic %></td>
+        <td><%= journal.diastolic %></td>
+        <td><%= journal.body_fat %></td>
+        <td><%= journal.energy %></td>
+        <td><%= journal.motivation %></td>
+        <td><%= journal.happiness %></td>
+        <td><%= journal.details %></td>
+        <td><%= journal.goals %></td>
+        <td><%= journal.notes %></td>
+        <td><%= journal.created_at %></td>
+        <td><%= journal.updated_at %></td>
+        <td><%= link_to 'Show', journal, class: "btn btn-primary btn-xs"  %></td>
+        <td><%= link_to 'Edit', edit_journal_path(journal), class: "btn btn-primary btn-xs" %></td>
+        <td><%= link_to 'Destroy', journal, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary btn-xs" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br>
+
+<%= link_to 'New Journal', new_journal_path, class: "btn btn-primary" %>
+
+</div>
+</div>
+</div>

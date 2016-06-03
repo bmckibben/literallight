@@ -1,0 +1,111 @@
+<%= form_for(@journal) do |f| %>
+  <% if @journal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@journal.errors.count, "error") %> prohibited this journal from being saved:</h2>
+
+      <ul>
+      <% @journal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="row">
+  <div class="field col-md-2 col-sm-12">
+    <%= f.label :entry_for %><br>
+    <%= f.text_field :entry_for %>
+  </div>
+  <div class="field col-md-2 col-sm-12">
+    <%= f.label :am_glucose %><br>
+    <%= f.number_field :am_glucose %>
+  </div>
+  <div class="field col-md-2 col-sm-12">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field col-md-2 col-sm-12">
+    <%= f.label :systolic %><br>
+    <%= f.number_field :systolic %>
+  </div>
+  <div class="field col-md-2 col-sm-12">
+    <%= f.label :diastolic %><br>
+    <%= f.number_field :diastolic %>
+  </div>
+  <div class="field col-md-2 col-sm-12">
+    <%= f.label :body_fat %><br>
+    <%= f.text_field :body_fat %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="field col-md-2 col-md-offset-3 col-sm-12">
+    <%= f.label :energy %><br>
+    <%= f.number_field :energy %>
+  </div>
+  <div class="field col-md-2 col-sm-12">
+    <%= f.label :motivation %><br>
+    <%= f.number_field :motivation %>
+  </div>
+  <div class="field col-md-2 col-sm-12">
+    <%= f.label :happiness %><br>
+    <%= f.number_field :happiness %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 col-sm-12 ">
+    <div id="accordion" class="panel-group">
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse01">Details</a>
+              </h3>
+          </div>
+          <div id="collapse01" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="field">
+                    <%= f.text_area :details %>
+                  </div>       
+              </div>
+          </div>
+      </div> 
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse02">Musings</a>
+              </h3>
+          </div>
+          <div id="collapse02" class="panel-collapse collapse">
+              <div class="panel-body"> 
+                  <div class="field">
+                    <%= f.text_area :notes %>
+                  </div>   
+              </div>
+          </div>
+      </div> 
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse03">Goals</a>
+              </h3>
+          </div>
+          <div id="collapse03" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="field">
+                    <%= f.text_area :goals %>
+                  </div>
+              </div>
+          </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="actions col-md-6 col-md-offset-3 col-sm-12"> 
+    <%= f.submit "Save" , class: "btn btn-primary pull-right" %> 
+    <%= link_to "Cancel" , journals_path , class: "btn btn-danger" %> 
+  </div>
+</div>  
+<% end %>

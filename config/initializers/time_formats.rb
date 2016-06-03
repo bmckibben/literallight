@@ -1,0 +1,4 @@
+Time::DATE_FORMATS[:date] = "%d"
+Time::DATE_FORMATS[:month_year] = "%B %Y"
+Time::DATE_FORMATS[:day_of_week] = "%A"
+Time::DATE_FORMATS[:stardate] = "%Y.%j"

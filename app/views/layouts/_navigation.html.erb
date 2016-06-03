@@ -16,16 +16,23 @@
       <% if user_signed_in? %>
       <ul class="nav navbar-nav">
         <li class="active"><%= link_to 'Home', home_path %></li>
-        <li><%= link_to 'About Us', home_path(anchor: "about") %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to 'This Site', static_about_path %></li>
+            <li><%= link_to 'Contact', static_contact_path %></li>
+            <li><%= link_to 'Test', static_help_path %></li>
+          </ul>
+        </li>
         <li><%= link_to 'Portfolio', home_path(anchor: "portfolio") %></li>
         <li><%= link_to 'FAQ', home_path(anchor: "faq") %></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Stuff <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><%= link_to 'Star Trek', static_star_trek_path %></li>
             <li><%= link_to 'Sysiphus', static_sysiphus_path %></li>
+            <li><%= link_to 'Moderation', static_moderation_path %></li>
             <li><%= link_to 'Novels', nominees_path %></li>
-            <li><%= link_to "Angular Test", angular_test_path %></li>
           </ul>
         </li>
 

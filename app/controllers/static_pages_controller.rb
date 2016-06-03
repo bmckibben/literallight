@@ -12,4 +12,7 @@ class StaticPagesController < ApplicationController
 
   def title
   end  
+
+  def moderation
+  end      
 end
