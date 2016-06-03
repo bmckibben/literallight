@@ -2,9 +2,9 @@
 <div class="col-md-12">
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Journals</h1>
-
-<table>
+<h1>Entries</h1>
+<div class="table-responsive">
+<table class="table reqponsive-table">
   <thead>
     <tr>
       <th>Id</th>
@@ -53,7 +53,7 @@
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
 
 <%= link_to 'New Journal', new_journal_path, class: "btn btn-primary" %>
