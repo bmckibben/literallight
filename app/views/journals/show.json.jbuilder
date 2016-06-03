@@ -1,0 +1,1 @@
+json.extract! @journal, :id, :id, :entry_for, :am_glucose, :pm_glucose, :weight, :systolic, :diastolic, :body_fat, :energy, :motivation, :happiness, :details, :goals, :notes, :created_at, :updated_at, :created_at, :updated_at

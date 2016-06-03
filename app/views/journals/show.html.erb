@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @journal.id %>
+</p>
+
+<p>
+  <strong>Entry for:</strong>
+  <%= @journal.entry_for %>
+</p>
+
+<p>
+  <strong>Am glucose:</strong>
+  <%= @journal.am_glucose %>
+</p>
+
+<p>
+  <strong>Pm glucose:</strong>
+  <%= @journal.pm_glucose %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @journal.weight %>
+</p>
+
+<p>
+  <strong>Systolic:</strong>
+  <%= @journal.systolic %>
+</p>
+
+<p>
+  <strong>Diastolic:</strong>
+  <%= @journal.diastolic %>
+</p>
+
+<p>
+  <strong>Body fat:</strong>
+  <%= @journal.body_fat %>
+</p>
+
+<p>
+  <strong>Energy:</strong>
+  <%= @journal.energy %>
+</p>
+
+<p>
+  <strong>Motivation:</strong>
+  <%= @journal.motivation %>
+</p>
+
+<p>
+  <strong>Happiness:</strong>
+  <%= @journal.happiness %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @journal.details %>
+</p>
+
+<p>
+  <strong>Goals:</strong>
+  <%= @journal.goals %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @journal.notes %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @journal.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @journal.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_journal_path(@journal), class: "btn btn-primary pull-right" %> |
+<%= link_to 'Back', journals_path, class: "btn btn-danger" %>

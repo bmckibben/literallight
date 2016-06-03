@@ -17,6 +17,6 @@ Rails.application.routes.draw do
 	get 'home/home' => 'home'
 	get 'angular_test/index' => 'angular_test'
   	get 'users/list' => 'users#list'
-  	get 'journals/musings' => 'journals#musings', as journals_musings
+  	get 'journals/musings' => 'journals#musings'
   	
 end
