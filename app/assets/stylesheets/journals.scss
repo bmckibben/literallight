@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.body-panel {
+.edit_journal.body-panel {
 	padding:5px;
 }
 
@@ -11,7 +11,12 @@
 	border:none;
 }
 
-.panel-default {
+.edit_journal .panel-default {
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.edit_journal textarea {
+	width:100%;
+	border: none;
 }

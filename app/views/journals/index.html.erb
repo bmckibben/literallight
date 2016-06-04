@@ -2,7 +2,7 @@
 <div class="row">
 <div class="col-md-12">
 <p id="notice"><%= notice %></p>
-
+Today is <%= DateTime.now.to_formatted_s(:stardate) %>
 <h1>Entries</h1>
 <div class="table-responsive">
 <table class="table responsive-table">
@@ -32,16 +32,16 @@
     <% @journals.each do |journal| %>
       <tr>
         <td><%= journal.id %></td>
-        <td><%= journal.entry_for.to_formatted_s(:stardate) %></td>
-        <td><%= journal.am_glucose %></td>
-        <td><%= journal.pm_glucose %></td>
-        <td><%= journal.weight %></td>
-        <td><%= journal.systolic %></td>
-        <td><%= journal.diastolic %></td>
-        <td><%= journal.body_fat %></td>
-        <td><%= journal.energy %></td>
-        <td><%= journal.motivation %></td>
-        <td><%= journal.happiness %></td>
+        <td><%= journal.entry_for.to_formatted_s(:stardate) if journal.entry_for %></td>
+        <td><%= journal.am_glucose.to_s %></td>
+        <td><%= journal.pm_glucose.to_s %></td>
+        <td><%= journal.weight.to_s %></td>
+        <td><%= journal.systolic.to_s %></td>
+        <td><%= journal.diastolic.to_s %></td>
+        <td><%= journal.body_fat.to_s %></td>
+        <td><%= journal.energy.to_s %></td>
+        <td><%= journal.motivation.to_s %></td>
+        <td><%= journal.happiness.to_s %></td>
         <td><%= journal.details %></td>
         <td><%= journal.goals %></td>
         <td><%= journal.notes %></td>
