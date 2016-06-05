@@ -11,7 +11,7 @@
 	border:none;
 }
 
-.edit_journal .panel-default {
+.edit_journal.panel-default {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -19,4 +19,23 @@
 .edit_journal textarea {
 	width:100%;
 	border: none;
+}
+
+.new_journal textarea {
+	width:100%;
+	border: none;
+}
+
+.new_journal.body-panel {
+	padding:5px;
+}
+
+.body-panel textarea {
+	width: 100%;
+	border:none;
+}
+
+.new_journal.panel-default {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }

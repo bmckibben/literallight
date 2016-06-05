@@ -18,9 +18,9 @@
   <tbody>
     <% @journals.each do |journal| %>
       <tr>
-        <td><%= journal.entry_for.to_formatted_s(:stardate) %></td>
+        <td><%= journal.entry_for.to_formatted_s(:stardate)  if journal.entry_for  %></td>
         <td><%= journal.notes %></td>
-        <td><%= link_to journal.entry_for.to_formatted_s(:stardate), edit_journal_path(journal), class: "btn btn-primary btn-xs" %></td>
+        <td></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,7 +28,7 @@
 </div>
 <br>
 
-<%= link_to "Home" , journal_path , class: "btn btn-primary" %> 
+<%= link_to "Home" , home_path , class: "btn btn-primary" %> 
 
 </div>
 </div>

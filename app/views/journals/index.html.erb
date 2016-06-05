@@ -8,7 +8,6 @@ Today is <%= DateTime.now.to_formatted_s(:stardate) %>
 <table class="table responsive-table">
   <thead>
     <tr>
-      <th>Id</th>
       <th>Entry for</th>
       <th>Am glucose</th>
       <th>Pm glucose</th>
@@ -31,7 +30,6 @@ Today is <%= DateTime.now.to_formatted_s(:stardate) %>
   <tbody>
     <% @journals.each do |journal| %>
       <tr>
-        <td><%= journal.id %></td>
         <td><%= journal.entry_for.to_formatted_s(:stardate) if journal.entry_for %></td>
         <td><%= journal.am_glucose.to_s %></td>
         <td><%= journal.pm_glucose.to_s %></td>
