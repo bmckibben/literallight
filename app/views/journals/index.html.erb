@@ -3,16 +3,19 @@
 <div class="col-md-12">
 <% if notice %>
 <div class="alert alert-warning alert-dismissible" role="alert">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove-circle"></span></button>
 <p id="notice"><%= notice %></p>
 </div>
 <% end %>
-<div class="alert alert-info alert-dismissible" rold="alert">
+<div class="alert alert-info alert-dismissible" role="alert">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"  class="glyphicon glyphicon-remove-circle"></span></button>
 Today is <%= DateTime.now.to_formatted_s(:stardate) %>
 </div>
 </div>
 </div>
 <div class="row">
 <div class="col-md-12">
+<%= link_to 'New Journal', new_journal_path, class: "btn btn-primary pull-right" %>
 <h1>Entries</h1>
 <div class="table-responsive">
 <table class="table responsive-table">
@@ -50,11 +53,11 @@ Today is <%= DateTime.now.to_formatted_s(:stardate) %>
         <td><%= journal.energy.to_s %></td>
         <td><%= journal.motivation.to_s %></td>
         <td><%= journal.happiness.to_s %></td>
-        <td><%= journal.details %></td>
-        <td><%= journal.goals %></td>
-        <td><%= journal.notes %></td>
-        <td><%= journal.created_at %></td>
-        <td><%= journal.updated_at %></td>
+        <td><%= journal.details[0...70] %></td>
+        <td><%= journal.goals[0...70] %></td>
+        <td><%= journal.notes[0...70] %></td>
+        <td><%= journal.created_at.to_formatted_s(:stardate) %></td>
+        <td><%= journal.updated_at.to_formatted_s(:stardate)  %></td>
         <td><%= link_to 'Show', journal, class: "btn btn-primary btn-xs"  %></td>
         <td><%= link_to 'Edit', edit_journal_path(journal), class: "btn btn-primary btn-xs" %></td>
         <td><%= link_to 'Destroy', journal, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary btn-xs" %></td>
