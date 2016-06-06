@@ -18,7 +18,7 @@
   <tbody>
     <% @journals.each do |journal| %>
       <tr>
-        <td style="width:50px;"><%= link_to journal.entry_for, journals_show_musing, class: "btn btn-primary btn-xs"  %></td>
+        <td style="width:50px;"><%= link_to journal.entry_for, journals_show_musing_path, class: "btn btn-primary btn-xs"  %></td>
         <td><%= journal.notes %></td>
         <td style="width:50px;"><%= link_to 'Edit', edit_journal_path(journal), class: "btn btn-primary btn-xs" %></td>
       </tr>
