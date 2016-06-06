@@ -1,5 +1,5 @@
 class JournalsController < ApplicationController
-  before_action :set_journal, only: [:show, :edit, :update, :destroy]
+  before_action :set_journal, only: [:show, :edit, :update, :destroy, :show_musing]
 
   # GET /journals
   # GET /journals.json
@@ -71,6 +71,10 @@ class JournalsController < ApplicationController
   def musings
     @journals = Journal.where(:notes.exists => true, :notes.ne => "").order_by(entry_for: :desc)
   end
+
+  def show_musing
+
+  end  
 
   private
     # Use callbacks to share common setup or constraints between actions.
