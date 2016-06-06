@@ -15,6 +15,7 @@ class JournalsController < ApplicationController
   # GET /journals/new
   def new
     @journal = Journal.new
+    @journal.entry_for = DateTime.now.to_formatted_s(:stardate)
   end
 
   # GET /journals/1/edit
@@ -28,7 +29,7 @@ class JournalsController < ApplicationController
 
     respond_to do |format|
       if @journal.save
-        format.html { redirect_to @journal, notice: 'Journal was successfully created.' }
+        format.html { redirect_to journals_url, notice: 'Journal was successfully created.' }
         format.json { render :show, status: :created, location: @journal }
       else
         format.html { render :new }
@@ -42,7 +43,7 @@ class JournalsController < ApplicationController
   def update
     respond_to do |format|
       if @journal.update(journal_params)
-        format.html { redirect_to @journal, notice: 'Journal was successfully updated.' }
+        format.html { redirect_to journals_url, notice: 'Journal was successfully updated.' }
         format.json { render :show, status: :ok, location: @journal }
       else
         format.html { render :edit }

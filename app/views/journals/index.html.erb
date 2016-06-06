@@ -1,8 +1,14 @@
 <div class="main-margined">
 <div class="row">
 <div class="col-md-12">
+<% if notice %>
+<div class="alert alert-warning alert-dismissible" role="alert">
 <p id="notice"><%= notice %></p>
+</div>
+<% end %>
+<div class="alert alert-info alert-dismissible" rold="alert">
 Today is <%= DateTime.now.to_formatted_s(:stardate) %>
+</div>
 <h1>Entries</h1>
 <div class="table-responsive">
 <table class="table responsive-table">
@@ -30,7 +36,7 @@ Today is <%= DateTime.now.to_formatted_s(:stardate) %>
   <tbody>
     <% @journals.each do |journal| %>
       <tr>
-        <td><%= journal.entry_for.to_formatted_s(:stardate) if journal.entry_for %></td>
+        <td class="bold"><%= journal.entry_for.to_formatted_s(:stardate) if journal.entry_for %></td>
         <td><%= journal.am_glucose.to_s %></td>
         <td><%= journal.pm_glucose.to_s %></td>
         <td><%= journal.weight.to_s %></td>
@@ -55,7 +61,7 @@ Today is <%= DateTime.now.to_formatted_s(:stardate) %>
 </div>
 <br>
 
-<%= link_to 'New Journal', new_journal_path, class: "btn btn-primary" %>
+<%= link_to 'New Journal', new_journal_path, class: "btn btn-primary pull-right" %>
 
 </div>
 </div>
