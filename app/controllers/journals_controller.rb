@@ -4,7 +4,7 @@ class JournalsController < ApplicationController
   # GET /journals
   # GET /journals.json
   def index
-    @journals = Journal.all
+    @journals = Journal.all.order_by(entry_for: :desc)
   end
 
   # GET /journals/1
@@ -26,6 +26,9 @@ class JournalsController < ApplicationController
   # POST /journals.json
   def create
     @journal = Journal.new(journal_params)
+    @journal.created_at = DateTime.now
+    @journal.updated_at = DateTime.now
+
 
     respond_to do |format|
       if @journal.save
@@ -41,6 +44,9 @@ class JournalsController < ApplicationController
   # PATCH/PUT /journals/1
   # PATCH/PUT /journals/1.json
   def update
+
+    @journal.updated_at = DateTime.now
+
     respond_to do |format|
       if @journal.update(journal_params)
         format.html { redirect_to journals_url, notice: 'Journal was successfully updated.' }

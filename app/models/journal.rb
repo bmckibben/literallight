@@ -1,7 +1,7 @@
 class Journal
   include Mongoid::Document
   field :id, type: Integer
-  field :entry_for, type: Time
+  field :entry_for, type: String
   field :am_glucose, type: Integer
   field :pm_glucose, type: Integer
   field :weight, type: Float

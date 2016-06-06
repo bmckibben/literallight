@@ -1,11 +1,5 @@
 /* I prefer these to bootstrap defaults */
 
-.alert-warning {
-  background-color: #FCC2CA;
-  border-color: #FF7386;
-  color: #AD0219;
-}
-
 .navbar {
   padding-left: 15px;
   padding-right: 15px;
@@ -45,9 +39,8 @@ th {
 }
 
 .alert {
-  margin-top: 50px;
-  margin-left: 2em;
-  float: left;
+  margin: 1em;
+  padding: 1em;
 }
 
 .alert-danger, #error_explanation, .alert-error, .alert-success {

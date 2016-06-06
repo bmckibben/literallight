@@ -9,6 +9,10 @@
 <div class="alert alert-info alert-dismissible" rold="alert">
 Today is <%= DateTime.now.to_formatted_s(:stardate) %>
 </div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
 <h1>Entries</h1>
 <div class="table-responsive">
 <table class="table responsive-table">
@@ -36,7 +40,7 @@ Today is <%= DateTime.now.to_formatted_s(:stardate) %>
   <tbody>
     <% @journals.each do |journal| %>
       <tr>
-        <td class="bold"><%= journal.entry_for.to_formatted_s(:stardate) if journal.entry_for %></td>
+        <td class="bold"><%= journal.entry_for %></td>
         <td><%= journal.am_glucose.to_s %></td>
         <td><%= journal.pm_glucose.to_s %></td>
         <td><%= journal.weight.to_s %></td>
