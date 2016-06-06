@@ -10,26 +10,34 @@
     <strong>Entry for:</strong><br/>
     <%= @journal.entry_for %>
   </div>
-</div>
-
-<div class="field col-md-2 col-md-offset-3 col-sm-12">
-  <strong>Created at:</strong></br>
-  <%= @journal.created_at %>
-</div>
-
-<div class="field col-md-2 col-md-offset-3 col-sm-12">
-  <strong>Updated at:</strong></br>
-  <%= @journal.updated_at %>
-</div>
 
 
-<div class="field col-md-6 col-md-offset-3 col-sm-12">
-  <%= @journal.notes %>
-</div>
+  <div class="field col-md-2 col-sm-12">
+    <strong>Created at:</strong></br>
+    <%= @journal.created_at.to_formatted_s(:stardate)  %>
+  </div>
 
-<%= link_to 'Edit', edit_journal_path(@journal), class: "btn btn-primary pull-right" %> 
-<%= link_to 'Back', journals_musings_path, class: "btn btn-danger" %>
+  <div class="field col-md-2 col-sm-12">
+    <strong>Updated at:</strong></br>
+    <%= @journal.updated_at.to_formatted_s(:stardate)  %>
+  </div>
 
 </div>
+
+<div class="row">
+  <div class="field col-md-6 col-md-offset-3 col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <%= @journal.notes %>
+      </div>
+    </div>    
+  </div>
+</div>
+
+<div class="row">
+  <div class="field col-md-12 col-md-offset-3 col-sm-12">
+  <%= link_to 'Edit', edit_journal_path(@journal), class: "btn btn-primary pull-right" %> 
+  <%= link_to 'Back', journals_musings_path, class: "btn btn-danger" %>
+  </div>
 </div>
 </div>
