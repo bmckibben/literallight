@@ -4,7 +4,7 @@ class JournalsController < ApplicationController
   # GET /journals
   # GET /journals.json
   def index
-    @journals = Journal.all.order_by(entry_for: :desc).limit(5)
+    @journals = Journal.all.order_by(entry_for: :desc).limit(20)
   end
 
   # GET /journals/1
@@ -69,7 +69,7 @@ class JournalsController < ApplicationController
   end
 
   def musings
-    @journals = Journal.where(:notes.exists => true).order_by(entry_for: :desc)
+    @journals = Journal.where(:notes.exists => true, :notes.ne => "").order_by(entry_for: :desc)
   end
 
   private
