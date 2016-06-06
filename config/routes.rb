@@ -17,5 +17,6 @@ Rails.application.routes.draw do
 	get 'angular_test/index' => 'angular_test', :as => 'angular_test'
   	get 'users/list' => 'users#list', :as => 'users_list'
   	get 'musings' => 'journals#musings', :as => 'journals_musings'
+  	get 'show_musing' => 'journals#show_musing', :as => 'journals_show_musing'
   	
 end
