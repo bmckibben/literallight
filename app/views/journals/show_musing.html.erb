@@ -1,0 +1,37 @@
+<div class="main-margined">
+<div class="row">
+  <div class="field col-md-12 col-md-offset-3 col-sm-12">
+    <p id="notice"><%= notice %></p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="field col-md-2 col-md-offset-3 col-sm-12">
+    <strong>Entry for:</strong><br/>
+    <%= @journal.entry_for %>
+  </div>
+</div>
+
+<div class="field col-md-2 col-md-offset-3 col-sm-12">
+  <strong>Created at:</strong></br>
+  <%= @journal.created_at %>
+</div>
+
+<div class="field col-md-2 col-md-offset-3 col-sm-12">
+  <strong>Updated at:</strong></br>
+  <%= @journal.updated_at %>
+</div>
+
+
+<div class="field col-md-6 col-md-offset-3 col-sm-12">
+  <%= @journal.notes %>
+</div>
+
+
+
+<%= link_to 'Edit', edit_journal_path(@journal), class: "btn btn-primary pull-right" %> 
+<%= link_to 'Back', journals_path, class: "btn btn-danger" %>
+
+</div>
+</div>
+</div>
