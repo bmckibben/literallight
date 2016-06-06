@@ -69,7 +69,7 @@ class JournalsController < ApplicationController
   end
 
   def musings
-    @journals = Journal.where(notes.exists: :true).order_by(entry_for: :desc)
+    @journals = Journal.where(notes.exists: true).order_by(entry_for: :desc)
   end
 
   private
