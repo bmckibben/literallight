@@ -16,3 +16,14 @@
 	</form>
 	</section>
 </article>
+Today is <%= DateTime.now.to_formatted_s(:stardate) %>
+
+<article>
+	<header>
+		<h1>Today is</h1>
+	</header>
+	<section>
+		<p>Raw Date: <%= DateTime.now.to_formatted_s(:fullDT) %></p>
+		<p>StarDate: <%= DateTime.now.to_formatted_s(:stardate) %></p>
+	</section>
+</article>
