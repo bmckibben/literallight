@@ -15,7 +15,7 @@ class JournalsController < ApplicationController
   # GET /journals/new
   def new
     @journal = Journal.new
-    @journal.entry_for = DateTime.now.to_formatted_s(:stardate)
+    @journal.entry_for = DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate)
   end
 
   # GET /journals/1/edit
