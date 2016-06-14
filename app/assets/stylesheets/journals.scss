@@ -2,13 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.edit_journal.body-panel {
+.edit_journal.panel-body {
 	padding:5px;
 }
 
 .body-panel textarea {
 	width: 100%;
 	border:none;
+	height: 90px;
 }
 
 .edit_journal.panel-default {
