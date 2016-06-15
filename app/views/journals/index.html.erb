@@ -39,14 +39,17 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
       <th>Notes</th>
       <th>Created at</th>
       <th>Updated at</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @journals.each do |journal| %>
       <tr>
-        <td class="bold"><%= journal.entry_for %></td>
+        <td class="bold"><%= journal.entry_for %>
+          <br/><%= link_to '', journal, class: "glyphicon glyphicon-eye-open"  %> 
+          <br/><%= link_to '', edit_journal_path(journal), class: "glyphicon glyphicon-pencil"  %>
+          <br/><%= link_to '', journal, method: :delete, data: { confirm: 'Are you sure?' }, class: "glyphicon glyphicon-trash"  %>
+        </td>
         <td><%= journal.am_glucose.to_s %></td>
         <td><%= journal.pm_glucose.to_s %></td>
         <td><%= journal.weight.to_s %></td>
@@ -64,9 +67,6 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
         <td><%= journal.notes[0...70] %></td>
         <td><%= journal.created_at.to_formatted_s(:stardate) if journal.created_at %></td>
         <td><%= journal.updated_at.to_formatted_s(:stardate) if journal.updated_at %></td>
-        <td><%= link_to 'Show', journal, class: "btn btn-primary btn-xs"  %></td>
-        <td><%= link_to 'Edit', edit_journal_path(journal), class: "btn btn-primary btn-xs" %></td>
-        <td><%= link_to 'Destroy', journal, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary btn-xs" %></td>
       </tr>
     <% end %>
   </tbody>
