@@ -28,6 +28,9 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
       <th>Systolic</th>
       <th>Diastolic</th>
       <th>Body fat</th>
+      <th>Curls</th>
+      <th>Yoga</th>
+      <th>Meditation</th>
       <th>Energy</th>
       <th>Motivation</th>
       <th>Happiness</th>
@@ -50,6 +53,9 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
         <td><%= journal.systolic.to_s %></td>
         <td><%= journal.diastolic.to_s %></td>
         <td><%= journal.body_fat.to_s %></td>
+        <td><%= journal.curls.to_s %></td>
+        <td><%= journal.yoga.to_s %></td>
+        <td><%= journal.meditation.to_s %></td>
         <td><%= journal.energy.to_s %></td>
         <td><%= journal.motivation.to_s %></td>
         <td><%= journal.happiness.to_s %></td>

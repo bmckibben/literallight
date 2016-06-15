@@ -20,7 +20,7 @@
       <tr>
         <td style="width:50px;"><%= link_to journal.entry_for, journals_show_musing_path(journal),  class: "btn btn-default btn-xs"  %></td>
         <td><%= journal.notes %></td>
-        <td style="width:50px;"><%= link_to 'Edit', edit_journal_path(journal), class: "btn btn-primary btn-xs" %></td>
+        <td style="width:50px;"><%= link_to 'Edit', edit_journal_path(journal), class: "glyphicon glyphicon-pencil" %></td>
       </tr>
     <% end %>
   </tbody>
