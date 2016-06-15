@@ -37,7 +37,20 @@
     <%= f.number_field :am_glucose %>
   </div>
 </div>
-
+<div class="row">
+  <div class="field col-md-2 col-md-offset-3 col-sm-12">
+    <%= f.label :meditation %><br>
+    <%= f.text_field :meditation %>
+  </div>
+  <div class="field col-md-2 col-sm-12">
+    <%= f.label :yoga %><br>
+    <%= f.text_field :yoga %>
+  </div>  
+  <div class="field col-md-2 col-sm-12">
+    <%= f.label :curls %><br>
+    <%= f.text_field :curls %>
+  </div>  
+</div>
 <div class="row">
   <div class="field col-md-2 col-md-offset-3 col-sm-12">
     <%= f.label :energy %><br>
@@ -50,7 +63,7 @@
   <div class="field col-md-2 col-sm-12">
     <%= f.label :happiness %><br>
     <%= f.number_field :happiness %>
-  </div>
+  </div>  
 </div>
 
 <div class="row">
