@@ -7,16 +7,13 @@
 <p id="notice"><%= notice %></p>
 </div>
 <% end %>
-<div class="alert alert-info alert-dismissible" role="alert">
-<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"  class="glyphicon glyphicon-remove-circle"></span></button>
-Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate) %>
-</div>
 </div>
 </div>
 <div class="row">
 <div class="col-md-12">
 <%= link_to 'New Journal', new_journal_path, class: "btn btn-primary pull-right" %>
 <h1>Entries</h1>
+Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate) %>
 <div class="table-responsive">
 <table class="table responsive-table">
   <thead>
