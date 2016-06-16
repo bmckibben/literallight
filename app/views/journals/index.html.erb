@@ -23,7 +23,6 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
     <tr>
       <th>Entry for</th>
       <th>Am glucose</th>
-      <th>Pm glucose</th>
       <th>Weight</th>
       <th>Systolic</th>
       <th>Diastolic</th>
@@ -47,11 +46,10 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
       <tr>
         <td class="bold center"><%= journal.entry_for %>
           <br/><%= link_to '', journal, class: "glyphicon glyphicon-eye-open"  %> 
-          <br/><%= link_to '', edit_journal_path(journal), class: "glyphicon glyphicon-pencil"  %>
-          <br/><%= link_to '', journal, method: :delete, data: { confirm: 'Are you sure?' }, class: "glyphicon glyphicon-trash"  %>
+          <%= link_to '', edit_journal_path(journal), class: "glyphicon glyphicon-pencil"  %>
+          <%= link_to '', journal, method: :delete, data: { confirm: 'Are you sure?' }, class: "glyphicon glyphicon-trash"  %>
         </td>
         <td><%= journal.am_glucose.to_s %></td>
-        <td><%= journal.pm_glucose.to_s %></td>
         <td><%= journal.weight.to_s %></td>
         <td><%= journal.systolic.to_s %></td>
         <td><%= journal.diastolic.to_s %></td>

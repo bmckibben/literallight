@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
 
-    resources :glossaries
-    resources :journals
-	resources :nominees
-  	devise_for :users
-  	resources :users
+
 
 	root 'home#home'
 	
@@ -20,5 +16,11 @@ Rails.application.routes.draw do
   	get 'users/list' => 'users#list', :as => 'users_list'
   	get 'musings' => 'journals#musings', :as => 'journals_musings'
   	get 'show_musing/:id' => 'journals#show_musing', :as => 'journals_show_musing'
+ 
+    resources :glossaries
+    resources :journals
+	resources :nominees
+  	devise_for :users
+  	resources :users
   	
 end
