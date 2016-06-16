@@ -14,8 +14,15 @@ class StaticPagesController < ApplicationController
   end  
 
   def moderation
+    render :layout => 'gradient'
   end   
 
   def startrek
+    render :layout => 'gradient'
   end 
+
+  def sysiphus
+    render :layout => 'gradient'
+  end 
+
 end
