@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+    resources :glossaries
     resources :journals
 	resources :nominees
   	devise_for :users
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
 	get 'static_pages/startrek' => 'static_pages#star_trek', :as => 'static_star_trek'
 	get 'static_pages/sysiphus' => 'static_pages#sysiphus', :as => 'static_sysiphus'
 	get 'static_pages/moderation' => 'static_pages#moderation', :as => 'static_moderation'
+	get 'glossaries/list' => 'glossaries#list', :as => 'glossaries_list'
 	get 'angular_test/index' => 'angular_test', :as => 'angular_test'
   	get 'users/list' => 'users#list', :as => 'users_list'
   	get 'musings' => 'journals#musings', :as => 'journals_musings'

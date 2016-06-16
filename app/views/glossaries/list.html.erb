@@ -1,0 +1,28 @@
+<div class="row">
+      <div class="col-md-1">
+      </div>  
+      <div class="col-md-10">
+            <div class="panel panel-default">
+                  <div class="panel-heading">
+                        <h1>
+                        Raquesti Glossary
+                        </h1>
+                  </div>      
+                  <div class="panel-body">
+                      <% @glossaries.each do |glossary| %>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="glossary-word"><%= glossary.word %></p>
+                        </div>
+                      </div>
+                        <div class="row">
+                        <div class="col-md-12">
+                          <p class="glossary-definition"><%= glossary.definition %></p>
+                        </div>
+                      </div>     
+                      <% end %>
+                  </div>
+            </div>
+      </div>
+</div>
+
