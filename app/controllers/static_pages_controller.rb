@@ -16,6 +16,6 @@ class StaticPagesController < ApplicationController
   def moderation
   end   
 
-  def star_trek
+  def startrek
   end 
 end
