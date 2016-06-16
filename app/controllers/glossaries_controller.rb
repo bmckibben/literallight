@@ -9,6 +9,7 @@ class GlossariesController < ApplicationController
 
   def list
     @glossaries = Glossary.all
+    render :layout => 'graident'
   end
 
   # GET /glossaries/1

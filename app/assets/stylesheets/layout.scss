@@ -364,3 +364,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', end
 }
 
 
+/* Pages with gradient background */
+.gradient-main {
+  background-image: linear-gradient(to bottom, black 0%, #000099 100%);
+}
+
+.gradient-body {
+    background: #000099 none repeat scroll 0 0;
+    color: #ccc;
+}
+
+.gradient-footer {
+    background: #000099 none repeat scroll 0 0;
+    border-top: 1px solid #66ccff;
+    clear: both;
+    color: #66ccff;
+    height: 50px;
+    padding-left: 2em;
+    position: relative;
+}
+
+.glossary-word {
+    font-size: 2em;
+    font-weight: bold;
+}
