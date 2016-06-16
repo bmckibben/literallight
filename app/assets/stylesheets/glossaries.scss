@@ -12,7 +12,7 @@ body {
     color: #ccc;
 }
 
-.footer {
+footer {
     background: #000099 none repeat scroll 0 0;
     border-top: 1px solid #66ccff;
     clear: both;
@@ -20,4 +20,9 @@ body {
     height: 50px;
     padding-left: 2em;
     position: relative;
+}
+
+.glossary-word {
+    font-size: 2em;
+    font-weight: bold;
 }

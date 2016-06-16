@@ -29,6 +29,8 @@ class GlossariesController < ApplicationController
   # POST /glossaries.json
   def create
     @glossary = Glossary.new(glossary_params)
+    @glossary.created_at = DateTime.now
+    @glossary.updated_at = DateTime.now    
 
     respond_to do |format|
       if @glossary.save
@@ -44,6 +46,7 @@ class GlossariesController < ApplicationController
   # PATCH/PUT /glossaries/1
   # PATCH/PUT /glossaries/1.json
   def update
+    @glossary.updated_at = DateTime.now 
     respond_to do |format|
       if @glossary.update(glossary_params)
         format.html { redirect_to @glossary, notice: 'Glossary was successfully updated.' }
