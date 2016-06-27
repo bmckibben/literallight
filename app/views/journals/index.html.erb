@@ -15,7 +15,7 @@
 <h1>Entries</h1>
 Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate) %>
 <div class="table-responsive">
-<table class="table responsive-table">
+<table class="table responsive-table table-striped table-hover">
   <thead>
     <tr>
       <th>Entry for</th>
@@ -40,11 +40,8 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
 
   <tbody>
     <% @journals.each do |journal| %>
-      <tr>
-        <td class="bold center"><%= journal.entry_for %>
-          <br/>
-          <%= link_to '', edit_journal_path(journal), class: "glyphicon glyphicon-pencil"  %>
-        </td>
+      <tr data-link="<%= edit_journal_path(journal) %>" class="data-row">
+        <td class="bold center"><%= journal.entry_for %></td>
         <td><%= journal.am_glucose.to_s %></td>
         <td><%= journal.weight.to_s %></td>
         <td><%= journal.systolic.to_s %></td>
