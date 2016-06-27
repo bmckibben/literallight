@@ -40,7 +40,7 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
 
   <tbody>
     <% @journals.each do |journal| %>
-      <tr data-id="<%= journal.id %>" class="data-row">
+      <tr data-journalid="<%= journal.id %>" class="data-row">
         <td class="bold center"><%= journal.entry_for %>
           <br/>
           <%= link_to '', edit_journal_path(journal), class: "glyphicon glyphicon-pencil"  %>
@@ -76,7 +76,7 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
 <script>
   $(document).ready(function() {
     $(".data-row").on("click", function(){
-      alert($(this).data("id"));
+      alert($(this).data("journalid"));
     })
   })
 </script>
