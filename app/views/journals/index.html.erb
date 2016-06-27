@@ -10,7 +10,7 @@
 </div>
 </div>
 <div class="row">
-<div class="col-md-12">
+<div class="col-md-10 col-md-offset-1 col-sm-12">
 <%= link_to 'New Journal', new_journal_path, class: "btn btn-primary pull-right" %>
 <h1>Entries</h1>
 Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate) %>
