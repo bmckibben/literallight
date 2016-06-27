@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 	get 'static_pages/moderation' => 'static_pages#moderation', :as => 'static_moderation'
 	get 'glossaries/list' => 'glossaries#list', :as => 'glossaries_list'
 	get 'angular_test/index' => 'angular_test', :as => 'angular_test'
+	get 'angular_test/paging' => 'paging', :as => 'paging'
   	get 'users/list' => 'users#list', :as => 'users_list'
   	get 'musings' => 'journals#musings', :as => 'journals_musings'
   	get 'show_musing/:id' => 'journals#show_musing', :as => 'journals_show_musing'
