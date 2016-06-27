@@ -41,10 +41,7 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
   <tbody>
     <% @journals.each do |journal| %>
       <tr data-link="<%= edit_journal_path(journal) %>" class="data-row">
-        <td class="bold center"><%= journal.entry_for %>
-          <br/>
-          <%= link_to '', edit_journal_path(journal), class: "glyphicon glyphicon-pencil"  %>
-        </td>
+        <td class="bold center"><%= journal.entry_for %></td>
         <td><%= journal.am_glucose.to_s %></td>
         <td><%= journal.weight.to_s %></td>
         <td><%= journal.systolic.to_s %></td>
@@ -73,11 +70,3 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
 </div>
 </div>
 </div>
-<script>
-  $(document).ready(function() {
-    $(".data-row").on("click", function(){
-      alert($(this).data("link"));
-      window.location = $(this).data("link")
-    })
-  })
-</script>
