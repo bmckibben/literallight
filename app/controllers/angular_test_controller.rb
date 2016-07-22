@@ -7,7 +7,7 @@ class AngularTestController < ApplicationController
   def paging
   	if params[:keywords].present?
   		@keywords  =params[:keywords]
-  		musing_searchTerm = MusingSearchTerm.new(@keywords)
+  		musing_search_term = MusingSearchTerm.new(@keywords)
   		@jourals = Journal.where(
   			musing_search_term.where_clause,
   			musing_search_term.where_args).
