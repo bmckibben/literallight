@@ -1,8 +1,8 @@
 class MusingSearchTerm
 	attr_reader :where_clause, :where_args
-	
+
 	def initialize(search_term)
-		search_term = search_term_downcase
+		search_term = search_term.downcase
 		@where_clause = ""
 		@where_args = {}
 		build_for_name_search(search_term)
