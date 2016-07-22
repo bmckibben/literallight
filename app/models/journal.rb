@@ -22,7 +22,7 @@ class Journal
 
   index({notes: "text"})
 
-  def search(q)
+  def self.search(q)
       Journal.where({ :$text => { :$search => q, :$language => "none"}})
   end 
 
