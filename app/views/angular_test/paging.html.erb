@@ -20,7 +20,7 @@
   <% end %>
 </div>  
 </div>
-<% if @journals.size > 0 %>
+<% unless @journals.nil?  %>
 <div class="table-responsive">
 <table class="table reqponsive-table">
   <thead>
