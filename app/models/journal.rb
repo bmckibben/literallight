@@ -19,6 +19,13 @@ class Journal
   field :meditation, type: Integer
   field :yoga, type: Integer
   field :curls, type: Integer
+
+  index({notes: "text"})
+
+  def search(q)
+      Journal.where({ :$text => { :$search => q, :$language => "none"}})
+  end 
+
 end
 
 #rails g journal id:integer  entry_for:datetime am_glucose:integer pm_glucose:integer weight:float systolic:integer diastolic:integer body_fat:float  energy:integer   motivation:integer happiness:integer  details:text goals:text notes:text  created_at:datetime updated_at:datetime

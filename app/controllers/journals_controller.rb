@@ -74,11 +74,7 @@ class JournalsController < ApplicationController
 
   def show_musing
 
-  end  
-
-  def search(q)
-      Journal.where({ :$text => { :$search => q, :$language => "none"}})
-  end  
+  end   
 
   private
     # Use callbacks to share common setup or constraints between actions.
