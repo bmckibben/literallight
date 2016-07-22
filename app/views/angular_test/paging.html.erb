@@ -1,63 +1,25 @@
 <div class="main-margined">
 <div class="row">
-<div class="col-md-12">
-<% if notice %>
-<div class="alert alert-warning alert-dismissible" role="alert">
-<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove-circle"></span></button>
-<p id="notice"><%= notice %></p>
-</div>
-<% end %>
-</div>
-</div>
-<div class="row">
 <div class="col-md-10 col-md-offset-1 col-sm-12">
-<%= link_to 'New Journal', new_journal_path, class: "btn btn-primary pull-right" %>
-<h1>Entries</h1>
-Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate) %>
+
+<h1>Musings</h1>
+
 <div class="table-responsive">
-<table class="table responsive-table table-striped table-hover">
+<table class="table reqponsive-table">
   <thead>
     <tr>
-      <th>Entry for</th>
-      <th>Am glucose</th>
-      <th>Weight</th>
-      <th>Systolic</th>
-      <th>Diastolic</th>
-      <th>Body fat</th>
-      <th>Curls</th>
-      <th>Yoga</th>
-      <th>Meditation</th>
-      <th>Energy</th>
-      <th>Motivation</th>
-      <th>Happiness</th>
-      <th>Details</th>
-      <th>Goals</th>
-      <th>Notes</th>
-      <th>Created at</th>
-      <th>Updated at</th>
+      <th>Date</th>
+      <th>Note</th>
+      <th>&nbsp;</th>
     </tr>
   </thead>
 
   <tbody>
     <% @journals.each do |journal| %>
-      <tr data-link="<%= edit_journal_path(journal) %>" class="data-row">
-        <td class="bold center"><%= journal.entry_for %></td>
-        <td><%= journal.am_glucose.to_s %></td>
-        <td><%= journal.weight.to_s %></td>
-        <td><%= journal.systolic.to_s %></td>
-        <td><%= journal.diastolic.to_s %></td>
-        <td><%= journal.body_fat.to_s %></td>
-        <td><%= journal.curls.to_s %></td>
-        <td><%= journal.yoga.to_s %></td>
-        <td><%= journal.meditation.to_s %></td>
-        <td><%= journal.energy.to_s %></td>
-        <td><%= journal.motivation.to_s %></td>
-        <td><%= journal.happiness.to_s %></td>
-        <td><%= journal.details[0...70] %></td>
-        <td><%= journal.goals[0...70] %></td>
-        <td><%= journal.notes[0...70] %></td>
-        <td><%= journal.created_at.to_formatted_s(:stardate) if journal.created_at %></td>
-        <td><%= journal.updated_at.to_formatted_s(:stardate) if journal.updated_at %></td>
+      <tr>
+        <td style="width:50px;"><%= link_to journal.entry_for, journals_show_musing_path(journal),  class: "btn btn-default btn-xs"  %></td>
+        <td><%= journal.notes %></td>
+        <td style="width:50px;"><%= link_to '', edit_journal_path(journal), class: "glyphicon glyphicon-pencil" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -65,7 +27,7 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
 </div>
 <br>
 
-<%= link_to 'New Journal', new_journal_path, class: "btn btn-primary pull-right" %>
+<%= link_to "Home" , home_path , class: "btn btn-primary" %> 
 
 </div>
 </div>
