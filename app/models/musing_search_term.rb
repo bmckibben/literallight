@@ -17,4 +17,7 @@ class MusingSearchTerm
 		@where_args[:notes] = starts_with(search_term)
 	end
 
+	def starts_with(search_term)
+		search_term + "%"	
+	end	
 end	
