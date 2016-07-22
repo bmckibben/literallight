@@ -5,7 +5,7 @@ class AngularTestController < ApplicationController
 
 
   def paging
-    @journals = Journal.all.order_by(entry_for: :desc).limit(10)
+    @journals = Journal.where(:notes.exists => true, :notes.ne => "").order_by(entry_for: :desc).limit(10)
   end
   	
 end
