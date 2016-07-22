@@ -20,7 +20,7 @@
   <% end %>
 </div>  
 </div>
-
+<% if @journals.size > 0 %>
 <div class="table-responsive">
 <table class="table reqponsive-table">
   <thead>
@@ -31,6 +31,7 @@
   </thead>
 
   <tbody>
+
     <% @journals.each do |journal| %>
       <tr>
         <td style="width:50px;"><%= link_to journal.entry_for, journals_show_musing_path(journal),  class: "btn btn-default btn-xs"  %></td>
@@ -40,6 +41,7 @@
   </tbody>
 </table>
 </div>
+<% end %>
 <br>
 
 <%= link_to "Home" , home_path , class: "btn btn-primary" %> 
