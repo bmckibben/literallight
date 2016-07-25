@@ -69,8 +69,6 @@ class JournalsController < ApplicationController
   end
 
   def musings
-    
-
     if params[:searchwords].present?
       #@nominees = Nominee.search(params[:kewords])
       @journals = Journal.full_text_search(params[:searchwords])
@@ -78,8 +76,6 @@ class JournalsController < ApplicationController
     else
       @journals = Journal.where(:notes.exists => true, :notes.ne => "").order_by(entry_for: :desc)
     end
-
-
   end
 
   def show_musing

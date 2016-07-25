@@ -5,19 +5,14 @@ class AngularTestController < ApplicationController
 
 
   def paging
-  	if params[:keywords].present?
-  		@keywords  =params[:keywords]
-  		#musing_search_term = MusingSearchTerm.new(@keywords)
-  		
-  		Journal.search(@keywords)
+    if params[:searchwords].present?
+      #@nominees = Nominee.search(params[:kewords])
+      @journals = Journal.full_text_search(params[:searchwords])
+      @searched_for = params[:searchwords]
+    else
+      @journals = Journal.where(:notes.exists => true, :notes.ne => "").order_by(entry_for: :desc)
+    end
 
-  		#@jourals = Journal.where(
-  		#	musing_search_term.where_clause,
-  		#	musing_search_term.where_args).
-  		#	order_by(entry_for: :desc)
-  	else	
-    	@journals = Journal.where(:notes.exists => true, :notes.ne => "").order_by(entry_for: :desc).limit(10)
-	end
   end
   	
 end
