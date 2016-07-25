@@ -9,10 +9,10 @@
 <div class="panel-body">
   <form>
     <div class="input-group inpug-group-lg">
-      <label for="searchwords" class: "sr-only">Searchwords</label> 
+      <label for="searchwords" class="sr-only">Searchwords</label> 
       <input type="text" 
         name="searchwords" 
-        placeholder="Search Word"
+        placeholder="Search Words"
         class="form-control input-md" 
         ng-model="searchwords">
       <span class="input-group-btn">
@@ -25,7 +25,7 @@
   </form>
 </div>  
 </div>
-<p class="h2 searchedFor" ng-if="searchedFor">
+<p class="searchedFor" ng-if="searchedFor">
 <small> Searched for:</small> {{searchedFor}}
 </p>
 
