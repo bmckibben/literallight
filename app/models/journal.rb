@@ -1,5 +1,6 @@
 class Journal
   include Mongoid::Document
+  include Mongoid::Search
   field :id, type: Integer
   field :entry_for, type: String
   field :am_glucose, type: Integer
