@@ -1,53 +1,36 @@
 <div class="main-margined">
 <div class="row">
 <div class="col-md-10 col-md-offset-1 col-sm-12">
-
+<article ng-app="musings" ng-appcontroller="MusingSearchController">
 <h1>Musings</h1>
 
 
 <div class="search-form panel panel-default" >
 <div class="panel-body">
-  <%= form_for :journals, html: {id: 'search_form'}, method: :get do |f| %>
+  <form>
     <div class="input-group inpug-group-lg">
-      <%= label_tag :searchwords, nil, class: "sr-only" %>
-      <%= text_field_tag :searchwords, nil, 
-        placeholder: "Search Word",
-        class: "form-control input-md" %>
+      <label for="searchwords" class: "sr-only">Searchwords</label> 
+      <input type="text" 
+        name="searchwords" 
+        placeholder="Search Word"
+        class="form-control input-md" 
+        ng-model="searchwords">
       <span class="input-group-btn">
-        <%= submit_tag "Find Musings", class: "btn btn-primary btn-lg"  %>
+        <button class="btn btn-primary btn-lg"
+          ng-click="search(searchwords)">
+          Find Musings
+        </button>  
       </span>  
     </div>
-  <% end %>
-      <% if @searched_for %> 
-      <p class="h2">Search Terms: [<%= @searched_for %>]</p>
-      <% end %>  
+  </form>
 </div>  
 </div>
-<% unless @journals.nil?  %>
-<div class="table-responsive">
-<table class="table reqponsive-table">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Note</th>
-    </tr>
-  </thead>
+<p class="h2 searchedFor" ng-if="searchedFor">
+<small> Searched for:</small> {{searchedFor}}
+</p>
 
-  <tbody>
 
-    <% @journals.each do |journal| %>
-      <tr>
-        <td style="width:50px;"><%= link_to journal.entry_for, journals_show_musing_path(journal),  class: "btn btn-default btn-xs"  %></td>
-        <td><%= journal.notes %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-</div>
-<% end %>
-<br>
-
-<%= link_to "Home" , home_path , class: "btn btn-primary" %> 
+</article>
 
 </div>
 </div>
