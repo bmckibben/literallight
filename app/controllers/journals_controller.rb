@@ -4,7 +4,7 @@ class JournalsController < ApplicationController
   # GET /journals
   # GET /journals.json
   def index
-    @journals = Journal.all.order_by(entry_for: :desc).limit(20)
+    @journals = Journal.all.order_by(entry_for: :desc).limit(20)    
   end
 
   # GET /journals/1
@@ -69,7 +69,17 @@ class JournalsController < ApplicationController
   end
 
   def musings
-    @journals = Journal.where(:notes.exists => true, :notes.ne => "").order_by(entry_for: :desc)
+    
+
+    if params[:searchwords].present?
+      #@nominees = Nominee.search(params[:kewords])
+      @journals = Journal.full_text_search(params[:searchwords])
+      @searched_for = params[:searchwords]
+    else
+      @journals = Journal.where(:notes.exists => true, :notes.ne => "").order_by(entry_for: :desc)
+    end
+
+
   end
 
   def show_musing

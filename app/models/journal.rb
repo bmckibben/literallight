@@ -20,7 +20,7 @@ class Journal
   field :yoga, type: Integer
   field :curls, type: Integer
 
-  index({notes: "text"})
+  search_in :notes
 
   def self.search(q)
       Journal.where({ :$text => { :$search => q, :$language => "none"}})

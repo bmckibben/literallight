@@ -9,8 +9,8 @@
 <div class="panel-body">
   <%= form_for :journals, html: {id: 'search_form'}, method: :get do |f| %>
     <div class="input-group inpug-group-lg">
-      <%= label_tag :keywords, nil, class: "sr-only" %>
-      <%= text_field_tag :keywords, nil, 
+      <%= label_tag :searchwords, nil, class: "sr-only" %>
+      <%= text_field_tag :searchwords, nil, 
         placeholder: "Search Word",
         class: "form-control input-md" %>
       <span class="input-group-btn">
@@ -27,7 +27,6 @@
     <tr>
       <th>Date</th>
       <th>Note</th>
-      <th>Keywords</th>
     </tr>
   </thead>
 
@@ -37,11 +36,6 @@
       <tr>
         <td style="width:50px;"><%= link_to journal.entry_for, journals_show_musing_path(journal),  class: "btn btn-default btn-xs"  %></td>
         <td><%= journal.notes %></td>
-        <td>
-          <% if not journal._keywords.present? %> 
-            <span class="glyphicon glyphicon-ok"></span>
-          <% end %> 
-        </td>  
       </tr>
     <% end %>
   </tbody>
