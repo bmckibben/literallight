@@ -27,6 +27,7 @@
     <tr>
       <th>Date</th>
       <th>Note</th>
+      <th>Keywords</th>
     </tr>
   </thead>
 
@@ -36,6 +37,11 @@
       <tr>
         <td style="width:50px;"><%= link_to journal.entry_for, journals_show_musing_path(journal),  class: "btn btn-default btn-xs"  %></td>
         <td><%= journal.notes %></td>
+        <td>
+          <% if not journal._keywords.present? %> 
+            <span class="glyphicon glyphicon-ok"></span>
+          <% end %> 
+        </td>  
       </tr>
     <% end %>
   </tbody>
