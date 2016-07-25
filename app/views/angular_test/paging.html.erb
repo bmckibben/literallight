@@ -18,6 +18,9 @@
       </span>  
     </div>
   <% end %>
+      <% if @searched_for %> 
+      <p class="h2">Search Terms: [<%= @searched_for %>]</p>
+      <% end %>  
 </div>  
 </div>
 <% unless @journals.nil?  %>
