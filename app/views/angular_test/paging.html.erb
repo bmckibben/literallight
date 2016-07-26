@@ -3,9 +3,36 @@
 <div class="col-md-10 col-md-offset-1 col-sm-12">
 
 <article data-ng-app="apMusingSearch">
-  <header>
-    <h1 ng-controller="ctlrMusingSearch">Today is, {{greeting}}</h1>
-  </header>
+
+<div ng-appcontroller="ctlrMusingSearch">
+<h1>Musings</h1>
+
+
+<div class="search-form panel panel-default" >
+<div class="panel-body">
+  <form>
+    <div class="input-group inpug-group-lg">
+      <label for="searchwords" class="sr-only">Searchwords</label> 
+      <input type="text" 
+        name="searchwords" 
+        placeholder="Search Words"
+        class="form-control input-md" 
+        ng-model="searchwords">
+      <span class="input-group-btn">
+        <button class="btn btn-primary btn-lg" 
+          ng-click="search(searchwords)">
+          Find Musings
+        </button>  
+      </span>  
+    </div>
+  </form>
+</div>  
+</div>
+<p class="searchedFor" ng-if="searchedFor">
+<small> Searched for:</small> {{searchedFor}}
+</p>
+
+</div>
 </article>
 
 </div>
