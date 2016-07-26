@@ -1,4 +1,4 @@
-var appMusing = angular.module('angular_test',[ ]);
+var appMusing = angular.module('angular_test', []);
 
 appMusing.controller('GreetingController', [
   '$scope',
