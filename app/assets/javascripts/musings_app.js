@@ -6,5 +6,3 @@ appMusing.controller('ctlrMusingSearch', [
     $scope.greeting = 'Sup!';
   }
 ]);
-
-
