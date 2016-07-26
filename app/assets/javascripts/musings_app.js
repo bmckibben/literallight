@@ -3,6 +3,6 @@ var appMusing = angular.module('apMusingSearch', []);
 appMusing.controller('ctlrMusingSearch', [
   '$scope',
   function($scope){
-    $scope.greeting = 'Sup!';
+    $scope.greeting = 'Boyd!';
   }
 ]);
