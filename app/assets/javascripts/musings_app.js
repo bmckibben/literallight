@@ -2,10 +2,12 @@ var app = angular.module('musings',[]);
 
 
 app.controller("MusingSearchController", [
-	"$scope",
+	'$scope',
 	function($scope){
-		$scope.search= function(searchTerm) {
+		alert("line 7");
+		$scope.search = function(searchTerm) {
 			$scope.searchedFor = searchTerm;
+			alert("line 10");
 		}
 	}	
 	]);
