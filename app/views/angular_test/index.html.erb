@@ -21,10 +21,9 @@
 	</section>
 </article>
 
-
-<article>
+<article data-ng-controller="MusingSearchController">
 	<header>
-		<h1>Today is</h1>
+		<h1>Today is, {{greeting}}</h1>
 	</header>
 	<section>
 		<p>Raw Date: <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:fullDT) %></p>
