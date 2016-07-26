@@ -10,7 +10,7 @@ appMusing.controller("ctlrMusingSearch", [
 	}
 ])
 
-var appMusing = angular.module('angular_test', []);
+
 
 
 
