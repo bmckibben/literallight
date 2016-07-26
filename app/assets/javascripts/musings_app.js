@@ -1,13 +1,9 @@
-var app = angular.module('musings',[]);
+var appMusing = angular.module('appMusing',[]);
 
 
-app.controller("MusingSearchController", [
+appMusing.controller('MusingSearchController', [
 	'$scope',
 	function($scope){
-		alert("line 7");
-		$scope.search = function(searchTerm) {
-			$scope.searchedFor = searchTerm;
-			alert("line 10");
-		}
-	}	
-	]);
+		$scope.greeting = 'Sup!';
+	}
+]);
