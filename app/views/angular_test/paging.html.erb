@@ -3,25 +3,9 @@
 <div class="col-md-10 col-md-offset-1 col-sm-12">
 
 
-<article ng-appcontroller="MusingSearchController">
-  <header>
-    <h1>{{greeting}}</h1>
-    <h1 ng-if="name">Hello, {{name}}</h1>
-  </header>
-  <section>
-  <form class="form-inline">
-    <div class="form-group">
-    <label for="name">Name</label>
-    <input class="form-control"
-    name="name"
-    type="text"
-    placeholder="Enter your name"
-    autofocus
-    ng-model="name">
-    </div>
-  </form>
-  </section>
-</article>
+<div ng-controller="MusingSearchController">
+{{greeting}}
+</div>
 
 </div>
 </div>
