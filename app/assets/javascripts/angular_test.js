@@ -1,6 +1,6 @@
 var appMusing = angular.module('angular_test',[ ]);
 
-appMusing.controller('MusingSearchController', [
+appMusing.controller('GreetingController', [
   '$scope',
   function($scope){
     $scope.greeting = 'Sup!';
