@@ -13,8 +13,9 @@ class AngularTestController < ApplicationController
       @journals = Journal.where(:notes.exists => true, :notes.ne => "").order_by(entry_for: :desc)
     end
     respond_to do |format|
-    format.html {}
-    format.json {render json: @journals}
+      format.html {}
+      format.json {render json: @journals}
+    end
   end
   	
 end
