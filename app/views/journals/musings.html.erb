@@ -37,14 +37,14 @@
       <table class="table reqponsive-table">
         <thead>
           <tr>
-            <th style="width:50px;">Date</th>
+            <th style="width:100px;">Date</th>
             <th>Note</th>
           </tr>
         </thead>
         <tbody>
           
             <tr ng-repeat="musing in musings">
-              <td style="width:50px;"><a href="#"  class="btn btn-default btn-xs" >{{musing.entry_for | date }}</a> </td>
+              <td style="width:100px;"><a href="#"  class="btn btn-default btn-xs" >{{musing.entry_for | date }}</a> </td>
               <td>{{musing.notes}}</td>
             </tr>
 
@@ -53,8 +53,6 @@
     </div>
 
   </article>
-
-<%= link_to "Home" , home_path , class: "btn btn-primary" %> 
 
 </div>
 </div>
