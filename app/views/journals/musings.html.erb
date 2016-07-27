@@ -1,32 +1,58 @@
 <div class="main-margined">
 <div class="row">
-<div class="col-md-12">
-<p id="notice"><%= notice %></p>
+<div class="col-md-10 col-md-offset-1 col-sm-12">
 
-<h1>Musings</h1>
+<article data-ng-app="apMusingSearch">
+  <div  ng-controller="ctlrMusingSearch">
+    <header>
+      <h1>{{greeting}}</h1>
+    </header>
 
-<div class="table-responsive">
-<table class="table reqponsive-table">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Note</th>
-      <th>&nbsp;</th>
-    </tr>
-  </thead>
+    <div class="search-form panel panel-default" >
+      <div class="panel-body" style="background-color: #ccc;">
+        <form>
+          <div class="input-group inpug-group-lg">
+            <label for="searchwords" class="sr-only">Searchwords</label> 
+            <input type="text" 
+              name="searchwords" 
+              placeholder="Search Words"
+              class="form-control input-md" 
+              ng-model="searchwords">
+            <span class="input-group-btn">
+              <button class="btn btn-primary btn-lg" 
+                ng-click="search(searchwords)">
+                Find Musings
+              </button>  
+            </span>  
+          </div>
+        </form>
+      </div>  
+    </div>
+    <p class="searchedFor" ng-if="searchedFor">
+      <small> Results for:</small> {{searchedFor}}
+    </p>
 
-  <tbody>
-    <% @journals.each do |journal| %>
-      <tr>
-        <td style="width:50px;"><%= link_to journal.entry_for, journals_show_musing_path(journal),  class: "btn btn-default btn-xs"  %></td>
-        <td><%= journal.notes %></td>
-        <td style="width:50px;"><%= link_to '', edit_journal_path(journal), class: "glyphicon glyphicon-pencil" %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-</div>
-<br>
+
+    <div class="table-responsive">
+      <table class="table reqponsive-table">
+        <thead>
+          <tr>
+            <th style="width:50px;">Date</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr ng-repeat="musing in musings">
+              <td style="width:50px;"><a href="#"  class="btn btn-default btn-xs" >{{musing.entry_for | date }}</a> </td>
+              <td>{{musing.notes}}</td>
+            </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </article>
 
 <%= link_to "Home" , home_path , class: "btn btn-primary" %> 
 
