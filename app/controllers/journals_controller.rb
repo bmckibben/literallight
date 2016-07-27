@@ -68,8 +68,19 @@ class JournalsController < ApplicationController
     end
   end
 
-  def musings
+  def musing
+
+    if params[:searchwords].present?
+      @journals = Journal.full_text_search(params[:searchwords])
+    else
       @journals = Journal.where(:notes.exists => true, :notes.ne => "").order_by(entry_for: :desc)
+    end
+
+    respond_to do |format|
+      format.html {}
+      format.json {render json: @journals}
+    end
+    
   end
 
   def show_musing
