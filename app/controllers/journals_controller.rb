@@ -1,5 +1,6 @@
 class JournalsController < ApplicationController
   before_action :set_journal, only: [:show, :edit, :update, :destroy, :show_musing]
+  before_action :set_journal, except: [:index, :new, :create, :musing]
 
   # GET /journals
   # GET /journals.json
@@ -28,7 +29,6 @@ class JournalsController < ApplicationController
     @journal = Journal.new(journal_params)
     @journal.created_at = DateTime.now
     @journal.updated_at = DateTime.now
-
 
     respond_to do |format|
       if @journal.save
