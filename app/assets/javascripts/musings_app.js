@@ -1,22 +1,20 @@
 var appMusing = angular.module('apMusingSearch', []);
 
 appMusing.controller("ctlrMusingSearch", [
-	'$scope',
-	function($scope) {
+	'$scope', '$http', 
+	function($scope, $http) {
 		$scope.greeting = "Search Musings";
 		$scope.musings = [];
 		$scope.search = function(searchTerm) {
-			$scope.musings = [
-			{"entry_for" : "2016-01-02",
-			 "note" : "test  note january"
-			},
-		    {"entry_for" : "2016-02-02",
-			"note" : "test  note february"
-			},
-			{"entry_for" : "2016-02-02",
-			"note" : "test  note march"
-			}	
-			],
+			$http.get("/angular_test/paging.json",
+				{"params": {"searchwords" : searchTerm}}
+				).success(
+					function(data,status,headers,config){
+						$scope.musings = data;
+				}).error(
+				function(data,status,headers,config){
+					alert("Houston, we have a problem: " + status);
+				});	
 			$scope.searchedFor = searchTerm;
 		};
 	}
