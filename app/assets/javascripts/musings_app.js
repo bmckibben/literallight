@@ -6,7 +6,7 @@ appMusing.controller("ctlrMusingSearch", [
 		$scope.greeting = "Search Musings";
 		$scope.musings = [];
 		$scope.search = function(searchTerm) {
-			$http.get("/journals/musing.json",
+			$http.get("/musing.json",
 				{"params": {"searchwords" : searchTerm}}
 				).success(
 					function(data,status,headers,config){
