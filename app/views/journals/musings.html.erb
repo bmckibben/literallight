@@ -17,13 +17,8 @@
               name="searchwords" 
               placeholder="Search Words"
               class="form-control input-md" 
-              ng-model="searchwords">
-            <span class="input-group-btn">
-              <button class="btn btn-primary btn-lg" 
-                ng-click="search(searchwords)">
-                Find Musings
-              </button>  
-            </span>  
+              ng-model="searchwords"
+              ng-change="search(searchwords)">  
           </div>
         </form>
       </div>  
@@ -32,7 +27,17 @@
       <small> Results for:</small> {{searchedFor}}
     </p>
 
-
+    <nav>
+      <ul class="pager">
+        <li class = "prevoius">
+          <a href="" ng-click="previousPage()">&larr; Previous</a>a=
+        </li>
+        <li class="next">
+          <a href="" ng=click="nextPage()">Next &rarr;</a>
+        </li>  
+      </ul>
+    </nav>
+      
     <div class="table-responsive">
       <table class="table reqponsive-table">
         <thead>
