@@ -8,6 +8,7 @@ appMusing.controller("ctlrMusingSearch", [
 		$scope.musings = [];
 		$scope.search = function(searchTerm) {
 			if (searchTerm.length < 3){
+				$scope.searchedFor = searchTerm;
 				return;
 			}
 			$http.get("/angular_test/paging.json",
