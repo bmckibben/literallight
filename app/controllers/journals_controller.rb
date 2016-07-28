@@ -1,6 +1,7 @@
 class JournalsController < ApplicationController
-  #before_action :set_journal, only: [:show, :edit, :update, :destroy, :show_musing]
-  before_action :set_journal, except: [:index, :new, :create, :musing]
+  
+  before_action :set_journal, only: [:show, :edit, :update, :destroy, :show_musing]
+  
 
   # GET /journals
   # GET /journals.json
