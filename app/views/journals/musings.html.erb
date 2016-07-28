@@ -50,7 +50,7 @@
           
             <tr ng-repeat="musing in musings">
               <td style="width:100px;">
-              <%= link_to '{{musing.entry_for | date }}', edit_journal_path(journal) class: "btn btn-default btn-xs" %>
+              <a href="/journals/{{musing.id}}/edit"  class="btn btn-default btn-xs" >{{musing.entry_for | date }}</a> 
               </td>
               <td>{{musing.notes}}</td>
             </tr>
