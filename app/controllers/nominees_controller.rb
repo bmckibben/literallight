@@ -4,14 +4,18 @@ class NomineesController < ApplicationController
   # GET /nominees
   # GET /nominees.json
   def index
-    if params[:searchwords].present?
-      #@nominees = Nominee.search(params[:kewords])
-      @nominees = Nominee.full_text_search(params[:searchwords])
-      @searched_for = params[:searchwords]
 
+    if params[:searchwords].present?
+      @nominees = Nominee.full_text_search(params[:searchwords])
     else
       @nominees = Nominee.all #.sort({year: 1})
     end
+
+    respond_to do |format|
+      format.html {}
+      format.json {render json: @nominees}
+    end
+
   end
 
   # GET /nominees/1
