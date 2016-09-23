@@ -37,6 +37,11 @@
         <li> <a class="page-scroll" href="#team">Team</a> </li>
         <li> <a class="page-scroll" href="#testimonials">Testimonials</a> </li>
         <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+        <% if user_signed_in? %>
+            <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+        <% else %>
+            <li><%= link_to 'Login', new_user_session_path %></li>
+        <% end %>        
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -70,18 +75,21 @@
         <div class="about-text">
           <h4>Who I Am</h4>
           <p>An experienced full stack web application developer.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum. </p>
+          <p>I am a puzzle solver. I have the ability to create component parts and assemble them so they work in the most efficient way.</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="about-text">
-          <h4>What I Do</h4>
-          <p>Deliver applications that meet the need of my customers.</p>
+          <h4>This Website</h4>
+          <p>This is a showcase of my technical expertise using:</p>
           <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing commodo</li>
-            <li>Duis sed dapibus leo sed dapibus</li>
-            <li>Sed commodo nibh ante bibendum</li>
+              <li>Ruby <%= RUBY_VERSION %></li>
+              <li>Rails <%= Rails.version %></li>
+              <li>MongoDB/Mongoid</li>
+              <li>jQuery</li>
+              <li>Twitter Bootstrap</li> 
+              <li>Devise</li>
+              <li>Pundit</li>     
           </ul>
         </div>
       </div>
@@ -265,37 +273,37 @@
     <div class="section-title center">
       <h2>Meet the team</h2>
       <hr>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+      <p>These are a few of my favorite science fiction writers.</p>
     </div>
     <div id="row">
       <div class="col-xs-6 col-md-3 col-sm-6"><%= image_tag("team/01.jpg",  class: "img-thumbnail team-img", alt: "...") %>
           <div class="caption">
-            <h3>John Doe</h3>
-            <p>Founder / CEO</p>
+            <h3>Frank Herbert</h3>
+            <p>Dune</p>
           </div>
         </div>
       </div>
       <div class="col-xs-6 col-md-3 col-sm-6">
         <div class="thumbnail"><%= image_tag("team/02.jpg",  class: "img-thumbnail team-img", alt: "...") %>
           <div class="caption">
-            <h3>Mike Doe</h3>
-            <p>Web Designer</p>
+            <h3>Samuel R Delany</h3>
+            <p>Dhalgren</p>
           </div>
         </div>
       </div>
       <div class="col-xs-6 col-md-3 col-sm-6">
         <div class="thumbnail"><%= image_tag("team/03.jpg",  class: "img-thumbnail team-img", alt: "...") %>
           <div class="caption">
-            <h3>Jane Doe</h3>
-            <p>Creative Director</p>
+            <h3>Ursula K Le Guin</h3>
+            <p>The Left Hand of Darkness</p>
           </div>
         </div>
       </div>
       <div class="col-xs-6 col-md-3 col-sm-6">
         <div class="thumbnail"><%= image_tag("team/04.jpg",  class: "img-thumbnail team-img", alt: "...") %>
           <div class="caption">
-            <h3>Larry Show</h3>
-            <p>Project Manager</p>
+            <h3>Ernest Cline</h3>
+            <p>Ready Player ONe</p>
           </div>
         </div>
       </div>

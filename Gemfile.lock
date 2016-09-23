@@ -55,7 +55,6 @@ GEM
     crono (1.0.3)
       activerecord (>= 4.0)
       activesupport (>= 4.0)
-    debug_inspector (0.0.2)
     devise (4.2.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -185,10 +184,6 @@ GEM
       execjs (>= 0.3.0, < 3)
     warden (1.2.6)
       rack (>= 1.0)
-    web-console (3.3.0)
-      activemodel (>= 4.2)
-      debug_inspector
-      railties (>= 4.2)
 
 PLATFORMS
   ruby
@@ -217,7 +212,6 @@ DEPENDENCIES
   sinatra
   tzinfo-data
   uglifier (>= 1.3.0)
-  web-console
 
 BUNDLED WITH
    1.12.5
