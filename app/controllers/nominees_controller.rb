@@ -1,4 +1,6 @@
 class NomineesController < ApplicationController
+
+  before_action :authenticate_user!
   before_action :set_nominee, only: [:show, :edit, :update, :destroy]
 
   # GET /nominees
