@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
 
-
-
 	root 'home#home'
 	
 	get 'home/home' => 'home', :as => 'home'
+	get 'home/index' => 'home#index'
 	get 'static_pages/about' => 'static_pages#about', :as => 'static_about'
 	get 'static_pages/help' => 'static_pages#help', :as => 'static_help'
 	get 'static_pages/contact' => 'static_pages#contact', :as => 'static_contact'
