@@ -62,13 +62,13 @@ function main() {
     })
 
   	$(document).ready(function() {
-  	    $("#testimonial").owlCarousel({
+/*  	    $("#testimonial").owlCarousel({
         navigation : false, // Show next and prev buttons
         slideSpeed : 300,
         paginationSpeed : 400,
         singleItem:true
         });
-
+*/
   	});
 
   	// Portfolio Isotope Filter
