@@ -4,17 +4,17 @@ function main() {
 (function () {
    'use strict';
 
-	// Hide .navbar first
-	$(".navbar").hide();
+	// Hide .navbar-custom first
+	$(".navbar-custom").hide();
 	
-	// Fade in .navbar
+	// Fade in .navbar-custom
 	$(function () {
 		$(window).scroll(function () {
-            // set distance user needs to scroll before we fadeIn navbar
+            // set distance user needs to scroll before we fadeIn navbar-custom
 			if ($(this).scrollTop() > 200) {
-				$('.navbar').fadeIn();
+				$('.navbar-custom').fadeIn();
 			} else {
-				$('.navbar').fadeOut();
+				$('.navbar-custom').fadeOut();
 			}
 		});
 
