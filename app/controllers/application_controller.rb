@@ -20,4 +20,8 @@ class ApplicationController < ActionController::Base
     redirect_to (request.referrer || root_path), :notice => "You are not authorized to perform this action."
   end
 
+ # def after_sign_in_path_for(user)
+ #   internal_home_path
+ # end
+
 end
