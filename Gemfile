@@ -37,6 +37,7 @@ gem 'simple_enum', '~> 2.0.0' , require: 'simple_enum/mongoid'
 
 # asset manager
 gem 'bower-rails'
+gem 'font-awesome-sass'
 
 # per heroku
 gem 'rails_12factor'
