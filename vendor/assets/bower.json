@@ -1,8 +1,7 @@
 {
   "name": "dsl-generated-dependencies",
   "dependencies": {
-    "bootstrap-sass": "latest",
-    "angular": "latest",
-    "font-awesome-sass": "latest"
+    "bootstrap-sass-official": "latest",
+    "angular": "latest"
   }
 }
