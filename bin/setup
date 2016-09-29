@@ -27,4 +27,3 @@ Dir.chdir APP_ROOT do
   puts "\n== Restarting application server =="
   system "touch tmp/restart.txt"
 end
-# random comment to force update
