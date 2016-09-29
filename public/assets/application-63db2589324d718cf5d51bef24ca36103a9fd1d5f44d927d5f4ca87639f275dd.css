@@ -13462,7 +13462,7 @@ hr {
 /* line 270, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #services h2 {
   color: #26B4E7;
-  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+  text-shadow: -3px -3px 4 #fff, 3px -3px 4 #fff, -3px 3px 4 #fff, 3px 3px 4 #fff;
 }
 
 /* line 278, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
@@ -13470,52 +13470,53 @@ hr {
   font-size: 20px;
   font-weight: 600;
   color: #26B4E7;
-  -webkit-text-stroke: 4px #000000;
-}
-
-/* line 284, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
-#services p {
-  color: rgba(38, 180, 231, 0.7);
-  -webkit-text-stroke: 2px #000000;
+  text-shadow: -3px -3px 4 #000, 3px -3px 4 #000, -3px 3px 4 #000, 3px 3px 4 #000;
 }
 
 /* line 288, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+#services p {
+  color: rgba(38, 180, 231, 0.7);
+  text-shadow: -3px -3px 4 #000, 3px -3px 4 #000, -3px 3px 4 #000, 3px 3px 4 #000;
+}
+
+/* line 296, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .space {
   margin-top: 40px;
 }
 
-/* line 291, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 299, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #services i.fa {
   font-size: 36px;
-  color: #ffffff;
+  color: #26B4E7;
   transition: all 0.5s;
+  text-shadow: -3px -3px 4 #fff, 3px -3px 4 #fff, -3px 3px 4 #fff, 3px 3px 4 #fff;
 }
 
 /* Gallery Section */
-/* line 297, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 310, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #works {
   padding: 120px 0;
   background: #f6f6f6;
 }
 
-/* line 301, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 314, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .categories {
   padding-bottom: 30px;
   text-align: center;
 }
 
-/* line 305, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 318, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 ul.cat li {
   display: inline-block;
 }
 
-/* line 308, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 321, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 ol.type li {
   display: inline-block;
   margin-left: 20px;
 }
 
-/* line 312, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 325, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 ol.type li a {
   color: #777;
   padding: 8px 16px;
@@ -13523,31 +13524,31 @@ ol.type li a {
   border-radius: 2px;
 }
 
-/* line 318, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 331, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 ol.type li a.active {
   color: #f6f6f6;
   border: 1px solid #cf5022;
   background: #cf5022;
 }
 
-/* line 323, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 336, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 ol.type li a:hover {
   color: #f6f6f6;
   border: 1px solid #cf5022;
   background: #cf5022;
 }
 
-/* line 328, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 341, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 331, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 344, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .isotope-hidden.isotope-item {
   z-index: 1;
 }
 
-/* line 334, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 347, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .isotope, .isotope .isotope-item {
   /* change duration value to whatever you like */
   -webkit-transition-duration: 0.8s;
@@ -13555,14 +13556,14 @@ ol.type li a:hover {
   transition-duration: 0.8s;
 }
 
-/* line 340, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 353, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .isotope-item {
   margin-right: -1px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-/* line 345, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 358, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .isotope {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -13571,7 +13572,7 @@ ol.type li a:hover {
   transition-property: height, width;
 }
 
-/* line 352, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 365, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .isotope .isotope-item {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -13580,19 +13581,19 @@ ol.type li a:hover {
   transition-property: transform, opacity;
 }
 
-/* line 359, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 372, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .portfolio-item {
   margin-bottom: 30px;
 }
 
-/* line 362, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 375, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .portfolio-item .hover-bg {
   max-height: 190px;
   overflow: hidden;
   position: relative;
 }
 
-/* line 367, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 380, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .hover-bg .hover-text {
   position: absolute;
   text-align: center;
@@ -13606,7 +13607,7 @@ ol.type li a:hover {
   transition: all 0.5s;
 }
 
-/* line 379, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 392, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .hover-bg .hover-text > h4 {
   opacity: 0;
   -webkit-transform: translateY(100%);
@@ -13615,7 +13616,7 @@ ol.type li a:hover {
   color: #f6f6f6;
 }
 
-/* line 386, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 399, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .hover-bg:hover .hover-text > h4 {
   opacity: 1;
   -webkit-backface-visibility: hidden;
@@ -13623,7 +13624,7 @@ ol.type li a:hover {
   transform: translateY(0);
 }
 
-/* line 392, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 405, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .hover-bg .hover-text > p {
   opacity: 0;
   -webkit-transform: translateY(100%);
@@ -13631,7 +13632,7 @@ ol.type li a:hover {
   transition: all 0.3s;
 }
 
-/* line 398, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 411, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .hover-bg:hover .hover-text > p {
   opacity: 1;
   -webkit-backface-visibility: hidden;
@@ -13639,7 +13640,7 @@ ol.type li a:hover {
   transform: translateY(0);
 }
 
-/* line 404, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 417, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .hover-bg .hover-text > i {
   opacity: 0;
   -webkit-transform: translateY(0);
@@ -13647,7 +13648,7 @@ ol.type li a:hover {
   transition: all 0.3s;
 }
 
-/* line 410, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 423, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .hover-bg:hover .hover-text > i {
   opacity: 1;
   -webkit-backface-visibility: hidden;
@@ -13655,12 +13656,12 @@ ol.type li a:hover {
   transform: translateY(100%);
 }
 
-/* line 416, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 429, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .hover-bg:hover .hover-text {
   opacity: 1;
 }
 
-/* line 419, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 432, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #works i.fa {
   font-size: 20px;
   padding: 5px;
@@ -13668,13 +13669,13 @@ ol.type li a:hover {
 }
 
 /* Team Section */
-/* line 425, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 438, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #team {
   padding: 140px 0;
   background: #e6e6e6;
 }
 
-/* line 429, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 442, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 img.img-thumbnail.team-img {
   width: 200px;
   height: 200px;
@@ -13683,20 +13684,20 @@ img.img-thumbnail.team-img {
   background-color: #f6f6f6;
 }
 
-/* line 436, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 449, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #team .thumbnail {
   background: transparent;
   border: 0;
 }
 
-/* line 440, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 453, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #team .thumbnail .caption {
   padding: 9px;
   color: #777;
 }
 
 /* Testimonials Section */
-/* line 445, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 458, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #testimonials {
   background: url("/assets/43-783bc03ad9e98645fb19f65fb8e5d45d40c422e5fe77ac5fe56e660186745463.jpg");
   background-size: cover;
@@ -13705,12 +13706,12 @@ img.img-thumbnail.team-img {
   padding: 140px 0;
 }
 
-/* line 452, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 465, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #testimonials h2 {
   color: #f6f6f6;
 }
 
-/* line 455, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 468, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #testimonials blockquote {
   position: relative;
   margin-top: 20px;
@@ -13719,14 +13720,14 @@ img.img-thumbnail.team-img {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 462, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 475, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #testimonials i {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.3);
   margin-bottom: 14px;
 }
 
-/* line 467, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 480, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #testimonials .clients-name {
   display: inline-block;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -13735,13 +13736,13 @@ img.img-thumbnail.team-img {
 }
 
 /* Contact Section */
-/* line 474, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 487, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact {
   padding: 120px 0 40px 0;
   background: #f6f6f6;
 }
 
-/* line 478, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 491, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact .contact-item {
   padding: 10px;
   margin: 10px;
@@ -13749,32 +13750,32 @@ img.img-thumbnail.team-img {
   border-radius: 4px;
 }
 
-/* line 484, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 497, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact h3 {
   font-size: 20px;
   font-weight: 400;
   margin-top: 40px;
 }
 
-/* line 489, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 502, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact form {
   padding: 30px 0;
 }
 
-/* line 492, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 505, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact i.fa {
   font-size: 22px;
   color: #26B4E7;
   margin-bottom: 10px;
 }
 
-/* line 497, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 510, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact .text-danger {
   color: #ff3333;
   text-align: left;
 }
 
-/* line 501, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 514, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 label {
   font-size: 12px;
   font-weight: 400;
@@ -13782,7 +13783,7 @@ label {
   float: left;
 }
 
-/* line 507, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 520, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact .form-control {
   display: block;
   width: 100%;
@@ -13801,7 +13802,7 @@ label {
   transition: none;
 }
 
-/* line 524, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 537, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact .form-control:focus {
   border-color: inherit;
   outline: 0;
@@ -13809,7 +13810,7 @@ label {
   box-shadow: transparent;
 }
 
-/* line 530, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 543, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact .btn-default {
   background: #cf5022;
   border: 0;
@@ -13820,13 +13821,13 @@ label {
   font-size: 15px;
 }
 
-/* line 539, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 552, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact .btn-default:hover, #contact .btn-default:focus {
   color: #f6f6f6;
   background: #a13e1a;
 }
 
-/* line 543, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 556, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 .btn:active, .btn.active {
   background-image: none;
   outline: 0;
@@ -13834,24 +13835,24 @@ label {
   box-shadow: none;
 }
 
-/* line 549, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 562, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
   outline: none;
   outline-offset: none;
 }
 
-/* line 553, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 566, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact .social ul {
   margin-top: 30px;
 }
 
-/* line 556, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 569, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact .social ul li {
   display: inline-block;
   margin: 0 20px;
 }
 
-/* line 560, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 573, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact .social i.fa {
   font-size: 24px;
   padding-top: 8px;
@@ -13860,13 +13861,13 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   transition: all 0.3s;
 }
 
-/* line 567, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 580, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #contact .social i.fa:hover {
   color: #a13e1a;
 }
 
 /* Footer Section*/
-/* line 571, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 584, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #footer {
   background: #333;
   color: #777;
@@ -13874,30 +13875,30 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   text-align: center;
 }
 
-/* line 577, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 590, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #footer a {
   color: #999999;
 }
 
-/* line 580, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 593, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #footer a:hover, a:focus {
   color: #26B4E7;
 }
 
-/* line 583, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+/* line 596, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
 #footer p {
   font-size: 13px;
   margin-top: 10px;
 }
 
 @media (max-width: 768px) {
-  /* line 589, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+  /* line 602, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
   .hover-bg .hover-text {
     padding: 20%;
   }
 }
 @media (max-width: 640px) {
-  /* line 595, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
+  /* line 608, /media/sf_apps/literallight/app/assets/stylesheets/style.scss */
   #intro .intro-body H1 {
     font-size: 36px;
   }
