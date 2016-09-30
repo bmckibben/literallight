@@ -74,23 +74,15 @@
       <div class="col-md-4">
         <div class="about-text">
           <h4>Who I Am</h4>
-          <p>An experienced full stack web application developer.</p>
-          <p>I am a puzzle solver. I have the ability to create component parts and assemble them so they work in the most efficient way.</p>
+          <p>A puzzle solver. I have an innate sense of pattern recognition. I have the ability to create component parts and assemble them so they work in the most efficient way.</p>
+          <p>I am an experienced full stack web application developer.</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="about-text">
           <h4>This Website</h4>
-          <p>This is a showcase of my technical expertise using:</p>
-          <ul>
-              <li>Ruby <%= RUBY_VERSION %></li>
-              <li>Rails <%= Rails.version %></li>
-              <li>MongoDB/Mongoid</li>
-              <li>jQuery</li>
-              <li>Twitter Bootstrap</li> 
-              <li>Devise</li>
-              <li>Pundit</li>     
-          </ul>
+          <p>Remember those &ldquo;Under Construction&rdquo; pages that were the anathema of ancient web development? This page is always under construction. It is my sandbox and a showcase of my technical expertise.</p>
+          <p>It is an implementation of a template by Templatewire for a Ruby on Rails environment.</p>
         </div>
       </div>
     </div>
@@ -375,28 +367,33 @@
     </div>
     <div class="col-md-8 col-md-offset-2">
       <h3>Leave us a message</h3>
+<div data-ng-app="appWorklist">
+  <div ng-controller="ctlrWorklist">
+    <form ng-class="form" ng-submit="sendEmail(email_name,email_address,email_message)">  
       <form name="sentMessage" id="contactForm" novalidate>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" id="contactName" class="form-control" placeholder="Name" required="required">
+              <input type="text" id="contactName" name="email_name" class="form-control" placeholder="Name" required="required" ng-model="email_name">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="email" id="contactEmail" class="form-control" placeholder="Email" required="required">
+              <input type="email" id="contactEmail" name="email_address" class="form-control" placeholder="Email" required="required" ng-model="email_address">
               <p class="help-block text-danger"></p>
             </div>
           </div>
         </div>
         <div class="form-group">
-          <textarea name="message" id="contactMessage" class="form-control" rows="4" placeholder="Message" required></textarea>
+          <textarea name="email_message" id="contactMessage" class="form-control" rows="4" placeholder="Message" required ng-model="email_message"></textarea>
           <p class="help-block text-danger"></p>
         </div>
         <div id="success"></div>
         <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
+    </div>
+  </div>
       <div class="social">
         <h3>Follow me</h3>
         <ul>
