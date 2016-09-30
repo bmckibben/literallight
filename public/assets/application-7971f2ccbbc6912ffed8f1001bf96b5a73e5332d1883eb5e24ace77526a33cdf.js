@@ -45489,6 +45489,24 @@ appMusing.controller('GreetingController', [
     $scope.greeting = 'Sup!';
   }
 ]);
+angular.module('appContact', [])
+.controller("ctlrContact", function($scope, $http, $interval){
+ 
+
+            $scope.sendEmail = function(worklist_id, worklist_note){
+                       
+                        $http.post("/pipeline/worklists/update_note",  //"/pipeline/worklists/update_note"
+                                    {"worklist_id":worklist_id,"note":worklist_note }
+                                    )
+                                    .success(function(data){
+                                                alert("Your email has been sent!");
+                                    })
+                                    .error(function(data){
+                                                alert("Your email was NOT sent!");
+                                    });
+            };
+ 
+});
 $(function() {
 
     $("#contactName,#contactEmail,#contactMessage").jqBootstrapValidation({
