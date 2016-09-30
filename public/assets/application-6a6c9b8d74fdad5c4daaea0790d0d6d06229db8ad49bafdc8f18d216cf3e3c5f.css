@@ -12436,6 +12436,1072 @@ label {
   width: 100%;
 }
 
+/* line 1, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_top, div.pp_default .pp_top .pp_middle, div.pp_default .pp_top .pp_left, div.pp_default .pp_top .pp_right, div.pp_default .pp_bottom, div.pp_default .pp_bottom .pp_left, div.pp_default .pp_bottom .pp_middle, div.pp_default .pp_bottom .pp_right {
+  height: 13px;
+}
+
+/* line 2, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_top .pp_left {
+  background: url("/assets/prettyPhoto/default/sprite-009ea272018963349c464e648fc440cfbc0065c9d220dcd9e79fb12047e387a2.png") -78px -93px no-repeat;
+}
+
+/* line 3, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_top .pp_middle {
+  background: url("/assets/prettyPhoto/default/sprite_x-cf8a95c98411826d030dee08daf6ec8caeabab42a29143ab3d8eb69fcd30add5.png") top left repeat-x;
+}
+
+/* line 4, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_top .pp_right {
+  background: url("/assets/prettyPhoto/default/sprite-009ea272018963349c464e648fc440cfbc0065c9d220dcd9e79fb12047e387a2.png") -112px -93px no-repeat;
+}
+
+/* line 5, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_content .ppt {
+  color: #f8f8f8;
+}
+
+/* line 6, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_content_container .pp_left {
+  background: url("/assets/prettyPhoto/default/sprite_y-7385cfef6ca7555144d6e75b17a3805b8c46d6663d06b7b4692327b92251fcac.png") -7px 0 repeat-y;
+  padding-left: 13px;
+}
+
+/* line 7, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_content_container .pp_right {
+  background: url("/assets/prettyPhoto/default/sprite_y-7385cfef6ca7555144d6e75b17a3805b8c46d6663d06b7b4692327b92251fcac.png") top right repeat-y;
+  padding-right: 13px;
+}
+
+/* line 8, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_next:hover {
+  background: url("/assets/prettyPhoto/default/sprite_next-75b7bb1e52ae9d0a7ee3647e3c840aa5b89135b6125badb2d55280504488072a.png") center right no-repeat;
+  cursor: pointer;
+}
+
+/* line 9, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_previous:hover {
+  background: url("/assets/prettyPhoto/default/sprite_prev-0bab08fa3983682b543c484a6a891d0ed725f83ff3e81efa42a198546c4daea2.png") center left no-repeat;
+  cursor: pointer;
+}
+
+/* line 10, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_expand {
+  background: url("/assets/prettyPhoto/default/sprite-009ea272018963349c464e648fc440cfbc0065c9d220dcd9e79fb12047e387a2.png") 0 -29px no-repeat;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+}
+
+/* line 11, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_expand:hover {
+  background: url("/assets/prettyPhoto/default/sprite-009ea272018963349c464e648fc440cfbc0065c9d220dcd9e79fb12047e387a2.png") 0 -56px no-repeat;
+  cursor: pointer;
+}
+
+/* line 12, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_contract {
+  background: url("/assets/prettyPhoto/default/sprite-009ea272018963349c464e648fc440cfbc0065c9d220dcd9e79fb12047e387a2.png") 0 -84px no-repeat;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+}
+
+/* line 13, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_contract:hover {
+  background: url("/assets/prettyPhoto/default/sprite-009ea272018963349c464e648fc440cfbc0065c9d220dcd9e79fb12047e387a2.png") 0 -113px no-repeat;
+  cursor: pointer;
+}
+
+/* line 14, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_close {
+  width: 30px;
+  height: 30px;
+  background: url("/assets/prettyPhoto/default/sprite-009ea272018963349c464e648fc440cfbc0065c9d220dcd9e79fb12047e387a2.png") 2px 1px no-repeat;
+  cursor: pointer;
+}
+
+/* line 15, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_gallery ul li a {
+  background: url("/assets/prettyPhoto/default/default_thumb-82ddbf7fd3fd6b045fc6667a94a3dad1301a1b7572bc9c8003b9df22d46fb2ba.png") center center #f8f8f8;
+  border: 1px solid #aaa;
+}
+
+/* line 16, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_social {
+  margin-top: 7px;
+}
+
+/* line 17, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_gallery a.pp_arrow_previous, div.pp_default .pp_gallery a.pp_arrow_next {
+  position: static;
+  left: auto;
+}
+
+/* line 18, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_nav .pp_play, div.pp_default .pp_nav .pp_pause {
+  background: url("/assets/prettyPhoto/default/sprite-009ea272018963349c464e648fc440cfbc0065c9d220dcd9e79fb12047e387a2.png") -51px 1px no-repeat;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 19, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_nav .pp_pause {
+  background-position: -51px -29px;
+}
+
+/* line 20, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default a.pp_arrow_previous, div.pp_default a.pp_arrow_next {
+  background: url("/assets/prettyPhoto/default/sprite-009ea272018963349c464e648fc440cfbc0065c9d220dcd9e79fb12047e387a2.png") -31px -3px no-repeat;
+  height: 20px;
+  width: 20px;
+  margin: 4px 0 0;
+}
+
+/* line 21, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default a.pp_arrow_next {
+  left: 52px;
+  background-position: -82px -3px;
+}
+
+/* line 22, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_content_container .pp_details {
+  margin-top: 5px;
+}
+
+/* line 23, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_nav {
+  clear: none;
+  height: 30px;
+  width: 110px;
+  position: relative;
+}
+
+/* line 24, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_nav .currentTextHolder {
+  font-family: Georgia;
+  font-style: italic;
+  color: #999;
+  font-size: 11px;
+  left: 75px;
+  line-height: 25px;
+  position: absolute;
+  top: 2px;
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+/* line 25, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_close:hover, div.pp_default .pp_nav .pp_play:hover, div.pp_default .pp_nav .pp_pause:hover, div.pp_default .pp_arrow_next:hover, div.pp_default .pp_arrow_previous:hover {
+  opacity: 0.7;
+}
+
+/* line 26, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_description {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  margin: 5px 50px 5px 0;
+}
+
+/* line 27, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_bottom .pp_left {
+  background: url("/assets/prettyPhoto/default/sprite-009ea272018963349c464e648fc440cfbc0065c9d220dcd9e79fb12047e387a2.png") -78px -127px no-repeat;
+}
+
+/* line 28, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_bottom .pp_middle {
+  background: url("/assets/prettyPhoto/default/sprite_x-cf8a95c98411826d030dee08daf6ec8caeabab42a29143ab3d8eb69fcd30add5.png") bottom left repeat-x;
+}
+
+/* line 29, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_bottom .pp_right {
+  background: url("/assets/prettyPhoto/default/sprite-009ea272018963349c464e648fc440cfbc0065c9d220dcd9e79fb12047e387a2.png") -112px -127px no-repeat;
+}
+
+/* line 30, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_loaderIcon {
+  background: url("/assets/prettyPhoto/default/loader-255f2566cd540a486b952938766fe509402c88f306cb501345131d86ad3ef978.gif") center center no-repeat;
+}
+
+/* line 31, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_top .pp_left {
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") -88px -53px no-repeat;
+}
+
+/* line 32, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_top .pp_right {
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") -110px -53px no-repeat;
+}
+
+/* line 33, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_next:hover {
+  background: url("/assets/prettyPhoto/light_rounded/btnNext-f70f9ba6b6a11baceab4d76131276c68a8381739f8528cd4577ed0aced90d9b7.png") center right no-repeat;
+  cursor: pointer;
+}
+
+/* line 34, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_previous:hover {
+  background: url("/assets/prettyPhoto/light_rounded/btnPrevious-fa43438befeeef390166ce541dbd8f585097629cb2df6ab3d6a5abc72d3413dc.png") center left no-repeat;
+  cursor: pointer;
+}
+
+/* line 35, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_expand {
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") -31px -26px no-repeat;
+  cursor: pointer;
+}
+
+/* line 36, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_expand:hover {
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") -31px -47px no-repeat;
+  cursor: pointer;
+}
+
+/* line 37, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_contract {
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") 0 -26px no-repeat;
+  cursor: pointer;
+}
+
+/* line 38, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_contract:hover {
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") 0 -47px no-repeat;
+  cursor: pointer;
+}
+
+/* line 39, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_close {
+  width: 75px;
+  height: 22px;
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") -1px -1px no-repeat;
+  cursor: pointer;
+}
+
+/* line 40, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_nav .pp_play {
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") -1px -100px no-repeat;
+  height: 15px;
+  width: 14px;
+}
+
+/* line 41, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_nav .pp_pause {
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") -24px -100px no-repeat;
+  height: 15px;
+  width: 14px;
+}
+
+/* line 42, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_arrow_previous {
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") 0 -71px no-repeat;
+}
+
+/* line 43, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_arrow_next {
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") -22px -71px no-repeat;
+}
+
+/* line 44, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_bottom .pp_left {
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") -88px -80px no-repeat;
+}
+
+/* line 45, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_bottom .pp_right {
+  background: url("/assets/prettyPhoto/light_rounded/sprite-fb578ff5ab573efe22a87d63d027f7afee1fa949593b1ff2053b490bc845771a.png") -110px -80px no-repeat;
+}
+
+/* line 46, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_top .pp_left {
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") -88px -53px no-repeat;
+}
+
+/* line 47, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_top .pp_right {
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") -110px -53px no-repeat;
+}
+
+/* line 48, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_content_container .pp_left {
+  background: url("/assets/prettyPhoto/dark_rounded/contentPattern-0bdac66efbb11777d972f6a5211490e346d4d82776184ddf7c8040894e1e3a66.png") top left repeat-y;
+}
+
+/* line 49, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_content_container .pp_right {
+  background: url("/assets/prettyPhoto/dark_rounded/contentPattern-0bdac66efbb11777d972f6a5211490e346d4d82776184ddf7c8040894e1e3a66.png") top right repeat-y;
+}
+
+/* line 50, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_next:hover {
+  background: url("/assets/prettyPhoto/dark_rounded/btnNext-f70f9ba6b6a11baceab4d76131276c68a8381739f8528cd4577ed0aced90d9b7.png") center right no-repeat;
+  cursor: pointer;
+}
+
+/* line 51, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_previous:hover {
+  background: url("/assets/prettyPhoto/dark_rounded/btnPrevious-fa43438befeeef390166ce541dbd8f585097629cb2df6ab3d6a5abc72d3413dc.png") center left no-repeat;
+  cursor: pointer;
+}
+
+/* line 52, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_expand {
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") -31px -26px no-repeat;
+  cursor: pointer;
+}
+
+/* line 53, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_expand:hover {
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") -31px -47px no-repeat;
+  cursor: pointer;
+}
+
+/* line 54, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_contract {
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") 0 -26px no-repeat;
+  cursor: pointer;
+}
+
+/* line 55, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_contract:hover {
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") 0 -47px no-repeat;
+  cursor: pointer;
+}
+
+/* line 56, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_close {
+  width: 75px;
+  height: 22px;
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") -1px -1px no-repeat;
+  cursor: pointer;
+}
+
+/* line 57, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_description {
+  margin-right: 85px;
+  color: #fff;
+}
+
+/* line 58, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_nav .pp_play {
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") -1px -100px no-repeat;
+  height: 15px;
+  width: 14px;
+}
+
+/* line 59, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_nav .pp_pause {
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") -24px -100px no-repeat;
+  height: 15px;
+  width: 14px;
+}
+
+/* line 60, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_arrow_previous {
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") 0 -71px no-repeat;
+}
+
+/* line 61, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_arrow_next {
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") -22px -71px no-repeat;
+}
+
+/* line 62, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_bottom .pp_left {
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") -88px -80px no-repeat;
+}
+
+/* line 63, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_bottom .pp_right {
+  background: url("/assets/prettyPhoto/dark_rounded/sprite-183773346ca33ad6935e01714aab0e55d315b72767d3aaa6b51180367826091a.png") -110px -80px no-repeat;
+}
+
+/* line 64, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_loaderIcon {
+  background: url("/assets/prettyPhoto/dark_rounded/loader-ccd39b8ba77b46e92151135ac4749d1fa2e03fb5bc30b475c9ca11b8c95ef64e.gif") center center no-repeat;
+}
+
+/* line 65, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_left, div.dark_square .pp_middle, div.dark_square .pp_right, div.dark_square .pp_content {
+  background: #000;
+}
+
+/* line 66, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_description {
+  color: #fff;
+  margin: 0 85px 0 0;
+}
+
+/* line 67, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_loaderIcon {
+  background: url("/assets/prettyPhoto/dark_square/loader-ccd39b8ba77b46e92151135ac4749d1fa2e03fb5bc30b475c9ca11b8c95ef64e.gif") center center no-repeat;
+}
+
+/* line 68, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_expand {
+  background: url("/assets/prettyPhoto/dark_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") -31px -26px no-repeat;
+  cursor: pointer;
+}
+
+/* line 69, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_expand:hover {
+  background: url("/assets/prettyPhoto/dark_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") -31px -47px no-repeat;
+  cursor: pointer;
+}
+
+/* line 70, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_contract {
+  background: url("/assets/prettyPhoto/dark_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") 0 -26px no-repeat;
+  cursor: pointer;
+}
+
+/* line 71, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_contract:hover {
+  background: url("/assets/prettyPhoto/dark_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") 0 -47px no-repeat;
+  cursor: pointer;
+}
+
+/* line 72, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_close {
+  width: 75px;
+  height: 22px;
+  background: url("/assets/prettyPhoto/dark_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") -1px -1px no-repeat;
+  cursor: pointer;
+}
+
+/* line 73, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_nav {
+  clear: none;
+}
+
+/* line 74, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_nav .pp_play {
+  background: url("/assets/prettyPhoto/dark_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") -1px -100px no-repeat;
+  height: 15px;
+  width: 14px;
+}
+
+/* line 75, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_nav .pp_pause {
+  background: url("/assets/prettyPhoto/dark_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") -24px -100px no-repeat;
+  height: 15px;
+  width: 14px;
+}
+
+/* line 76, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_arrow_previous {
+  background: url("/assets/prettyPhoto/dark_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") 0 -71px no-repeat;
+}
+
+/* line 77, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_arrow_next {
+  background: url("/assets/prettyPhoto/dark_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") -22px -71px no-repeat;
+}
+
+/* line 78, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_next:hover {
+  background: url("/assets/prettyPhoto/dark_square/btnNext-f70f9ba6b6a11baceab4d76131276c68a8381739f8528cd4577ed0aced90d9b7.png") center right no-repeat;
+  cursor: pointer;
+}
+
+/* line 79, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_square .pp_previous:hover {
+  background: url("/assets/prettyPhoto/dark_square/btnPrevious-fa43438befeeef390166ce541dbd8f585097629cb2df6ab3d6a5abc72d3413dc.png") center left no-repeat;
+  cursor: pointer;
+}
+
+/* line 80, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_square .pp_expand {
+  background: url("/assets/prettyPhoto/light_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") -31px -26px no-repeat;
+  cursor: pointer;
+}
+
+/* line 81, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_square .pp_expand:hover {
+  background: url("/assets/prettyPhoto/light_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") -31px -47px no-repeat;
+  cursor: pointer;
+}
+
+/* line 82, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_square .pp_contract {
+  background: url("/assets/prettyPhoto/light_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") 0 -26px no-repeat;
+  cursor: pointer;
+}
+
+/* line 83, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_square .pp_contract:hover {
+  background: url("/assets/prettyPhoto/light_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") 0 -47px no-repeat;
+  cursor: pointer;
+}
+
+/* line 84, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_square .pp_close {
+  width: 75px;
+  height: 22px;
+  background: url("/assets/prettyPhoto/light_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") -1px -1px no-repeat;
+  cursor: pointer;
+}
+
+/* line 85, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_square .pp_nav .pp_play {
+  background: url("/assets/prettyPhoto/light_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") -1px -100px no-repeat;
+  height: 15px;
+  width: 14px;
+}
+
+/* line 86, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_square .pp_nav .pp_pause {
+  background: url("/assets/prettyPhoto/light_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") -24px -100px no-repeat;
+  height: 15px;
+  width: 14px;
+}
+
+/* line 87, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_square .pp_arrow_previous {
+  background: url("/assets/prettyPhoto/light_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") 0 -71px no-repeat;
+}
+
+/* line 88, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_square .pp_arrow_next {
+  background: url("/assets/prettyPhoto/light_square/sprite-ec6447bf74951685ad6773ad32a9a9123af6fed69fc20eefcaa33956f315eebc.png") -22px -71px no-repeat;
+}
+
+/* line 89, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_square .pp_next:hover {
+  background: url("/assets/prettyPhoto/light_square/btnNext-f70f9ba6b6a11baceab4d76131276c68a8381739f8528cd4577ed0aced90d9b7.png") center right no-repeat;
+  cursor: pointer;
+}
+
+/* line 90, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_square .pp_previous:hover {
+  background: url("/assets/prettyPhoto/light_square/btnPrevious-fa43438befeeef390166ce541dbd8f585097629cb2df6ab3d6a5abc72d3413dc.png") center left no-repeat;
+  cursor: pointer;
+}
+
+/* line 91, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_top .pp_left {
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") -88px -53px no-repeat;
+}
+
+/* line 92, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_top .pp_middle {
+  background: url("/assets/prettyPhoto/facebook/contentPatternTop-41960505e78c2519594af3bdea17ddc116413fe313e98c5b206bad5abd1e7718.png") top left repeat-x;
+}
+
+/* line 93, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_top .pp_right {
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") -110px -53px no-repeat;
+}
+
+/* line 94, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_content_container .pp_left {
+  background: url("/assets/prettyPhoto/facebook/contentPatternLeft-c9183c4ea5f592f5db89558b91abc45d6d10ca383f1ce41233900b1cbacff308.png") top left repeat-y;
+}
+
+/* line 95, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_content_container .pp_right {
+  background: url("/assets/prettyPhoto/facebook/contentPatternRight-2f47a984b0a0f656080dcf3b87cc75d2000344512007b2cbdbdec790f92c23db.png") top right repeat-y;
+}
+
+/* line 96, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_expand {
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") -31px -26px no-repeat;
+  cursor: pointer;
+}
+
+/* line 97, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_expand:hover {
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") -31px -47px no-repeat;
+  cursor: pointer;
+}
+
+/* line 98, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_contract {
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") 0 -26px no-repeat;
+  cursor: pointer;
+}
+
+/* line 99, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_contract:hover {
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") 0 -47px no-repeat;
+  cursor: pointer;
+}
+
+/* line 100, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_close {
+  width: 22px;
+  height: 22px;
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") -1px -1px no-repeat;
+  cursor: pointer;
+}
+
+/* line 101, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_description {
+  margin: 0 37px 0 0;
+}
+
+/* line 102, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_loaderIcon {
+  background: url("/assets/prettyPhoto/facebook/loader-68255b5e88e8c44694211d8d86c3460be92bb6f3d1dd252dc0bf783e833cb067.gif") center center no-repeat;
+}
+
+/* line 103, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_arrow_previous {
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") 0 -71px no-repeat;
+  height: 22px;
+  margin-top: 0;
+  width: 22px;
+}
+
+/* line 104, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_arrow_previous.disabled {
+  background-position: 0 -96px;
+  cursor: default;
+}
+
+/* line 105, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_arrow_next {
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") -32px -71px no-repeat;
+  height: 22px;
+  margin-top: 0;
+  width: 22px;
+}
+
+/* line 106, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_arrow_next.disabled {
+  background-position: -32px -96px;
+  cursor: default;
+}
+
+/* line 107, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_nav {
+  margin-top: 0;
+}
+
+/* line 108, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_nav p {
+  font-size: 15px;
+  padding: 0 3px 0 4px;
+}
+
+/* line 109, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_nav .pp_play {
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") -1px -123px no-repeat;
+  height: 22px;
+  width: 22px;
+}
+
+/* line 110, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_nav .pp_pause {
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") -32px -123px no-repeat;
+  height: 22px;
+  width: 22px;
+}
+
+/* line 111, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_next:hover {
+  background: url("/assets/prettyPhoto/facebook/btnNext-ff251aca3496a2c0ce25a4b05a619a61d5a4867fb7165ae816e202cde2103b4f.png") center right no-repeat;
+  cursor: pointer;
+}
+
+/* line 112, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_previous:hover {
+  background: url("/assets/prettyPhoto/facebook/btnPrevious-84db4592c7e89984d8ae40f81b779d97b6bb55d4741bba4329033ec4f854c1f1.png") center left no-repeat;
+  cursor: pointer;
+}
+
+/* line 113, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_bottom .pp_left {
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") -88px -80px no-repeat;
+}
+
+/* line 114, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_bottom .pp_middle {
+  background: url("/assets/prettyPhoto/facebook/contentPatternBottom-565ed0e8265b719692eff0e31356ece9c4e4b9ddd753b0858e0c2277668d184d.png") top left repeat-x;
+}
+
+/* line 115, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.facebook .pp_bottom .pp_right {
+  background: url("/assets/prettyPhoto/facebook/sprite-bcab8884b5a7e525cb27ea39cab9166dface8ff7028d8b311fec10971944529d.png") -110px -80px no-repeat;
+}
+
+/* line 116, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_pic_holder a:focus {
+  outline: none;
+}
+
+/* line 117, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_overlay {
+  background: #000;
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9500;
+}
+
+/* line 118, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_pic_holder {
+  display: none;
+  position: absolute;
+  width: 100px;
+  z-index: 10000;
+}
+
+/* line 119, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_content {
+  height: 40px;
+  min-width: 40px;
+}
+
+/* line 120, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+* html .pp_content {
+  width: 40px;
+}
+
+/* line 121, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_content_container {
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 122, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_content_container .pp_left {
+  padding-left: 20px;
+}
+
+/* line 123, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_content_container .pp_right {
+  padding-right: 20px;
+}
+
+/* line 124, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_content_container .pp_details {
+  float: left;
+  margin: 10px 0 2px;
+}
+
+/* line 125, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_description {
+  display: none;
+  margin: 0;
+}
+
+/* line 126, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_social {
+  float: left;
+  margin: 0;
+}
+
+/* line 127, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_social .facebook {
+  float: left;
+  margin-left: 5px;
+  width: 55px;
+  overflow: hidden;
+}
+
+/* line 128, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_social .twitter {
+  float: left;
+}
+
+/* line 129, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_nav {
+  clear: right;
+  float: left;
+  margin: 3px 10px 0 0;
+}
+
+/* line 130, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_nav p {
+  float: left;
+  white-space: nowrap;
+  margin: 2px 4px;
+}
+
+/* line 131, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_nav .pp_play, .pp_nav .pp_pause {
+  float: left;
+  margin-right: 4px;
+  text-indent: -10000px;
+}
+
+/* line 132, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+a.pp_arrow_previous, a.pp_arrow_next {
+  display: block;
+  float: left;
+  height: 15px;
+  margin-top: 3px;
+  overflow: hidden;
+  text-indent: -10000px;
+  width: 14px;
+}
+
+/* line 133, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_hoverContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+/* line 134, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_gallery {
+  display: none;
+  left: 50%;
+  margin-top: -50px;
+  position: absolute;
+  z-index: 10000;
+}
+
+/* line 135, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_gallery div {
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 136, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_gallery ul {
+  float: left;
+  height: 35px;
+  position: relative;
+  white-space: nowrap;
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+
+/* line 137, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_gallery ul a {
+  border: 1px rgba(0, 0, 0, 0.5) solid;
+  display: block;
+  float: left;
+  height: 33px;
+  overflow: hidden;
+}
+
+/* line 138, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_gallery ul a img {
+  border: 0;
+}
+
+/* line 139, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_gallery li {
+  display: block;
+  float: left;
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+
+/* line 140, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_gallery li.default a {
+  background: url("/assets/prettyPhoto/facebook/default_thumbnail-9468bfe77bb8540573a06e0e31b0577520cb5c12c575fdea39076a43c5764ecb.gif") 0 0 no-repeat;
+  display: block;
+  height: 33px;
+  width: 50px;
+}
+
+/* line 141, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_gallery .pp_arrow_previous, .pp_gallery .pp_arrow_next {
+  margin-top: 7px !important;
+}
+
+/* line 142, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+a.pp_next {
+  background: url("/assets/prettyPhoto/light_rounded/btnNext-f70f9ba6b6a11baceab4d76131276c68a8381739f8528cd4577ed0aced90d9b7.png") 10000px 10000px no-repeat;
+  display: block;
+  float: right;
+  height: 100%;
+  text-indent: -10000px;
+  width: 49%;
+}
+
+/* line 143, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+a.pp_previous {
+  background: url("/assets/prettyPhoto/light_rounded/btnNext-f70f9ba6b6a11baceab4d76131276c68a8381739f8528cd4577ed0aced90d9b7.png") 10000px 10000px no-repeat;
+  display: block;
+  float: left;
+  height: 100%;
+  text-indent: -10000px;
+  width: 49%;
+}
+
+/* line 144, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+a.pp_expand, a.pp_contract {
+  cursor: pointer;
+  display: none;
+  height: 20px;
+  position: absolute;
+  right: 30px;
+  text-indent: -10000px;
+  top: 10px;
+  width: 20px;
+  z-index: 20000;
+}
+
+/* line 145, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+a.pp_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  line-height: 22px;
+  text-indent: -10000px;
+}
+
+/* line 146, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_loaderIcon {
+  display: block;
+  height: 24px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  margin: -12px 0 0 -12px;
+}
+
+/* line 147, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+#pp_full_res {
+  line-height: 1 !important;
+}
+
+/* line 148, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+#pp_full_res .pp_inline {
+  text-align: left;
+}
+
+/* line 149, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+#pp_full_res .pp_inline p {
+  margin: 0 0 15px;
+}
+
+/* line 150, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.ppt {
+  color: #fff;
+  display: none;
+  font-size: 17px;
+  z-index: 9999;
+  margin: 0 0 5px 15px;
+}
+
+/* line 151, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_content, div.light_rounded .pp_content {
+  background-color: #fff;
+}
+
+/* line 152, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default #pp_full_res .pp_inline, div.light_rounded .pp_content .ppt, div.light_rounded #pp_full_res .pp_inline, div.light_square .pp_content .ppt, div.light_square #pp_full_res .pp_inline, div.facebook .pp_content .ppt, div.facebook #pp_full_res .pp_inline {
+  color: #000;
+}
+
+/* line 153, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_gallery ul li a:hover, div.pp_default .pp_gallery ul li.selected a, .pp_gallery ul a:hover, .pp_gallery li.selected a {
+  border-color: #fff;
+}
+
+/* line 154, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.pp_default .pp_details, div.light_rounded .pp_details, div.dark_rounded .pp_details, div.dark_square .pp_details, div.light_square .pp_details, div.facebook .pp_details {
+  position: relative;
+}
+
+/* line 155, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_top .pp_middle, div.light_rounded .pp_content_container .pp_left, div.light_rounded .pp_content_container .pp_right, div.light_rounded .pp_bottom .pp_middle, div.light_square .pp_left, div.light_square .pp_middle, div.light_square .pp_right, div.light_square .pp_content, div.facebook .pp_content {
+  background: #fff;
+}
+
+/* line 156, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_description, div.light_square .pp_description {
+  margin-right: 85px;
+}
+
+/* line 157, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_gallery a.pp_arrow_previous, div.light_rounded .pp_gallery a.pp_arrow_next, div.dark_rounded .pp_gallery a.pp_arrow_previous, div.dark_rounded .pp_gallery a.pp_arrow_next, div.dark_square .pp_gallery a.pp_arrow_previous, div.dark_square .pp_gallery a.pp_arrow_next, div.light_square .pp_gallery a.pp_arrow_previous, div.light_square .pp_gallery a.pp_arrow_next {
+  margin-top: 12px !important;
+}
+
+/* line 158, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_arrow_previous.disabled, div.dark_rounded .pp_arrow_previous.disabled, div.dark_square .pp_arrow_previous.disabled, div.light_square .pp_arrow_previous.disabled {
+  background-position: 0 -87px;
+  cursor: default;
+}
+
+/* line 159, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_arrow_next.disabled, div.dark_rounded .pp_arrow_next.disabled, div.dark_square .pp_arrow_next.disabled, div.light_square .pp_arrow_next.disabled {
+  background-position: -22px -87px;
+  cursor: default;
+}
+
+/* line 160, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.light_rounded .pp_loaderIcon, div.light_square .pp_loaderIcon {
+  background: url("/assets/prettyPhoto/light_rounded/loader-68255b5e88e8c44694211d8d86c3460be92bb6f3d1dd252dc0bf783e833cb067.gif") center center no-repeat;
+}
+
+/* line 161, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .pp_top .pp_middle, div.dark_rounded .pp_content, div.dark_rounded .pp_bottom .pp_middle {
+  background: url("/assets/prettyPhoto/dark_rounded/contentPattern-0bdac66efbb11777d972f6a5211490e346d4d82776184ddf7c8040894e1e3a66.png") top left repeat;
+}
+
+/* line 162, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded .currentTextHolder, div.dark_square .currentTextHolder {
+  color: #c4c4c4;
+}
+
+/* line 163, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+div.dark_rounded #pp_full_res .pp_inline, div.dark_square #pp_full_res .pp_inline {
+  color: #fff;
+}
+
+/* line 164, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_top, .pp_bottom {
+  height: 20px;
+  position: relative;
+}
+
+/* line 165, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+* html .pp_top, * html .pp_bottom {
+  padding: 0 20px;
+}
+
+/* line 166, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_top .pp_left, .pp_bottom .pp_left {
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 20px;
+}
+
+/* line 167, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_top .pp_middle, .pp_bottom .pp_middle {
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  right: 20px;
+}
+
+/* line 168, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+* html .pp_top .pp_middle, * html .pp_bottom .pp_middle {
+  left: 0;
+  position: static;
+}
+
+/* line 169, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_top .pp_right, .pp_bottom .pp_right {
+  height: 20px;
+  left: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+}
+
+/* line 170, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
+.pp_fade, .pp_gallery li.default a img {
+  display: none;
+}
+
 /* line 1, /media/sf_apps/literallight/app/assets/stylesheets/layout.scss */
 html, body {
   height: 100%;
@@ -13902,1069 +14968,4 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   #intro .intro-body H1 {
     font-size: 36px;
   }
-}
-/* line 1, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_top, div.pp_default .pp_top .pp_middle, div.pp_default .pp_top .pp_left, div.pp_default .pp_top .pp_right, div.pp_default .pp_bottom, div.pp_default .pp_bottom .pp_left, div.pp_default .pp_bottom .pp_middle, div.pp_default .pp_bottom .pp_right {
-  height: 13px;
-}
-
-/* line 2, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_top .pp_left {
-  background: url("/assets/prettyPhoto/default/sprite.png") -78px -93px no-repeat;
-}
-
-/* line 3, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_top .pp_middle {
-  background: url("/assets/prettyPhoto/default/sprite_x.png") top left repeat-x;
-}
-
-/* line 4, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_top .pp_right {
-  background: url("/assets/prettyPhoto/default/sprite.png") -112px -93px no-repeat;
-}
-
-/* line 5, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_content .ppt {
-  color: #f8f8f8;
-}
-
-/* line 6, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_content_container .pp_left {
-  background: url("/assets/prettyPhoto/default/sprite_y.png") -7px 0 repeat-y;
-  padding-left: 13px;
-}
-
-/* line 7, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_content_container .pp_right {
-  background: url("/assets/prettyPhoto/default/sprite_y.png") top right repeat-y;
-  padding-right: 13px;
-}
-
-/* line 8, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_next:hover {
-  background: url("/assets/prettyPhoto/default/sprite_next.png") center right no-repeat;
-  cursor: pointer;
-}
-
-/* line 9, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_previous:hover {
-  background: url("/assets/prettyPhoto/default/sprite_prev.png") center left no-repeat;
-  cursor: pointer;
-}
-
-/* line 10, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_expand {
-  background: url("/assets/prettyPhoto/default/sprite.png") 0 -29px no-repeat;
-  cursor: pointer;
-  width: 28px;
-  height: 28px;
-}
-
-/* line 11, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_expand:hover {
-  background: url("/assets/prettyPhoto/default/sprite.png") 0 -56px no-repeat;
-  cursor: pointer;
-}
-
-/* line 12, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_contract {
-  background: url("/assets/prettyPhoto/default/sprite.png") 0 -84px no-repeat;
-  cursor: pointer;
-  width: 28px;
-  height: 28px;
-}
-
-/* line 13, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_contract:hover {
-  background: url("/assets/prettyPhoto/default/sprite.png") 0 -113px no-repeat;
-  cursor: pointer;
-}
-
-/* line 14, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_close {
-  width: 30px;
-  height: 30px;
-  background: url("/assets/prettyPhoto/default/sprite.png") 2px 1px no-repeat;
-  cursor: pointer;
-}
-
-/* line 15, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_gallery ul li a {
-  background: url("/assets/prettyPhoto/default/default_thumb.png") center center #f8f8f8;
-  border: 1px solid #aaa;
-}
-
-/* line 16, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_social {
-  margin-top: 7px;
-}
-
-/* line 17, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_gallery a.pp_arrow_previous, div.pp_default .pp_gallery a.pp_arrow_next {
-  position: static;
-  left: auto;
-}
-
-/* line 18, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_nav .pp_play, div.pp_default .pp_nav .pp_pause {
-  background: url("/assets/prettyPhoto/default/sprite.png") -51px 1px no-repeat;
-  height: 30px;
-  width: 30px;
-}
-
-/* line 19, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_nav .pp_pause {
-  background-position: -51px -29px;
-}
-
-/* line 20, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default a.pp_arrow_previous, div.pp_default a.pp_arrow_next {
-  background: url("/assets/prettyPhoto/default/sprite.png") -31px -3px no-repeat;
-  height: 20px;
-  width: 20px;
-  margin: 4px 0 0;
-}
-
-/* line 21, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default a.pp_arrow_next {
-  left: 52px;
-  background-position: -82px -3px;
-}
-
-/* line 22, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_content_container .pp_details {
-  margin-top: 5px;
-}
-
-/* line 23, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_nav {
-  clear: none;
-  height: 30px;
-  width: 110px;
-  position: relative;
-}
-
-/* line 24, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_nav .currentTextHolder {
-  font-family: Georgia;
-  font-style: italic;
-  color: #999;
-  font-size: 11px;
-  left: 75px;
-  line-height: 25px;
-  position: absolute;
-  top: 2px;
-  margin: 0;
-  padding: 0 0 0 10px;
-}
-
-/* line 25, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_close:hover, div.pp_default .pp_nav .pp_play:hover, div.pp_default .pp_nav .pp_pause:hover, div.pp_default .pp_arrow_next:hover, div.pp_default .pp_arrow_previous:hover {
-  opacity: 0.7;
-}
-
-/* line 26, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_description {
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 14px;
-  margin: 5px 50px 5px 0;
-}
-
-/* line 27, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_bottom .pp_left {
-  background: url("/assets/prettyPhoto/default/sprite.png") -78px -127px no-repeat;
-}
-
-/* line 28, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_bottom .pp_middle {
-  background: url("/assets/prettyPhoto/default/sprite_x.png") bottom left repeat-x;
-}
-
-/* line 29, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_bottom .pp_right {
-  background: url("/assets/prettyPhoto/default/sprite.png") -112px -127px no-repeat;
-}
-
-/* line 30, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_loaderIcon {
-  background: url("/assets/prettyPhoto/default/loader.gif") center center no-repeat;
-}
-
-/* line 31, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_top .pp_left {
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") -88px -53px no-repeat;
-}
-
-/* line 32, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_top .pp_right {
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") -110px -53px no-repeat;
-}
-
-/* line 33, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_next:hover {
-  background: url("/assets/prettyPhoto/light_rounded/btnNext.png") center right no-repeat;
-  cursor: pointer;
-}
-
-/* line 34, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_previous:hover {
-  background: url("/assets/prettyPhoto/light_rounded/btnPrevious.png") center left no-repeat;
-  cursor: pointer;
-}
-
-/* line 35, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_expand {
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") -31px -26px no-repeat;
-  cursor: pointer;
-}
-
-/* line 36, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_expand:hover {
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") -31px -47px no-repeat;
-  cursor: pointer;
-}
-
-/* line 37, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_contract {
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") 0 -26px no-repeat;
-  cursor: pointer;
-}
-
-/* line 38, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_contract:hover {
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") 0 -47px no-repeat;
-  cursor: pointer;
-}
-
-/* line 39, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_close {
-  width: 75px;
-  height: 22px;
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") -1px -1px no-repeat;
-  cursor: pointer;
-}
-
-/* line 40, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_nav .pp_play {
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") -1px -100px no-repeat;
-  height: 15px;
-  width: 14px;
-}
-
-/* line 41, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_nav .pp_pause {
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") -24px -100px no-repeat;
-  height: 15px;
-  width: 14px;
-}
-
-/* line 42, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_arrow_previous {
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") 0 -71px no-repeat;
-}
-
-/* line 43, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_arrow_next {
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") -22px -71px no-repeat;
-}
-
-/* line 44, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_bottom .pp_left {
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") -88px -80px no-repeat;
-}
-
-/* line 45, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_bottom .pp_right {
-  background: url("/assets/prettyPhoto/light_rounded/sprite.png") -110px -80px no-repeat;
-}
-
-/* line 46, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_top .pp_left {
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") -88px -53px no-repeat;
-}
-
-/* line 47, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_top .pp_right {
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") -110px -53px no-repeat;
-}
-
-/* line 48, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_content_container .pp_left {
-  background: url("/assets/prettyPhoto/dark_rounded/contentPattern.png") top left repeat-y;
-}
-
-/* line 49, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_content_container .pp_right {
-  background: url("/assets/prettyPhoto/dark_rounded/contentPattern.png") top right repeat-y;
-}
-
-/* line 50, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_next:hover {
-  background: url("/assets/prettyPhoto/dark_rounded/btnNext.png") center right no-repeat;
-  cursor: pointer;
-}
-
-/* line 51, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_previous:hover {
-  background: url("/assets/prettyPhoto/dark_rounded/btnPrevious.png") center left no-repeat;
-  cursor: pointer;
-}
-
-/* line 52, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_expand {
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") -31px -26px no-repeat;
-  cursor: pointer;
-}
-
-/* line 53, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_expand:hover {
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") -31px -47px no-repeat;
-  cursor: pointer;
-}
-
-/* line 54, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_contract {
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") 0 -26px no-repeat;
-  cursor: pointer;
-}
-
-/* line 55, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_contract:hover {
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") 0 -47px no-repeat;
-  cursor: pointer;
-}
-
-/* line 56, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_close {
-  width: 75px;
-  height: 22px;
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") -1px -1px no-repeat;
-  cursor: pointer;
-}
-
-/* line 57, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_description {
-  margin-right: 85px;
-  color: #fff;
-}
-
-/* line 58, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_nav .pp_play {
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") -1px -100px no-repeat;
-  height: 15px;
-  width: 14px;
-}
-
-/* line 59, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_nav .pp_pause {
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") -24px -100px no-repeat;
-  height: 15px;
-  width: 14px;
-}
-
-/* line 60, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_arrow_previous {
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") 0 -71px no-repeat;
-}
-
-/* line 61, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_arrow_next {
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") -22px -71px no-repeat;
-}
-
-/* line 62, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_bottom .pp_left {
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") -88px -80px no-repeat;
-}
-
-/* line 63, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_bottom .pp_right {
-  background: url("/assets/prettyPhoto/dark_rounded/sprite.png") -110px -80px no-repeat;
-}
-
-/* line 64, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_loaderIcon {
-  background: url("/assets/prettyPhoto/dark_rounded/loader.gif") center center no-repeat;
-}
-
-/* line 65, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_left, div.dark_square .pp_middle, div.dark_square .pp_right, div.dark_square .pp_content {
-  background: #000;
-}
-
-/* line 66, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_description {
-  color: #fff;
-  margin: 0 85px 0 0;
-}
-
-/* line 67, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_loaderIcon {
-  background: url("/assets/prettyPhoto/dark_square/loader.gif") center center no-repeat;
-}
-
-/* line 68, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_expand {
-  background: url("/assets/prettyPhoto/dark_square/sprite.png") -31px -26px no-repeat;
-  cursor: pointer;
-}
-
-/* line 69, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_expand:hover {
-  background: url("/assets/prettyPhoto/dark_square/sprite.png") -31px -47px no-repeat;
-  cursor: pointer;
-}
-
-/* line 70, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_contract {
-  background: url("/assets/prettyPhoto/dark_square/sprite.png") 0 -26px no-repeat;
-  cursor: pointer;
-}
-
-/* line 71, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_contract:hover {
-  background: url("/assets/prettyPhoto/dark_square/sprite.png") 0 -47px no-repeat;
-  cursor: pointer;
-}
-
-/* line 72, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_close {
-  width: 75px;
-  height: 22px;
-  background: url("/assets/prettyPhoto/dark_square/sprite.png") -1px -1px no-repeat;
-  cursor: pointer;
-}
-
-/* line 73, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_nav {
-  clear: none;
-}
-
-/* line 74, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_nav .pp_play {
-  background: url("/assets/prettyPhoto/dark_square/sprite.png") -1px -100px no-repeat;
-  height: 15px;
-  width: 14px;
-}
-
-/* line 75, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_nav .pp_pause {
-  background: url("/assets/prettyPhoto/dark_square/sprite.png") -24px -100px no-repeat;
-  height: 15px;
-  width: 14px;
-}
-
-/* line 76, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_arrow_previous {
-  background: url("/assets/prettyPhoto/dark_square/sprite.png") 0 -71px no-repeat;
-}
-
-/* line 77, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_arrow_next {
-  background: url("/assets/prettyPhoto/dark_square/sprite.png") -22px -71px no-repeat;
-}
-
-/* line 78, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_next:hover {
-  background: url("/assets/prettyPhoto/dark_square/btnNext.png") center right no-repeat;
-  cursor: pointer;
-}
-
-/* line 79, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_square .pp_previous:hover {
-  background: url("/assets/prettyPhoto/dark_square/btnPrevious.png") center left no-repeat;
-  cursor: pointer;
-}
-
-/* line 80, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_square .pp_expand {
-  background: url("/assets/prettyPhoto/light_square/sprite.png") -31px -26px no-repeat;
-  cursor: pointer;
-}
-
-/* line 81, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_square .pp_expand:hover {
-  background: url("/assets/prettyPhoto/light_square/sprite.png") -31px -47px no-repeat;
-  cursor: pointer;
-}
-
-/* line 82, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_square .pp_contract {
-  background: url("/assets/prettyPhoto/light_square/sprite.png") 0 -26px no-repeat;
-  cursor: pointer;
-}
-
-/* line 83, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_square .pp_contract:hover {
-  background: url("/assets/prettyPhoto/light_square/sprite.png") 0 -47px no-repeat;
-  cursor: pointer;
-}
-
-/* line 84, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_square .pp_close {
-  width: 75px;
-  height: 22px;
-  background: url("/assets/prettyPhoto/light_square/sprite.png") -1px -1px no-repeat;
-  cursor: pointer;
-}
-
-/* line 85, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_square .pp_nav .pp_play {
-  background: url("/assets/prettyPhoto/light_square/sprite.png") -1px -100px no-repeat;
-  height: 15px;
-  width: 14px;
-}
-
-/* line 86, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_square .pp_nav .pp_pause {
-  background: url("/assets/prettyPhoto/light_square/sprite.png") -24px -100px no-repeat;
-  height: 15px;
-  width: 14px;
-}
-
-/* line 87, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_square .pp_arrow_previous {
-  background: url("/assets/prettyPhoto/light_square/sprite.png") 0 -71px no-repeat;
-}
-
-/* line 88, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_square .pp_arrow_next {
-  background: url("/assets/prettyPhoto/light_square/sprite.png") -22px -71px no-repeat;
-}
-
-/* line 89, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_square .pp_next:hover {
-  background: url("/assets/prettyPhoto/light_square/btnNext.png") center right no-repeat;
-  cursor: pointer;
-}
-
-/* line 90, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_square .pp_previous:hover {
-  background: url("/assets/prettyPhoto/light_square/btnPrevious.png") center left no-repeat;
-  cursor: pointer;
-}
-
-/* line 91, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_top .pp_left {
-  background: url("/assets/prettyPhoto/facebook/sprite.png") -88px -53px no-repeat;
-}
-
-/* line 92, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_top .pp_middle {
-  background: url("/assets/prettyPhoto/facebook/contentPatternTop.png") top left repeat-x;
-}
-
-/* line 93, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_top .pp_right {
-  background: url("/assets/prettyPhoto/facebook/sprite.png") -110px -53px no-repeat;
-}
-
-/* line 94, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_content_container .pp_left {
-  background: url("/assets/prettyPhoto/facebook/contentPatternLeft.png") top left repeat-y;
-}
-
-/* line 95, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_content_container .pp_right {
-  background: url("/assets/prettyPhoto/facebook/contentPatternRight.png") top right repeat-y;
-}
-
-/* line 96, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_expand {
-  background: url("/assets/prettyPhoto/facebook/sprite.png") -31px -26px no-repeat;
-  cursor: pointer;
-}
-
-/* line 97, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_expand:hover {
-  background: url("/assets/prettyPhoto/facebook/sprite.png") -31px -47px no-repeat;
-  cursor: pointer;
-}
-
-/* line 98, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_contract {
-  background: url("/assets/prettyPhoto/facebook/sprite.png") 0 -26px no-repeat;
-  cursor: pointer;
-}
-
-/* line 99, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_contract:hover {
-  background: url("/assets/prettyPhoto/facebook/sprite.png") 0 -47px no-repeat;
-  cursor: pointer;
-}
-
-/* line 100, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_close {
-  width: 22px;
-  height: 22px;
-  background: url("/assets/prettyPhoto/facebook/sprite.png") -1px -1px no-repeat;
-  cursor: pointer;
-}
-
-/* line 101, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_description {
-  margin: 0 37px 0 0;
-}
-
-/* line 102, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_loaderIcon {
-  background: url("/assets/prettyPhoto/facebook/loader.gif") center center no-repeat;
-}
-
-/* line 103, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_arrow_previous {
-  background: url("/assets/prettyPhoto/facebook/sprite.png") 0 -71px no-repeat;
-  height: 22px;
-  margin-top: 0;
-  width: 22px;
-}
-
-/* line 104, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_arrow_previous.disabled {
-  background-position: 0 -96px;
-  cursor: default;
-}
-
-/* line 105, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_arrow_next {
-  background: url("/assets/prettyPhoto/facebook/sprite.png") -32px -71px no-repeat;
-  height: 22px;
-  margin-top: 0;
-  width: 22px;
-}
-
-/* line 106, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_arrow_next.disabled {
-  background-position: -32px -96px;
-  cursor: default;
-}
-
-/* line 107, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_nav {
-  margin-top: 0;
-}
-
-/* line 108, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_nav p {
-  font-size: 15px;
-  padding: 0 3px 0 4px;
-}
-
-/* line 109, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_nav .pp_play {
-  background: url("/assets/prettyPhoto/facebook/sprite.png") -1px -123px no-repeat;
-  height: 22px;
-  width: 22px;
-}
-
-/* line 110, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_nav .pp_pause {
-  background: url("/assets/prettyPhoto/facebook/sprite.png") -32px -123px no-repeat;
-  height: 22px;
-  width: 22px;
-}
-
-/* line 111, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_next:hover {
-  background: url("/assets/prettyPhoto/facebook/btnNext.png") center right no-repeat;
-  cursor: pointer;
-}
-
-/* line 112, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_previous:hover {
-  background: url("/assets/prettyPhoto/facebook/btnPrevious.png") center left no-repeat;
-  cursor: pointer;
-}
-
-/* line 113, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_bottom .pp_left {
-  background: url("/assets/prettyPhoto/facebook/sprite.png") -88px -80px no-repeat;
-}
-
-/* line 114, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_bottom .pp_middle {
-  background: url("/assets/prettyPhoto/facebook/contentPatternBottom.png") top left repeat-x;
-}
-
-/* line 115, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.facebook .pp_bottom .pp_right {
-  background: url("/assets/prettyPhoto/facebook/sprite.png") -110px -80px no-repeat;
-}
-
-/* line 116, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_pic_holder a:focus {
-  outline: none;
-}
-
-/* line 117, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_overlay {
-  background: #000;
-  display: none;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 9500;
-}
-
-/* line 118, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_pic_holder {
-  display: none;
-  position: absolute;
-  width: 100px;
-  z-index: 10000;
-}
-
-/* line 119, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_content {
-  height: 40px;
-  min-width: 40px;
-}
-
-/* line 120, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-* html .pp_content {
-  width: 40px;
-}
-
-/* line 121, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_content_container {
-  position: relative;
-  text-align: left;
-  width: 100%;
-}
-
-/* line 122, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_content_container .pp_left {
-  padding-left: 20px;
-}
-
-/* line 123, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_content_container .pp_right {
-  padding-right: 20px;
-}
-
-/* line 124, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_content_container .pp_details {
-  float: left;
-  margin: 10px 0 2px;
-}
-
-/* line 125, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_description {
-  display: none;
-  margin: 0;
-}
-
-/* line 126, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_social {
-  float: left;
-  margin: 0;
-}
-
-/* line 127, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_social .facebook {
-  float: left;
-  margin-left: 5px;
-  width: 55px;
-  overflow: hidden;
-}
-
-/* line 128, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_social .twitter {
-  float: left;
-}
-
-/* line 129, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_nav {
-  clear: right;
-  float: left;
-  margin: 3px 10px 0 0;
-}
-
-/* line 130, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_nav p {
-  float: left;
-  white-space: nowrap;
-  margin: 2px 4px;
-}
-
-/* line 131, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_nav .pp_play, .pp_nav .pp_pause {
-  float: left;
-  margin-right: 4px;
-  text-indent: -10000px;
-}
-
-/* line 132, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-a.pp_arrow_previous, a.pp_arrow_next {
-  display: block;
-  float: left;
-  height: 15px;
-  margin-top: 3px;
-  overflow: hidden;
-  text-indent: -10000px;
-  width: 14px;
-}
-
-/* line 133, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_hoverContainer {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 2000;
-}
-
-/* line 134, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_gallery {
-  display: none;
-  left: 50%;
-  margin-top: -50px;
-  position: absolute;
-  z-index: 10000;
-}
-
-/* line 135, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_gallery div {
-  float: left;
-  overflow: hidden;
-  position: relative;
-}
-
-/* line 136, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_gallery ul {
-  float: left;
-  height: 35px;
-  position: relative;
-  white-space: nowrap;
-  margin: 0 0 0 5px;
-  padding: 0;
-}
-
-/* line 137, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_gallery ul a {
-  border: 1px rgba(0, 0, 0, 0.5) solid;
-  display: block;
-  float: left;
-  height: 33px;
-  overflow: hidden;
-}
-
-/* line 138, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_gallery ul a img {
-  border: 0;
-}
-
-/* line 139, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_gallery li {
-  display: block;
-  float: left;
-  margin: 0 5px 0 0;
-  padding: 0;
-}
-
-/* line 140, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_gallery li.default a {
-  background: url("/assets/prettyPhoto/facebook/default_thumbnail.gif") 0 0 no-repeat;
-  display: block;
-  height: 33px;
-  width: 50px;
-}
-
-/* line 141, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_gallery .pp_arrow_previous, .pp_gallery .pp_arrow_next {
-  margin-top: 7px !important;
-}
-
-/* line 142, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-a.pp_next {
-  background: url("/assets/prettyPhoto/light_rounded/btnNext.png") 10000px 10000px no-repeat;
-  display: block;
-  float: right;
-  height: 100%;
-  text-indent: -10000px;
-  width: 49%;
-}
-
-/* line 143, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-a.pp_previous {
-  background: url("/assets/prettyPhoto/light_rounded/btnNext.png") 10000px 10000px no-repeat;
-  display: block;
-  float: left;
-  height: 100%;
-  text-indent: -10000px;
-  width: 49%;
-}
-
-/* line 144, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-a.pp_expand, a.pp_contract {
-  cursor: pointer;
-  display: none;
-  height: 20px;
-  position: absolute;
-  right: 30px;
-  text-indent: -10000px;
-  top: 10px;
-  width: 20px;
-  z-index: 20000;
-}
-
-/* line 145, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-a.pp_close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-  line-height: 22px;
-  text-indent: -10000px;
-}
-
-/* line 146, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_loaderIcon {
-  display: block;
-  height: 24px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  width: 24px;
-  margin: -12px 0 0 -12px;
-}
-
-/* line 147, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-#pp_full_res {
-  line-height: 1 !important;
-}
-
-/* line 148, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-#pp_full_res .pp_inline {
-  text-align: left;
-}
-
-/* line 149, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-#pp_full_res .pp_inline p {
-  margin: 0 0 15px;
-}
-
-/* line 150, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.ppt {
-  color: #fff;
-  display: none;
-  font-size: 17px;
-  z-index: 9999;
-  margin: 0 0 5px 15px;
-}
-
-/* line 151, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_content, div.light_rounded .pp_content {
-  background-color: #fff;
-}
-
-/* line 152, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default #pp_full_res .pp_inline, div.light_rounded .pp_content .ppt, div.light_rounded #pp_full_res .pp_inline, div.light_square .pp_content .ppt, div.light_square #pp_full_res .pp_inline, div.facebook .pp_content .ppt, div.facebook #pp_full_res .pp_inline {
-  color: #000;
-}
-
-/* line 153, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_gallery ul li a:hover, div.pp_default .pp_gallery ul li.selected a, .pp_gallery ul a:hover, .pp_gallery li.selected a {
-  border-color: #fff;
-}
-
-/* line 154, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.pp_default .pp_details, div.light_rounded .pp_details, div.dark_rounded .pp_details, div.dark_square .pp_details, div.light_square .pp_details, div.facebook .pp_details {
-  position: relative;
-}
-
-/* line 155, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_top .pp_middle, div.light_rounded .pp_content_container .pp_left, div.light_rounded .pp_content_container .pp_right, div.light_rounded .pp_bottom .pp_middle, div.light_square .pp_left, div.light_square .pp_middle, div.light_square .pp_right, div.light_square .pp_content, div.facebook .pp_content {
-  background: #fff;
-}
-
-/* line 156, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_description, div.light_square .pp_description {
-  margin-right: 85px;
-}
-
-/* line 157, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_gallery a.pp_arrow_previous, div.light_rounded .pp_gallery a.pp_arrow_next, div.dark_rounded .pp_gallery a.pp_arrow_previous, div.dark_rounded .pp_gallery a.pp_arrow_next, div.dark_square .pp_gallery a.pp_arrow_previous, div.dark_square .pp_gallery a.pp_arrow_next, div.light_square .pp_gallery a.pp_arrow_previous, div.light_square .pp_gallery a.pp_arrow_next {
-  margin-top: 12px !important;
-}
-
-/* line 158, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_arrow_previous.disabled, div.dark_rounded .pp_arrow_previous.disabled, div.dark_square .pp_arrow_previous.disabled, div.light_square .pp_arrow_previous.disabled {
-  background-position: 0 -87px;
-  cursor: default;
-}
-
-/* line 159, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_arrow_next.disabled, div.dark_rounded .pp_arrow_next.disabled, div.dark_square .pp_arrow_next.disabled, div.light_square .pp_arrow_next.disabled {
-  background-position: -22px -87px;
-  cursor: default;
-}
-
-/* line 160, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.light_rounded .pp_loaderIcon, div.light_square .pp_loaderIcon {
-  background: url("/assets/prettyPhoto/light_rounded/loader.gif") center center no-repeat;
-}
-
-/* line 161, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .pp_top .pp_middle, div.dark_rounded .pp_content, div.dark_rounded .pp_bottom .pp_middle {
-  background: url("/assets/prettyPhoto/dark_rounded/contentPattern.png") top left repeat;
-}
-
-/* line 162, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded .currentTextHolder, div.dark_square .currentTextHolder {
-  color: #c4c4c4;
-}
-
-/* line 163, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-div.dark_rounded #pp_full_res .pp_inline, div.dark_square #pp_full_res .pp_inline {
-  color: #fff;
-}
-
-/* line 164, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_top, .pp_bottom {
-  height: 20px;
-  position: relative;
-}
-
-/* line 165, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-* html .pp_top, * html .pp_bottom {
-  padding: 0 20px;
-}
-
-/* line 166, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_top .pp_left, .pp_bottom .pp_left {
-  height: 20px;
-  left: 0;
-  position: absolute;
-  width: 20px;
-}
-
-/* line 167, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_top .pp_middle, .pp_bottom .pp_middle {
-  height: 20px;
-  left: 20px;
-  position: absolute;
-  right: 20px;
-}
-
-/* line 168, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-* html .pp_top .pp_middle, * html .pp_bottom .pp_middle {
-  left: 0;
-  position: static;
-}
-
-/* line 169, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_top .pp_right, .pp_bottom .pp_right {
-  height: 20px;
-  left: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20px;
-}
-
-/* line 170, /media/sf_apps/literallight/app/assets/stylesheets/prettyPhoto.scss */
-.pp_fade, .pp_gallery li.default a img {
-  display: none;
 }
