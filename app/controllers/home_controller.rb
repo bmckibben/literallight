@@ -8,6 +8,6 @@ class HomeController < ApplicationController
   end  
 
   def contact_email
-  	HomeMailer.send_contact_email(email_name,email_address,email_message).deliver_now
+  	HomeMailer.send_contact_email(params[:email_name],params[:email_address],params[:email_message]).deliver_now
   end	
 end
