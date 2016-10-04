@@ -82,7 +82,7 @@
         <div class="about-text">
           <h4>This Website</h4>
           <p>Remember those &ldquo;Under Construction&rdquo; pages that were the anathema of ancient web development? This page is always under construction. It is my sandbox and a showcase of my technical expertise.</p>
-          <p>It is an implementation of a template by Templatewire for a Ruby on Rails environment.</p>
+          <p>It is an implementation of a template by Templatewire adapted to a Ruby on Rails environment.</p>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
       <h2>Portfolio</h2>
       <hr>
       <div class="clearfix"></div>
-      <p>I&apos;ve always thought streamlined locomotives were cool! Click on the photos.</p>
+      <p>Streamlined locomotives are cool! Click on the photos.</p>
     </div>
     <div class="categories">
       <ul class="cat">
@@ -160,8 +160,8 @@
           <ol class="type">
             <li><a href="#" data-filter="*" class="active">All</a></li>
             <li><a href="#" data-filter=".lorem">Steam</a></li>
-            <li><a href="#" data-filter=".consectetur">Gas Turbine</a></li>
-            <li><a href="#" data-filter=".dapibus">Diesel Electric</a></li>
+            <li><a href="#" data-filter=".consectetur">Turbine</a></li>
+            <li><a href="#" data-filter=".dapibus">Diesel</a></li>
           </ol>
         </li>
       </ul>
@@ -189,12 +189,12 @@
               <%= image_tag("portfolio/02.jpg",  class: "img-responsive", alt: "T1") %></a> </div>
           </div>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 consectetur">
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 dapibus">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="<%= path_to_image('portfolio/03.jpg') %>" title="New York, New Haven and Hartford Railroad" rel="prettyPhoto">
               <div class="hover-text">
                 <h4>Commet</h4>
-                <p>Gas Turbine</p>
+                <p>Diesel Electric</p>
               </div>
               <%= image_tag("portfolio/03.jpg",  class: "img-responsive", alt: "Commet") %> </a> </div>
           </div>
@@ -209,24 +209,25 @@
               <%= image_tag("portfolio/04.jpg",  class: "img-responsive", alt: "2906") %></a> </div>
           </div>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 lorem">
+
+         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 dapibus">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="<%= path_to_image('portfolio/05.jpg') %>" title="Chesapeake &amp; Ohio Railroad" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="<%= path_to_image('portfolio/12.jpg') %>" title="Altantic Coast Line" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Yellowbelly</h4>
-                <p>Steam</p>
+                <h4>Champion</h4>
+                <p>Diesel</p>
               </div>
-             <%= image_tag("portfolio/05.jpg",  class: "img-responsive", alt: "Yellowbelly") %></a> </div>
+              <%= image_tag("portfolio/12.jpg",  class: "img-responsive", alt: "Champion") %></a> </div>
           </div>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 lorem">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="<%= path_to_image('portfolio/06.jpg') %>" title="New Youk Central Railroad" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="<%= path_to_image('portfolio/10.jpg') %>" title="Frisco Lines" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Mercury</h4>
+                <h4>Firefly</h4>
                 <p>Steam</p>
               </div>
-              <%= image_tag("portfolio/06.jpg",  class: "img-responsive", alt: "Mercury") %></a> </div>
+              <%= image_tag("portfolio/10.jpg",  class: "img-responsive", alt: "Firefly") %></a> </div>
           </div>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 lorem">
@@ -239,16 +240,57 @@
               <%= image_tag("portfolio/07.jpg",  class: "img-responsive", alt: "Black Diamond") %></a> </div>
           </div>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 consectetur">
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 dapibus">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="<%= path_to_image('portfolio/08.jpg') %>" title="Boston and Maine" rel="prettyPhoto">
               <div class="hover-text">
                 <h4>Flying Yankee</h4>
-                <p>Gas Turbine</p>
+                <p>Diesel</p>
               </div>
               <%= image_tag("portfolio/08.jpg",  class: "img-responsive", alt: "Flying Yankee") %></a> </div>
           </div>
         </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 consectetur">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="<%= path_to_image('portfolio/11.jpg') %>" title="Chesapeake and Ohio" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>M-1</h4>
+                <p>Steam Turbine Electric</p>
+              </div>
+             <%= image_tag("portfolio/11.jpg",  class: "img-responsive", alt: "M-1") %></a> </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 lorem">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="<%= path_to_image('portfolio/14.jpg') %>" title="Pennsylvania Railroad" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>K4</h4>
+                <p>Steam</p>
+              </div>
+              <%= image_tag("portfolio/14.jpg",  class: "img-responsive", alt: "Champion") %></a> </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 lorem">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="<%= path_to_image('portfolio/13.jpg') %>" title="New York Central" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Commodore</h4>
+                <p>Steam</p>
+              </div>
+              <%= image_tag("portfolio/13.jpg",  class: "img-responsive", alt: "Commodore") %></a> </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 lorem">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="<%= path_to_image('portfolio/09.jpg') %>" title="Milwakee Road" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Haiwatha</h4>
+                <p>Steam</p>
+              </div>
+              <%= image_tag("portfolio/09.jpg",  class: "img-responsive", alt: "Haiwatha") %></a> </div>
+          </div>
+        </div>      
       </div>
     </div>
   </div>
@@ -299,15 +341,15 @@
 <!-- Testimonials Section -->
 <div id="testimonials" class="text-center">
   <div class="container">
-    <div class="section-title center">
-      <h2>What clients say</h2>
+    <div class="section-title center testimonial-well">
+      <h2>What people say</h2>
       <hr>
     </div>
     <div class="row">
-      <div class="col-md-10 col-md-offset-1">
+      <div class="col-md-12 ">
         <div class="row testimonials">
           <div class="col-sm-4">
-            <blockquote><i class="fa fa-quote-left"></i>
+            <blockquote class="testimonial-well"><i class="fa fa-quote-left"></i>
               <p>If we know what we were doing, it wouldn&apos;t be called research, would it?</p>
               <div class="clients-name">
                 <p><strong>Albert Einstien</strong><br>
@@ -316,7 +358,7 @@
             </blockquote>
           </div>
           <div class="col-sm-4">
-            <blockquote><i class="fa fa-quote-left"></i>
+            <blockquote class="testimonial-well"><i class="fa fa-quote-left"></i>
               <p>A man who is afraid to make mistakes is unlikely to make anything.</p>
               <div class="clients-name">
                 <p><strong>John Cleese</strong><br>
@@ -325,7 +367,7 @@
             </blockquote>
           </div>
           <div class="col-sm-4">
-            <blockquote><i class="fa fa-quote-left"></i>
+            <blockquote class="testimonial-well"><i class="fa fa-quote-left"></i>
               <p>We learn something every day, and lots of times it&apos;s that what we learned the day before was wrong.</p>
               <div class="clients-name">
                 <p><strong>Bill Vaughan</strong><br>
@@ -345,7 +387,7 @@
     <div class="section-title center">
       <h2>Contact us</h2>
       <hr>
-      <p>The emai form is not working yet. Like I said: Under Consruction.</p>
+      <p>Use the form below to send me a message. The form is powered by AngularJS.</p>
     </div>
     <div class="col-md-8 col-md-offset-2">
       <div class="col-md-4">

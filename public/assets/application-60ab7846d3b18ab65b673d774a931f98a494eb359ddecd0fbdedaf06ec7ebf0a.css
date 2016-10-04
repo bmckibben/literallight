@@ -14774,26 +14774,30 @@ img.img-thumbnail.team-img {
 
 /* line 465, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #testimonials h2 {
-  color: #f6f6f6;
+  color: #fff;
 }
 
-/* line 468, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 469, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+#testimonials hr {
+  color: #fff;
+}
+
+/* line 473, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #testimonials blockquote {
   position: relative;
   margin-top: 20px;
-  border: 0;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 475, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 479, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #testimonials i {
   font-size: 24px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 14px;
 }
 
-/* line 480, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 484, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #testimonials .clients-name {
   display: inline-block;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -14801,14 +14805,28 @@ img.img-thumbnail.team-img {
   margin-top: 10px;
 }
 
+/* bmc customizations */
+/* line 491, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+.testimonial-well {
+  min-height: 20px;
+  padding: 19px;
+  margin: 0px 10px 20px;
+  background-color: rgba(25, 25, 25, 0.7);
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
 /* Contact Section */
-/* line 487, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 503, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact {
   padding: 120px 0 40px 0;
   background: #f6f6f6;
 }
 
-/* line 491, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 507, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact .contact-item {
   padding: 10px;
   margin: 10px;
@@ -14816,32 +14834,32 @@ img.img-thumbnail.team-img {
   border-radius: 4px;
 }
 
-/* line 497, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 513, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact h3 {
   font-size: 20px;
   font-weight: 400;
   margin-top: 40px;
 }
 
-/* line 502, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 518, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact form {
   padding: 30px 0;
 }
 
-/* line 505, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 521, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact i.fa {
   font-size: 22px;
   color: #26B4E7;
   margin-bottom: 10px;
 }
 
-/* line 510, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 526, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact .text-danger {
   color: #ff3333;
   text-align: left;
 }
 
-/* line 514, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 530, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 label {
   font-size: 12px;
   font-weight: 400;
@@ -14849,7 +14867,7 @@ label {
   float: left;
 }
 
-/* line 520, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 536, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact .form-control {
   display: block;
   width: 100%;
@@ -14868,7 +14886,7 @@ label {
   transition: none;
 }
 
-/* line 537, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 553, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact .form-control:focus {
   border-color: inherit;
   outline: 0;
@@ -14876,7 +14894,7 @@ label {
   box-shadow: transparent;
 }
 
-/* line 543, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 559, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact .btn-default {
   background: #cf5022;
   border: 0;
@@ -14887,13 +14905,13 @@ label {
   font-size: 15px;
 }
 
-/* line 552, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 568, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact .btn-default:hover, #contact .btn-default:focus {
   color: #f6f6f6;
   background: #a13e1a;
 }
 
-/* line 556, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 572, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 .btn:active, .btn.active {
   background-image: none;
   outline: 0;
@@ -14901,24 +14919,24 @@ label {
   box-shadow: none;
 }
 
-/* line 562, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 578, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
   outline: none;
   outline-offset: none;
 }
 
-/* line 566, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 582, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact .social ul {
   margin-top: 30px;
 }
 
-/* line 569, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 585, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact .social ul li {
   display: inline-block;
   margin: 0 20px;
 }
 
-/* line 573, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 589, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact .social i.fa {
   font-size: 24px;
   padding-top: 8px;
@@ -14927,13 +14945,13 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   transition: all 0.3s;
 }
 
-/* line 580, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 596, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #contact .social i.fa:hover {
   color: #a13e1a;
 }
 
 /* Footer Section*/
-/* line 584, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 600, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #footer {
   background: #333;
   color: #777;
@@ -14941,30 +14959,30 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   text-align: center;
 }
 
-/* line 590, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 606, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #footer a {
   color: #999999;
 }
 
-/* line 593, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 609, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #footer a:hover, a:focus {
   color: #26B4E7;
 }
 
-/* line 596, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+/* line 612, C:/Sites/literallight/app/assets/stylesheets/style.scss */
 #footer p {
   font-size: 13px;
   margin-top: 10px;
 }
 
 @media (max-width: 768px) {
-  /* line 602, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+  /* line 618, C:/Sites/literallight/app/assets/stylesheets/style.scss */
   .hover-bg .hover-text {
     padding: 20%;
   }
 }
 @media (max-width: 640px) {
-  /* line 608, C:/Sites/literallight/app/assets/stylesheets/style.scss */
+  /* line 624, C:/Sites/literallight/app/assets/stylesheets/style.scss */
   #intro .intro-body H1 {
     font-size: 36px;
   }
