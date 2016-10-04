@@ -9,5 +9,6 @@ class HomeController < ApplicationController
 
   def contact_email
   	HomeMailer.send_contact_email(params[:email_name],params[:email_address],params[:email_message]).deliver_now
+  	render layout: false
   end	
 end
