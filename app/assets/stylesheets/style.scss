@@ -463,8 +463,13 @@ img.img-thumbnail.team-img {
 	padding: 140px 0;
 }
 #testimonials h2 {
-	color: #f6f6f6;
+	color: #fff;
 }
+
+#testimonials hr {
+	color: #fff;
+}
+
 #testimonials blockquote {
 	position: relative;
 	margin-top: 20px;
@@ -473,7 +478,7 @@ img.img-thumbnail.team-img {
 }
 #testimonials i {
 	font-size: 24px;
-	color: rgba(255,255,255,0.3);
+	color: rgba(255,255,255,0.8);
 	margin-bottom: 14px;
 }
 #testimonials .clients-name {
