@@ -269,42 +269,27 @@ hr {
 }
 #services h2 {
 	color: #26B4E7;
-	text-shadow:
-    -3px -3px 33 #fff,
-    3px -3px 33 #fff,
-    -3px 3px 33 #fff,
-    3px 3px 33 #fff;
 }
 #services h3 {
 	font-size: 20px;
 	font-weight: 600;
 	color: #26B4E7;
-	text-shadow:
-    -3px -3px 23 #000,
-    3px -3px 23 #000,
-    -3px 3px 23 #000,
-    3px 3px 23 #000;
 }
 #services p {
 	color: rgba(38, 180, 231, 0.7);
-	text-shadow:
-    -3px -3px 17 #000,
-    3px -3px 17 #000,
-    -3px 3px 17 #000,
-    3px 3px 17 #000;
 }
+
+#services a {
+	color: rgba(38, 180, 231, 0.7);
+}
+
 .space {
 	margin-top: 40px;
 }
 #services i.fa {
 	font-size: 36px;
 	color: #26B4E7;
-	transition: all 0.5s;
-	text-shadow:
-    -3px -3px 39 #fff,
-    3px -3px 39 #fff,
-    -3px 3px 39 #fff,
-    3px 3px 39 #fff;	
+	transition: all 0.5s;	
 }
 /* Gallery Section */
 #works {
