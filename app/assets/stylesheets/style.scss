@@ -281,6 +281,12 @@ hr {
 
 #services a {
 	color: rgba(38, 180, 231, 0.7);
+    text-decoration: underline;	
+}
+
+#services a:hover {
+    color: #CC33FF !important;
+    text-decoration: underline;	
 }
 
 .space {
