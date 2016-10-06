@@ -36,11 +36,16 @@ gem 'bcrypt'
 gem 'simple_enum', '~> 2.0.0' , require: 'simple_enum/mongoid'
 
 # assets 
-gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.0.0.alpha4' 
 gem 'font-awesome-sass'
 gem 'angularjs-rails'
 # provides a CRSF Token Header for angularjs posts
 gem 'angular_rails_csrf'
+
+# for bootstraps positioning of tooltips and popovers
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end
 
 # per heroku
 gem 'rails_12factor'
