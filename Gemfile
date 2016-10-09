@@ -36,7 +36,7 @@ gem 'bcrypt'
 gem 'simple_enum', '~> 2.0.0' , require: 'simple_enum/mongoid'
 
 # assets 
-gem 'bootstrap', '~> 4.0.0.alpha4' 
+gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'angularjs-rails'
 # provides a CRSF Token Header for angularjs posts

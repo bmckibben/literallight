@@ -56,7 +56,7 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <h1><span class="brand-heading">LiteralLight</span></h1>
-          <p class="intro-text">The professional website of Ben McKibben</p>
+          <p class="intro-text">The professional website of Ben McKibben<br/><%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate) %></p>
           <a href="#about" class="btn btn-primary page-scroll">Learn More</a> </div>
       </div>
     </div>
@@ -179,14 +179,14 @@
     </div>
     <div class="row">
       <div class="portfolio-items">
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 lorem">
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 dapibus">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="<%= path_to_image('portfolio/01.jpg') %>" title="Burlington Railroad" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="<%= path_to_image('portfolio/15.jpg') %>" title="Union Pacific" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Aeolus</h4>
-                <p>Steam</p>
+                <h4>M-1000</h4>
+                <p>Diesel</p>
               </div>
-              <%= image_tag("portfolio/01.jpg",  class: "img-responsive", alt: "Aeolus") %> </a> </div>
+              <%= image_tag("portfolio/15.jpg",  class: "img-responsive", alt: "M-1000") %> </a> </div>
           </div>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 lorem">
@@ -459,10 +459,8 @@
   </div>
 </div>
 <div id="footer">
-  <div class="container">
-    <p>&copy; Ben McKibben, <%= Time.now.year %>. All rights reserved.<br/>
-        v.2016.274</p>
-  </div>
+
+<%= render 'layouts/footer' %>	
 </div>
 
 </body>
