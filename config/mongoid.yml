@@ -1,9 +1,7 @@
 development:
   clients:
     default:
-      database: myDB
-      hosts:
-        - localhost:27017
+      uri: mongodb://literallight:Satori71@ds155727.mlab.com:55727/heroku_0zclqwdh
       options:
   options:
      raise_not_found_error: true
@@ -22,5 +20,5 @@ test:
 production:
   clients:
     default:
-      uri: <%= ENV['MONGOHQ_URL'] %>
+      uri: <%= ENV['MLAB_URL'] %>
       options:
