@@ -1,7 +1,9 @@
 development:
   clients:
     default:
-      uri: mongodb://literallight:Satori71@ds155727.mlab.com:55727/heroku_0zclqwdh
+      database: literallight
+      hosts:
+        - localhost:27017
       options:
   options:
      raise_not_found_error: true
