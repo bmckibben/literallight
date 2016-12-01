@@ -21,6 +21,16 @@ class JournalsController < ApplicationController
     @journal.entry_for = DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate)
   end
 
+  # GET /goal
+  def goal
+      @journal = Journal.where(:entry_for => DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate)).first
+      if @journal.nil?
+        @journal = Journal.new
+        @entry_for = DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate)
+      end 
+      
+  end
+
   # GET /journals/1/edit
   def edit
   end
@@ -31,6 +41,9 @@ class JournalsController < ApplicationController
     @journal = Journal.new(journal_params)
     @journal.created_at = DateTime.now
     @journal.updated_at = DateTime.now
+    if @journal.entry_for.nil?
+      @journal.entry_for = DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate)
+    end  
 
     respond_to do |format|
       if @journal.save

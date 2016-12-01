@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   	get 'users/list' => 'users#list', :as => 'users_list'
   	get 'musings' => 'journals#musings', :as => 'journals_musings'
   	get 'show_musing/:id' => 'journals#show_musing', :as => 'journals_show_musing'
+  	get 'goal' => 'journals#goal', :as => 'journals_goal'
   	post 'home/contact_email' => 'home#contact_email'
  
     resources :glossaries
