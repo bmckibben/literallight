@@ -1,0 +1,128 @@
+<div class="main-margined">
+  <div class="row">
+    <div class="col-md-12">
+      <% if notice %>
+      <div class="alert alert-warning alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove-circle"></span></button>
+      <p id="notice"><%= notice %></p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 col-sm-12">
+    <%= link_to 'New Journal', new_journal_path, class: "btn btn-primary pull-right" %>
+    <h1>Entries</h1>
+    Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate) %>
+    </div>
+  </div>
+<% @journals.each do |journal| %>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 col-x-12" style="border-top:1px solid #fff">
+      <h2><%= link_to journal.entry_for, edit_journal_path(journal) %></h2>
+      <h3>Goals</h3>
+      <p><%= journal.goals.to_s %></p>
+      <h3>Notes</h3>
+      <p><%= journal.notes.to_s %></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :weight %><br>
+      <%= f.text_field :weight %>
+    </div>  
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :body_fat %><br>
+      <%= f.text_field :body_fat %>
+    </div>
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :systolic %><br>
+      <%= f.number_field :systolic %>
+    </div>
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :diastolic %><br>
+      <%= f.number_field :diastolic %>
+    </div>
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :am_glucose %><br>
+      <%= f.number_field :am_glucose %>
+    </div>
+    <div class="field col-md-1 col-sm-12">
+      &nbsp;
+    </div>    
+  </div>
+  <div class="row">
+    <div class="field col-md-1 col-md-offset-3 col-sm-12">
+      <%= f.label :curls %><br>
+      <%= f.text_field :curls %>
+    </div>  
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :kettlebells %><br>
+      <%= f.text_field :kettlebells %>
+    </div>  
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :situps %><br>
+      <%= f.text_field :situps %>
+    </div> 
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :pushups %><br>
+      <%= f.text_field :pushups %>
+    </div>
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :eliptical_time %><br>
+      <%= f.text_field :eliptical_time %>
+    </div> 
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :eliptical_dist %><br>
+      <%= f.text_field :eliptical_dist %>
+    </div>  
+  </div>
+  <div class="row">
+    <div class="field col-md-1 col-md-offset-3 col-sm-12">
+      <%= f.label :meditation %><br>
+      <%= f.text_field :meditation %>
+    </div>
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :yoga %><br>
+      <%= f.text_field :yoga %>
+    </div>
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :energy %><br>
+      <%= f.number_field :energy %>
+    </div>
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :motivation %><br>
+      <%= f.number_field :motivation %>
+    </div>
+    <div class="field col-md-1 col-sm-12">
+      <%= f.label :happiness %><br>
+      <%= f.number_field :happiness %>
+    </div>  
+    <div class="field col-md-1 col-sm-12">
+      &nbsp;
+    </div>   
+  </div>
+<% end %>
+</div>
+
+
+
+  <tbody>
+    <% @journals.each do |journal| %>
+      <tr data-link="<%= edit_journal_path(journal) %>" class="data-row">
+        <td><%= journal.am_glucose.to_s %></td>
+        <td><%= journal.weight.to_s %></td>
+        <td><%= journal.systolic.to_s %></td>
+        <td><%= journal.diastolic.to_s %></td>
+        <td><%= journal.body_fat.to_s %></td>
+        <td><%= journal.curls.to_s %></td>
+        <td><%= journal.yoga.to_s %></td>
+        <td><%= journal.meditation.to_s %></td>
+        <td><%= journal.energy.to_s %></td>
+        <td><%= journal.motivation.to_s %></td>
+        <td><%= journal.happiness.to_s %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
