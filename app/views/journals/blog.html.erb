@@ -28,24 +28,24 @@
   </div>
   <div class="row">
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :weight %><br>
-      <%= f.text_field :weight %>
+      Weight<br>
+      <%= journal.weight.to_s %>
     </div>  
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :body_fat %><br>
-      <%= f.text_field :body_fat %>
+      Body Fat<br>
+      <%= journal.body_fat.to_s %>
     </div>
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :systolic %><br>
-      <%= f.number_field :systolic %>
+      Systolic<br>
+      <%= journal.systolic.to_s %>
     </div>
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :diastolic %><br>
-      <%= f.number_field :diastolic %>
+      Diastolic<br>
+      <%= journal.diastolic.to_s %>
     </div>
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :am_glucose %><br>
-      <%= f.number_field :am_glucose %>
+      AM Glucose<br>
+      <%= journal.am_glucose.to_s %>
     </div>
     <div class="field col-md-1 col-sm-12">
       &nbsp;
@@ -53,76 +53,54 @@
   </div>
   <div class="row">
     <div class="field col-md-1 col-md-offset-3 col-sm-12">
-      <%= f.label :curls %><br>
-      <%= f.text_field :curls %>
+      Curls<br>
+      <%= journal.curls.to_s %>
     </div>  
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :kettlebells %><br>
-      <%= f.text_field :kettlebells %>
+      KettleBells<br>
+      <%= journal.kettlebells.to_s %>
     </div>  
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :situps %><br>
-      <%= f.text_field :situps %>
+      Situps<br>
+      <%= journal.situps.to_s %>
     </div> 
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :pushups %><br>
-      <%= f.text_field :pushups %>
+      Pushups<br>
+      <%= journal.pushups.to_s %>
     </div>
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :eliptical_time %><br>
-      <%= f.text_field :eliptical_time %>
+      Eliptical Time<br>
+      <%= journal.eliptical_time.to_s %>
     </div> 
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :eliptical_dist %><br>
-      <%= f.text_field :eliptical_dist %>
+      Eliptical Dist<br>
+      <%= journal.eliptical_dist.to_s %>
     </div>  
   </div>
   <div class="row">
     <div class="field col-md-1 col-md-offset-3 col-sm-12">
-      <%= f.label :meditation %><br>
-      <%= f.text_field :meditation %>
+      Meditation<br>
+      <%= journal.meditation.to_s %>
     </div>
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :yoga %><br>
-      <%= f.text_field :yoga %>
+      Yoga<br>
+      <%= journal.yoga.to_s %>
     </div>
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :energy %><br>
-      <%= f.number_field :energy %>
+      Energy<br>
+      <%= journal.energy.to_s %>
     </div>
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :motivation %><br>
-      <%= f.number_field :motivation %>
+      Motivation<br>
+      <%= journal.motivation.to_s %>
     </div>
     <div class="field col-md-1 col-sm-12">
-      <%= f.label :happiness %><br>
-      <%= f.number_field :happiness %>
+      Happiness<br>
+      <%= journal.happiness.to_s %>
     </div>  
     <div class="field col-md-1 col-sm-12">
       &nbsp;
     </div>   
   </div>
 <% end %>
-</div>
-
-
-
-  <tbody>
-    <% @journals.each do |journal| %>
-      <tr data-link="<%= edit_journal_path(journal) %>" class="data-row">
-        <td><%= journal.am_glucose.to_s %></td>
-        <td><%= journal.weight.to_s %></td>
-        <td><%= journal.systolic.to_s %></td>
-        <td><%= journal.diastolic.to_s %></td>
-        <td><%= journal.body_fat.to_s %></td>
-        <td><%= journal.curls.to_s %></td>
-        <td><%= journal.yoga.to_s %></td>
-        <td><%= journal.meditation.to_s %></td>
-        <td><%= journal.energy.to_s %></td>
-        <td><%= journal.motivation.to_s %></td>
-        <td><%= journal.happiness.to_s %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 </div>
