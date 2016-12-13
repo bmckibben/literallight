@@ -22,17 +22,14 @@
   <div class="col-md-6 col-md-offset-3 col-sm-12 ">
       <div class="panel panel-default">
           <div class="panel-heading">
-              <h3 class="panel-title">
-                  Goals
-              </h3>
-          </div>
-          
-              <div class="panel-body">
-                  <div class="field">
-                    <%= f.text_area :goals, rows: 25 %>
-                  </div>
+            <%= f.label :entry_for %><br>
+            <%= f.text_field :entry_for, :style => "width:100%;" %>
+          </div>      
+          <div class="panel-body">
+              <div class="field">
+                <%= f.text_area :goals, rows: 25 %>
               </div>
-
+          </div>
       </div> 
   </div>
 </div>
