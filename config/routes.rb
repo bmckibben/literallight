@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 	
 	get 'home/index' => 'home#index', :as => 'home'
 	get 'home/home' => 'home#home', :as => 'internal_home'
-	get 'journals/blog' => 'journals#blog', :as => 'journals_blog'
+	get 'blog' => 'journals#blog', :as => 'blog'
 	get 'static_pages/about' => 'static_pages#about', :as => 'static_about'
 	get 'static_pages/help' => 'static_pages#help', :as => 'static_help'
 	get 'static_pages/contact' => 'static_pages#contact', :as => 'static_contact'
