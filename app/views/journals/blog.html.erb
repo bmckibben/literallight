@@ -1,4 +1,4 @@
-<div class="main-margined blog">
+<div class="main-margined" id="blog">
   <div class="row">
     <div class="col-md-12">
       <% if notice %>
@@ -18,90 +18,67 @@
   </div>
 <% @journals.each do |journal| %>
   <div class="row">
-    <div class="col-md-6 col-md-offset-3 col-x-12" style="border-top:1px solid #fff">
+    <div class="col-md-6 col-md-offset-3 col-x-12">
       <h2><%= link_to journal.entry_for, edit_journal_path(journal) %></h2>
       <h3>Goals</h3>
       <p><%= journal.goals.to_s %></p>
       <h3>Musings</h3>
       <p><%= journal.notes.to_s %></p>
     </div>
-  </div>
   <div class="row">
-    <div class="col-md-1 col-md-offset-3  col-sm-12">
-      Weight<br>
-      <%= journal.weight.to_s %>
-    </div>  
-    <div class="col-md-1 col-sm-12">
-      Body Fat<br>
-      <%= journal.body_fat.to_s %>
+    <div class="col-md-6 col-md-offset-3 col-x-12">    
+    <table class="table small responsive">
+      <tr>
+        <th>Weight</th>
+        <th>Body Fat</th>
+        <th>Systolic</th>
+        <th>Diastolic</th>
+        <th>AM Glucose</th>
+        <th>&nbsp;</th>
+      </tr>
+      <tr>
+        <td><%= journal.weight.to_s %></td>
+        <td><%= journal.body_fat.to_s %></td>
+        <td><%= journal.systolic.to_s %></td>
+        <td><%= journal.diastolic.to_s %></td>
+        <td><%= journal.am_glucose.to_s %></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>Curls</th>
+        <th>Kettlebells</th>
+        <th>Push Ups</th>
+        <th>Sit Ups</th>
+        <th>Elip Time</th>
+        <th>Elip Dist</th>
+      </tr>
+      <tr>
+        <td><%= journal.curls.to_s %></td>
+        <td><%= journal.kettlebells.to_s %></td>
+        <td><%= journal.pushups.to_s %></td>
+        <td><%= journal.situps.to_s %></td>
+        <td><%= journal.eliptical_time.to_s %></td>
+        <td><%= journal.eliptical_dist.to_s %></td>
+      </tr>
+      <tr>
+        <th>Meditation</th>
+        <th>Yoga</th>
+        <th>Energy</th>
+        <th>Motivation</th>
+        <th>Happiness</th>
+        <th>&nbsp;</th>
+      </tr>
+      <tr>
+        <td><%= journal.meditation.to_s %></td>
+        <td><%= journal.yoga.to_s %></td>
+        <td><%= journal.energy.to_s %></td>
+        <td><%= journal.motivation.to_s %></td>
+        <td><%= journal.happiness.to_s %></td>
+        <td>&nbsp;</td>
+      </tr> 
+    </table>
     </div>
-    <div class="col-md-1 col-sm-12">
-      Systolic<br>
-      <%= journal.systolic.to_s %>
-    </div>
-    <div class="col-md-1 col-sm-12">
-      Diastolic<br>
-      <%= journal.diastolic.to_s %>
-    </div>
-    <div class="col-md-1 col-sm-12">
-      AM Glucose<br>
-      <%= journal.am_glucose.to_s %>
-    </div>
-    <div class="col-md-1 col-sm-12">
-      &nbsp;</br>
-      &nbsp;
-    </div>    
   </div>
-  <div class="row">
-    <div class="col-md-1 col-md-offset-3 col-sm-12">
-      Curls<br>
-      <%= journal.curls.to_s %>&nbsp;
-    </div>  
-    <div class="col-md-1 col-sm-12">
-      KettleBells<br>
-      <%= journal.kettlebells.to_s %>
-    </div>  
-    <div class="col-md-1 col-sm-12">
-      Situps<br>
-      <%= journal.situps.to_s %>
-    </div> 
-    <div class="col-md-1 col-sm-12">
-      Pushups<br>
-      <%= journal.pushups.to_s %>
-    </div>
-    <div class="col-md-1 col-sm-12">
-      Eliptical Time<br>
-      <%= journal.eliptical_time.to_s %>
-    </div> 
-    <div class="col-md-1 col-sm-12">
-      Eliptical Dist<br>
-      <%= journal.eliptical_dist.to_s %>
-    </div>  
-  </div>
-  <div class="row">
-    <div class="col-md-1 col-md-offset-3 col-sm-12">
-      Meditation<br>
-      <%= journal.meditation.to_s %>&nbsp;
-    </div>
-    <div class="col-md-1 col-sm-12">
-      Yoga<br>
-      <%= journal.yoga.to_s %>
-    </div>
-    <div class="col-md-1 col-sm-12">
-      Energy<br>
-      <%= journal.energy.to_s %>
-    </div>
-    <div class="col-md-1 col-sm-12">
-      Motivation<br>
-      <%= journal.motivation.to_s %>
-    </div>
-    <div class="col-md-1 col-sm-12">
-      Happiness<br>
-      <%= journal.happiness.to_s %>
-    </div>  
-    <div class="col-md-1 col-sm-12">
-      &nbsp;
-    </div>   
   </div>
 <% end %>
 </div>
