@@ -28,12 +28,6 @@ class JournalsController < ApplicationController
 
   # GET /goal
   def goal
-      @journal = Journal.where(:entry_for => DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate)).first
-      if @journal.nil?
-        @journal = Journal.new
-        @entry_for = DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate)
-      end 
-      render :layout => 'gradient' 
   end
 
   # GET /journals/1/edit

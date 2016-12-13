@@ -19,7 +19,7 @@
 <% @journals.each do |journal| %>
   <div class="row">
     <div class="col-md-6 col-md-offset-3 col-x-12">
-      <h2><%= link_to journal.entry_for, journals_goal_path(journal) %></h2>
+      <h2><%= link_to journal.entry_for, journals_musings_path(journal) %></h2>
       <% if journal.goals.to_s.size > 0 %>
       <h3>Goals</h3>
       <p><%= journal.goals.to_s %></p>
