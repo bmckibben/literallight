@@ -11,7 +11,8 @@ class JournalsController < ApplicationController
   end
 
  def blog
-    @journals = Journal.all.order_by(entry_for: :desc).limit(20)    
+    @journals = Journal.all.order_by(entry_for: :desc).limit(20)   
+    render :layout => 'gradient' 
   end
 
   # GET /journals/1
