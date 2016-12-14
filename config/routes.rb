@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
+
 	root 'home#index'
 	
 	get 'home/index' => 'home#index', :as => 'home'
 	get 'home/home' => 'home#home', :as => 'internal_home'
-	get 'blog' => 'journals#blog', :as => 'blog'
 	get 'static_pages/about' => 'static_pages#about', :as => 'static_about'
 	get 'static_pages/help' => 'static_pages#help', :as => 'static_help'
 	get 'static_pages/contact' => 'static_pages#contact', :as => 'static_contact'
@@ -17,7 +17,6 @@ Rails.application.routes.draw do
   	get 'users/list' => 'users#list', :as => 'users_list'
   	get 'musings' => 'journals#musings', :as => 'journals_musings'
   	get 'show_musing/:id' => 'journals#show_musing', :as => 'journals_show_musing'
-  	get 'goal' => 'journals#goal', :as => 'journals_goal'
   	post 'home/contact_email' => 'home#contact_email'
  
     resources :glossaries
@@ -25,5 +24,6 @@ Rails.application.routes.draw do
 	resources :nominees
   	devise_for :users
   	resources :users
+  	resources :blogs
   	
 end

@@ -43,6 +43,11 @@
 
 #blog {
 	color: #ddd;
+    overflow-y: auto;
+    position: fixed;
+    top: 50px;
+    bottom: -40px;
+    width: 95%;	
 }
 
 #blog h2{

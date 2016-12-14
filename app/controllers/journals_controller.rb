@@ -10,11 +10,6 @@ class JournalsController < ApplicationController
     @journals = Journal.all.order_by(entry_for: :desc) #.limit(20)    
   end
 
- def blog
-    @journals = Journal.all.order_by(entry_for: :desc).limit(14)   
-    render :layout => 'gradient' 
-  end
-
   # GET /journals/1
   # GET /journals/1.json
   def show
@@ -24,10 +19,6 @@ class JournalsController < ApplicationController
   def new
     @journal = Journal.new
     @journal.entry_for = DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate)
-  end
-
-  # GET /goal
-  def goal
   end
 
   # GET /journals/1/edit
