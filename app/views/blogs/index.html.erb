@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-10 col-md-offset-3 col-sm-12">
+    <div class="col-md-6 col-md-offset-3 col-sm-12">
     <%= link_to 'New Entry',  new_blog_path, class: "btn btn-primary pull-right" %>
     <h1>Entries</h1>
     Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate) %>
@@ -60,7 +60,7 @@
       </tr>
       <tr>
         <td><%= blog.curls.to_s %></td>
-        <td><%= blog.kettlebells.to_s %></td>
+        <td><%= blog.kettlebells.to_s %>&nbsp;</td>
         <td><%= blog.pushups.to_s %></td>
         <td><%= blog.situps.to_s %></td>
         <td><%= blog.eliptical_time.to_s %></td>
