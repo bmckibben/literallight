@@ -44,10 +44,12 @@
 #blog {
 	color: #ddd;
     overflow-y: auto;
+    overflow-x: hidden;
     position: fixed;
     top: 50px;
-    bottom: -40px;
-    width: 95%;	
+    /* bottom: -80px;  */
+    height: 85vh; 
+    width: 97%;	
 }
 
 #blog h2{

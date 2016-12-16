@@ -18,6 +18,8 @@ class BlogsController < ApplicationController
   # GET /blogs/new
   def new
     @blog = Journal.new
+    @blog.entry_for = DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate)
+    render :layout => 'gradient' 
   end
 
   # GET /blogs/1/edit
@@ -29,7 +31,11 @@ class BlogsController < ApplicationController
   # POST /blogs.json
   def create
     @blog = Journal.new(blog_params)
-
+    @blog.created_at = DateTime.now
+    @blog.updated_at = DateTime.now
+    if @blog.entry_for.nil?
+      @blog.entry_for = DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate)
+    end  
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
@@ -44,6 +50,7 @@ class BlogsController < ApplicationController
   # PATCH/PUT /blogs/1
   # PATCH/PUT /blogs/1.json
   def update
+    @journal.updated_at = DateTime.now
     respond_to do |format|
       if @blog.update(blog_params)
         format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }
@@ -73,6 +80,6 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:id, :entry_for, :am_glucose, :pm_glucose, :weight, :systolic, :diastolic, :body_fat, :energy, :motivation, :happiness, :details, :goals, :notes, :created_at, :updated_at, :meditation, :yoga, :curls, :kettlebells, :pushups, :situps, :eliptical_time, :eliptical_dist)
+      params.require(:blog).permit(:id, :entry_for, :am_glucose, :pm_glucose, :weight, :systolic, :diastolic, :body_fat, :energy, :motivation, :happiness, :details, :goals, :notes, :created_at, :updated_at, :meditation, :yoga, :curls, :kettlebells, :pushups, :situps, :eliptical_time, :eliptical_dist, :title)
     end
 end

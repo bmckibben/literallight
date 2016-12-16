@@ -12436,6 +12436,11 @@ label {
   width: 100%;
 }
 
+/* line 102, C:/Sites/literallight/app/assets/stylesheets/bootstrap_overrides.scss */
+#blog .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  padding: 4px;
+}
+
 /* line 1, C:/Sites/literallight/app/assets/stylesheets/prettyPhoto.scss */
 div.pp_default .pp_top, div.pp_default .pp_top .pp_middle, div.pp_default .pp_top .pp_left, div.pp_default .pp_top .pp_right, div.pp_default .pp_bottom, div.pp_default .pp_bottom .pp_left, div.pp_default .pp_bottom .pp_middle, div.pp_default .pp_bottom .pp_right {
   height: 13px;
@@ -14149,13 +14154,15 @@ body,
 #blog {
   color: #ddd;
   overflow-y: auto;
+  overflow-x: hidden;
   position: fixed;
   top: 50px;
-  bottom: -40px;
-  width: 95%;
+  /* bottom: -80px;  */
+  height: 85vh;
+  width: 97%;
 }
 
-/* line 53, C:/Sites/literallight/app/assets/stylesheets/journals.scss */
+/* line 55, C:/Sites/literallight/app/assets/stylesheets/journals.scss */
 #blog h2 {
   font-style: italic;
   color: #D15852;
@@ -14165,13 +14172,13 @@ body,
   margin-top: 1.5rem;
 }
 
-/* line 62, C:/Sites/literallight/app/assets/stylesheets/journals.scss */
+/* line 64, C:/Sites/literallight/app/assets/stylesheets/journals.scss */
 #blog div.small {
   font-size: 10pt;
 }
 
 @media (max-width: 400px) {
-  /* line 68, C:/Sites/literallight/app/assets/stylesheets/journals.scss */
+  /* line 70, C:/Sites/literallight/app/assets/stylesheets/journals.scss */
   table {
     font-size: 0.7 rem;
   }

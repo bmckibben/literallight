@@ -25,6 +25,7 @@ class Journal
   field :situps, type: Integer
   field :eliptical_time, type: Integer
   field :eliptical_dist, type: Float
+  field :title, type: String
 
   search_in :notes
 
