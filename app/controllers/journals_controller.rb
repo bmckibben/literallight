@@ -100,6 +100,6 @@ class JournalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def journal_params
-      params.require(:journal).permit(:id, :entry_for, :am_glucose, :pm_glucose, :weight, :systolic, :diastolic, :body_fat, :energy, :motivation, :happiness, :details, :goals, :notes, :created_at, :updated_at, :curls, :yoga, :meditation, :kettlebells, :situps, :pushups, :eliptical_time, :eliptical_dist)
+      params.require(:journal).permit(:id, :entry_for, :am_glucose, :pm_glucose, :weight, :systolic, :diastolic, :body_fat, :energy, :motivation, :happiness, :details, :goals, :notes, :created_at, :updated_at, :curls, :yoga, :meditation, :kettlebells, :situps, :pushups, :eliptical_time, :eliptical_dist, :title)
     end
 end
