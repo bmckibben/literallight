@@ -27,6 +27,8 @@ class Blog
   field :eliptical_time, type: Integer
   field :eliptical_dist, type: Float
   field :title, type: String
+
+    
 end
 
 #  rails g scaffold blog id:Integer entry_for:String am_glucose:Integer pm_glucose:Integer weight:Float systolic:Integer diastolic:Integer body_fat:Float energy:Integer motivation:Integer happiness:Integer details:String goals:String notes:String created_at:Time updated_at:Time meditation:Integer yoga:Integer curls:Integer kettlebells:Integer pushups:Integer situps:Integer eliptical_time:Integer eliptical_dist:Float
