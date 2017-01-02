@@ -20,7 +20,11 @@
 <% @blogs.each do |blog| %>
   <div class="row">
     <div class="col-md-6 col-md-offset-3 col-x-12">
-      <h2> <%= link_to blog.entry_for, edit_blog_path(blog) %> <% blog.title.to_s %></h2>
+      <h2> <%= link_to blog.entry_for, edit_blog_path(blog) %>
+      <% if blog.title.to_s.size > 0 %>  
+       <% blog.title %>
+      <% end %> 
+     </h2>
       <% if blog.goals.to_s.size > 0 %>
       <h3>Goals</h3>
       <p><%= blog.goals.to_s %></p>
