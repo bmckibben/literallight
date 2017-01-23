@@ -5,7 +5,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Journal.where.not(title: nil).order_by(entry_for: :desc).limit(14) 
+    @blogs = Journal.where(:title.exists => true, :title.ne => "").order_by(entry_for: :desc).limit(14) 
     render :layout => 'gradient' 
   end
 
