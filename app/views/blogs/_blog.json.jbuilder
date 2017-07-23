@@ -1,0 +1,2 @@
+json.extract! blog, :id, :id, :entry_for, :am_glucose, :pm_glucose, :weight, :systolic, :diastolic, :body_fat, :energy, :motivation, :happiness, :details, :goals, :notes, :created_at, :updated_at, :meditation, :yoga, :curls, :kettlebells, :pushups, :situps, :eliptical_time, :eliptical_dist, :created_at, :updated_at
+json.url blog_url(blog, format: :json)

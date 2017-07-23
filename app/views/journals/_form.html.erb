@@ -2,7 +2,6 @@
   <% if @journal.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@journal.errors.count, "error") %> prohibited this journal from being saved:</h2>
-
       <ul>
       <% @journal.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -10,13 +9,18 @@
       </ul>
     </div>
   <% end %>
-
 <div class="row">
   <div class="field col-md-1 col-md-offset-3 col-sm-12">
     <%= f.label :entry_for %><br>
-    <%= f.text_field :entry_for %>
+    <%= f.text_field :entry_for, :style => "width:100%;" %>
   </div>
-  <div class="field col-md-1 col-sm-12">
+  <div class="field col-md-5 col-sm-12">
+    <%= f.label :title %><br>
+    <%= f.text_field :title, :style => "width:100%;" %>
+  </div>  
+</div>  
+<div class="row">
+  <div class="field col-md-1 col-md-offset-3 col-sm-12">
     <%= f.label :weight %><br>
     <%= f.text_field :weight %>
   </div>  
@@ -36,53 +40,66 @@
     <%= f.label :am_glucose %><br>
     <%= f.number_field :am_glucose %>
   </div>
+  <div class="field col-md-1 col-sm-12">
+    &nbsp;
+  </div>  
 </div>
 <div class="row">
-  <div class="field col-md-2 col-md-offset-3 col-sm-12">
-    <%= f.label :meditation %><br>
-    <%= f.text_field :meditation %>
-  </div>
-  <div class="field col-md-2 col-sm-12">
-    <%= f.label :yoga %><br>
-    <%= f.text_field :yoga %>
-  </div>  
-  <div class="field col-md-2 col-sm-12">
+  <div class="field col-md-1 col-md-offset-3 col-sm-12">
     <%= f.label :curls %><br>
     <%= f.text_field :curls %>
   </div>  
+  <div class="field col-md-1 col-sm-12">
+    <%= f.label :kettlebells %><br>
+    <%= f.text_field :kettlebells %>
+  </div>  
+  <div class="field col-md-1 col-sm-12">
+    <%= f.label :situps %><br>
+    <%= f.text_field :situps %>
+  </div> 
+  <div class="field col-md-1 col-sm-12">
+    <%= f.label :pushups %><br>
+    <%= f.text_field :pushups %>
+  </div>
+  <div class="field col-md-1 col-sm-12">
+    <%= f.label :eliptical_time %><br>
+    <%= f.text_field :eliptical_time %>
+  </div> 
+  <div class="field col-md-1 col-sm-12">
+    <%= f.label :eliptical_dist %><br>
+    <%= f.text_field :eliptical_dist %>
+  </div>  
 </div>
 <div class="row">
-  <div class="field col-md-2 col-md-offset-3 col-sm-12">
+  <div class="field col-md-1 col-md-offset-3 col-sm-12">
+    <%= f.label :meditation %><br>
+    <%= f.text_field :meditation %>
+  </div>
+  <div class="field col-md-1 col-sm-12">
+    <%= f.label :yoga %><br>
+    <%= f.text_field :yoga %>
+  </div>
+  <div class="field col-md-1 col-sm-12">
     <%= f.label :energy %><br>
     <%= f.number_field :energy %>
   </div>
-  <div class="field col-md-2 col-sm-12">
+  <div class="field col-md-1 col-sm-12">
     <%= f.label :motivation %><br>
     <%= f.number_field :motivation %>
   </div>
-  <div class="field col-md-2 col-sm-12">
+  <div class="field col-md-1 col-sm-12">
     <%= f.label :happiness %><br>
     <%= f.number_field :happiness %>
   </div>  
+  <div class="field col-md-1 col-sm-12">
+    &nbsp;
+  </div>   
 </div>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3 col-sm-12 ">
     <div id="accordion" class="panel-group">
-      <div class="panel panel-default">
-          <div class="panel-heading">
-              <h3 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse01">Details</a>
-              </h3>
-          </div>
-          <div id="collapse01" class="panel-collapse collapse">
-              <div class="panel-body">
-                  <div class="field">
-                    <%= f.text_area :details %>
-                  </div>       
-              </div>
-          </div>
-      </div> 
+
       <div class="panel panel-default">
           <div class="panel-heading">
               <h3 class="panel-title">
@@ -111,6 +128,20 @@
               </div>
           </div>
       </div> 
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse01">Details</a>
+              </h3>
+          </div>
+          <div id="collapse01" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="field">
+                    <%= f.text_area :details %>
+                  </div>       
+              </div>
+          </div>
+      </div>       
     </div>
   </div>
 </div>

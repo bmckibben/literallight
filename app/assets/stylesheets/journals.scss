@@ -41,6 +41,30 @@
 	margin-bottom: 10px;
 }
 
+#blog {
+	color: #ddd;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 50px;
+    /* bottom: -80px;  */
+    height: 85vh; 
+    width: 97%;	
+}
+
+#blog h2{
+	font-style: italic;
+	color: #D15852;
+	width:100%;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 0.5rem;
+	margin-top: 1.5rem;
+}
+
+#blog div.small{
+	font-size: 10pt;
+}
+
 @media (max-width: 400px) {
 
 table {

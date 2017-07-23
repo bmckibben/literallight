@@ -1,7 +1,7 @@
 class JournalsController < ApplicationController
   
   before_action :authenticate_user!
-  before_action :set_journal, only: [:show, :edit, :update, :destroy, :show_musing]
+  before_action :set_journal, only: [:show, :edit, :update, :destroy, :show_musing, :goal]
 
 
   # GET /journals
@@ -31,6 +31,9 @@ class JournalsController < ApplicationController
     @journal = Journal.new(journal_params)
     @journal.created_at = DateTime.now
     @journal.updated_at = DateTime.now
+    if @journal.entry_for.nil?
+      @journal.entry_for = DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardate)
+    end  
 
     respond_to do |format|
       if @journal.save
@@ -97,6 +100,6 @@ class JournalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def journal_params
-      params.require(:journal).permit(:id, :entry_for, :am_glucose, :pm_glucose, :weight, :systolic, :diastolic, :body_fat, :energy, :motivation, :happiness, :details, :goals, :notes, :created_at, :updated_at, :curls, :yoga, :meditation)
+      params.require(:journal).permit(:id, :entry_for, :am_glucose, :pm_glucose, :weight, :systolic, :diastolic, :body_fat, :energy, :motivation, :happiness, :details, :goals, :notes, :created_at, :updated_at, :curls, :yoga, :meditation, :kettlebells, :situps, :pushups, :eliptical_time, :eliptical_dist, :title)
     end
 end

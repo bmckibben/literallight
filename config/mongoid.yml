@@ -1,7 +1,7 @@
 development:
   clients:
     default:
-      database: myDB
+      database: literallight
       hosts:
         - localhost:27017
       options:
@@ -22,5 +22,5 @@ test:
 production:
   clients:
     default:
-      uri: <%= ENV['MONGOHQ_URL'] %>
+      uri: <%= ENV['MLAB_URL'] %>
       options:

@@ -20,6 +20,12 @@ class Journal
   field :meditation, type: Integer
   field :yoga, type: Integer
   field :curls, type: Integer
+  field :kettlebells, type: Integer
+  field :pushups, type: Integer
+  field :situps, type: Integer
+  field :eliptical_time, type: Integer
+  field :eliptical_dist, type: Float
+  field :title, type: String
 
   search_in :notes
 

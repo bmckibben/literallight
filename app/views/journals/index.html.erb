@@ -19,11 +19,6 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
   <thead>
     <tr>
       <th>Entry for</th>
-      <th>Am glucose</th>
-      <th>Weight</th>
-      <th>Systolic</th>
-      <th>Diastolic</th>
-      <th>Body fat</th>
       <th>Curls</th>
       <th>Yoga</th>
       <th>Meditation</th>
@@ -42,20 +37,15 @@ Today is <%= DateTime.now.in_time_zone('Indiana (East)').to_formatted_s(:stardat
     <% @journals.each do |journal| %>
       <tr data-link="<%= edit_journal_path(journal) %>" class="data-row">
         <td class="bold center"><%= journal.entry_for %></td>
-        <td><%= journal.am_glucose.to_s %></td>
-        <td><%= journal.weight.to_s %></td>
-        <td><%= journal.systolic.to_s %></td>
-        <td><%= journal.diastolic.to_s %></td>
-        <td><%= journal.body_fat.to_s %></td>
         <td><%= journal.curls.to_s %></td>
         <td><%= journal.yoga.to_s %></td>
         <td><%= journal.meditation.to_s %></td>
         <td><%= journal.energy.to_s %></td>
         <td><%= journal.motivation.to_s %></td>
         <td><%= journal.happiness.to_s %></td>
-        <td><%= journal.details[0...70] %></td>
-        <td><%= journal.goals[0...70] %></td>
-        <td><%= journal.notes[0...70] %></td>
+        <td><%= journal.details.to_s[0...70] %></td>
+        <td><%= journal.goals.to_s[0...70] %></td>
+        <td><%= journal.notes.to_s[0...70] %></td>
         <td><%= journal.created_at.to_formatted_s(:stardate) if journal.created_at %></td>
         <td><%= journal.updated_at.to_formatted_s(:stardate) if journal.updated_at %></td>
       </tr>
